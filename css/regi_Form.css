@@ -1,0 +1,93 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.base_color {
+    background-color: #72C2E7;
+}
+
+.text_base_color {
+    color: #72C2E7;
+}
+
+.clip-left {
+    clip-path: polygon(10% 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.clip-right {
+    clip-path: polygon(0 0, 90% 0, 100% 100%, 0 100%);
+}
+
+
+/* rounded-md bg-purple-600 font-bold text-xl text-white px-4 py-2 */
+
+.btn_primary {
+    background-color: #6b46c1;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    padding: 8px 8px;
+}
+
+
+/* Custom CSS for the label transition */
+
+.floating-label-group input:focus~label,
+.floating-label-group input:not(:placeholder-shown)~label {
+    transform: translateY(-2rem);
+    font-size: 18px;
+    color: #72C2E7;
+    /* Adjust to desired color */
+}
+
+.custom-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-toggle {
+    padding: 8px 16px;
+    border: 1px solid #ccc;
+    background-color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 100%;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    z-index: 10;
+}
+
+.dropdown-item {
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+.dropdown-item:hover {
+    background-color: #72C2E7;
+    /* Purple */
+    color: white;
+}
+
+.custom-dropdown.open .dropdown-menu {
+    display: block;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    outline: none !important;
+}

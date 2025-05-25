@@ -1,0 +1,917 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Entrance Properties Limited</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+    <link href="./css/style.css" rel="stylesheet" />
+    <link href="./css/courses.css" rel="stylesheet" />
+</head>
+
+<body class="bg-gray-100 font-sans leading-normal tracking-normal">
+    <!-- Sidebar Component -->
+    <div class="flex gap-4 w-full">
+        <!-- Sidebar -->
+        <div id="sidebar" class="w-64 shadow-md z-50 bg-white text-white h-screen overflow-y-auto fixed p-4 transition-transform transform -translate-x-full md:translate-x-0">
+            <div class="bg-white rounded w-full">
+                <img class="rounded h-20 object-contain w-full" src="./assets/ENTRANCE.png" alt="Logo" />
+            </div>
+            <!-- Menu Items -->
+            <div class="flex flex-col justify-between mt-2">
+                <ul id="sidebarMenu" class="w-full">
+                    <!-- Overview Section -->
+                    <li class="font-bold text-sm text_color_primary my-2">Overview</li>
+                    <li class="mb-2">
+                        <a href="index.html" class="sidebar-link flex items-center gap-2 py-1.5 rounded hover:bg-gray-100 text-gray-700" id="homeLink">
+                            <i class="fas fa-home icon_color text-white p-2 text-xs rounded"></i>
+                            <span class="font-bold">Home</span>
+                        </a>
+                    </li>
+
+                    <li class="mb-2">
+                        <a href="about.html" class="sidebar-link flex items-center gap-2 py-1.5 rounded hover:bg-gray-100 text-gray-700" id="aboutLink">
+                            <i class="fas fa-home icon_color text-white p-2 text-xs rounded"></i>
+                            <span class="font-bold">About Us</span>
+                        </a>
+                    </li>
+
+                    <li class="mb-2">
+                        <a href="photo.html" class="sidebar-link flex items-center gap-2 py-1.5 rounded hover:bg-gray-100 text-gray-700" id="photoLink">
+                            <i class="fas fa-info-circle icon_color text-white p-2 text-xs rounded"></i>
+                            <span class="font-bold">Photo Gallery</span>
+                        </a>
+                    </li>
+
+                    <li class="mb-2">
+                        <a href="video.html" class="sidebar-link flex items-center gap-2 py-1.5 rounded hover:bg-gray-100 text-gray-700" id="videoLink">
+                            <i class="fas fa-info-circle icon_color text-white p-2 text-xs rounded"></i>
+                            <span class="font-bold">Video Gallery</span>
+                        </a>
+                    </li>
+
+                    <li class="mb-2">
+                        <a href="blog.html" class="sidebar-link flex items-center gap-2 py-1.5 rounded hover:bg-gray-100 text-gray-700" id="blogLink">
+                            <i class="fas fa-info-circle icon_color text-white p-2 text-xs rounded"></i>
+                            <span class="font-bold">Blog & Event</span>
+                        </a>
+                    </li>
+
+                    <li class="mb-2">
+                        <a href="contact.html" class="sidebar-link flex items-center gap-2 py-1.5 rounded hover:bg-gray-100 text-gray-700" id="contactLink">
+                            <i class="fas fa-info-circle icon_color text-white p-2 text-xs rounded"></i>
+                            <span class="font-bold">Contact Us</span>
+                        </a>
+                    </li>
+
+                    <li class="font-bold text-sm text_color_primary my-1">
+                        Our project
+                    </li>
+
+                    <li class="mb-2">
+                        <a href="bashundhara.html" class="sidebar-link flex items-center gap-2 py-1.5 rounded hover:bg-gray-100 text-gray-700" id="courseLinks">
+                            <i class="fas fa-info-circle icon_color text-white p-2 text-xs rounded"></i>
+                            <span class="font-bold">Basundhara</span>
+                        </a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="uttara.html" class="sidebar-link flex items-center gap-2 py-1.5 rounded hover:bg-gray-100 text-gray-700" id="serviceLink">
+                            <i class="fas fa-info-circle icon_color text-white p-2 text-xs rounded"></i>
+                            <span class="font-bold">Uttara</span>
+                        </a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="mirpur.html" class="sidebar-link flex items-center gap-2 py-1.5 rounded hover:bg-gray-100 text-gray-700" id="student_certificateLinkss">
+                            <i class="fas fa-info-circle icon_color text-white p-2 text-xs rounded"></i>
+                            <span class="font-bold">Mirpur</span>
+                        </a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="mohammadpur.html" class="sidebar-link flex items-center gap-2 py-1.5 rounded hover:bg-gray-100 text-gray-700" id="registration_formLinks">
+                            <i class="fas fa-info-circle icon_color text-white p-2 text-xs rounded"></i>
+                            <span class="font-bold">Mohammadpur</span>
+                        </a>
+                    </li>
+
+
+                </ul>
+            </div>
+        </div>
+        <!-- main content -->
+        <div class="md:ml-64 w-full">
+
+
+            <div class="mt-4 mx-4">
+                <div class="my-4 space-y-4 overflow-hidden">
+                    <!-- Main Section -->
+                    <img src="./assets/Blue White Clean Architectural Engineering Presentation.svg" class="w-full">
+                    <!-- Second Card (YouTube Embed) -->
+
+                </div>
+                <div class="flex flex-col lg:flex-row items-center justify-between gap-4 w-full h-full">
+                    <div class="flex-1 px-8 py-7 bg-white border-2 border-gray-300 mx-auto hover:border-purple-400 transition duration-500">
+                        <div class="flex items-center gap-2">
+                            <!-- start -->
+
+                            <!-- First Card -->
+                            <div data-aos="fade-right" data-aos-duration="1000" class="text-text_18px md:flex-1 p-4 bg-white border-gray-300 mx-auto w-full transition duration-500">
+                                <p class="text_color_primary font-bold text-base">
+                                    Welcome to Itder
+                                </p>
+                                <h1 class="text-5xl font-bold text_color_title mb-4">
+                                    Learn the Skills you Need to Succeed.
+                                </h1>
+                                <p class="text-base text_color_paragrap mb-5">
+                                    Best IT Training Institute in Dinajpur, Bangladesh with Instructor-led Live and Interactive Classes from Experienced Working Professionals, with 100% Placement Assistance.
+                                </p>
+                                <a href="/memberShip" class="icon_color text-white p-2 font-bold text-xl rounded-sm mt-5">Get Started</a>
+
+                            </div>
+                            <!-- end -->
+                        </div>
+
+
+
+                    </div>
+                    <div class="flex-1 grid lg:grid-cols-2 gap-6 py-7 px-8 h-full bg-white border-2 border-gray-300 mx-auto w-full hover:border-purple-400 transition duration-500">
+                        <div style="background-color: #d1fadf" class="p-6">
+                            <h2 class="mb-3 text-3xl font-bold">৭০০০+</h2>
+                            <p>জব প্লেসমেন্ট</p>
+                        </div>
+                        <div style="background-color: #dae4ff" class="p-6">
+                            <h2 class="mb-3 text-3xl font-bold">১৫,০০০+</h2>
+                            <p>লার্নার</p>
+                        </div>
+                        <div style="background-color: #ffe8db" class="p-6">
+                            <h2 class="mb-3 text-3xl font-bold">৯০%</h2>
+                            <p>কোর্স কমপ্লিশন রেট</p>
+                        </div>
+                        <div style="background-color: #fff2cc" class="p-6">
+                            <h2 class="mb-3 text-3xl font-bold">৪৬</h2>
+                            <p>লাইভ কোর্স</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="my-16">
+                    <div class="bg-white border-2 border-gray-300 py-10 mx-auto w-full hover:border-purple-400 transition duration-500">
+                        <h2 class="text-2xl lg:text-3xl text-[rgb(16, 24, 40)] font-bold text-center">
+                            কি কি পাচ্ছেন লাইভ কোর্সে
+                        </h2>
+                        <p class="mt-4 text-center text-xs lg:text-base">
+                            দেখে নিন কি কি পাচ্ছেন ওস্তাদের লাইভ কোর্সে জয়েন করলে
+                        </p>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 mt-4  gap-4">
+                        <div class="bg-white shadow-lg overflow-hidden border-2 border-gray-300  mx-auto w-full hover:border-purple-400 transition duration-500">
+                            <div class="relative">
+                                <img src="https://itderbd.nextwebservice.com/storage/uploads/course/7496351728743462.jpg" alt="" class="w-full lg:h-80" />
+                                <div class="absolute top-0 left-0 p-2">
+                                    <h3 class="text-white text-xl font-bold">Course Name</h3>
+                                </div>
+                            </div>
+                            <div class="p-4">
+                                <h2 class="text-gray-800 text-lg font-semibold text-center">
+                                    Course Name
+                                </h2>
+                                <div class="flex items-center justify-center mb-4">
+
+                                    <span class="ml-2  text-md font-bold text-blue-500">Trainer Name</span
+                      >
+                    </div>
+                    <div class="flex gap-2 mb-4 flex-wrap">
+                      <span
+                        class="bg-yellow-100 text-gray-700 text-xs font-semibold px-2 py-1 rounded"
+                        >Photography</span
+                      >
+                      <span
+                        class="bg-yellow-100 text-gray-700 text-xs font-semibold px-2 py-1 rounded"
+                        >Light set up</span
+                      >
+                      <span
+                        class="bg-yellow-100 text-gray-700 text-xs font-semibold px-2 py-1 rounded"
+                        >Camera angle</span
+                      >
+                      <span
+                        class="bg-yellow-100 text-gray-700 text-xs font-semibold px-2 py-1 rounded"
+                        >Self Development</span
+                      >
+                    </div>
+                   
+                    <hr />
+                    <div class="mt-4 flex justify-between items-center">
+                      <div>
+                        <span class="line-through text-gray-400 text-sm"
+                          >Tk 800</span
+                        >
+                        <span class="text-green-600 text-md font-bold ml-2"
+                          >-70%</span
+                        >
+                        <span class="text-black text-lg font-bold ml-2"
+                          >Tk 240</span
+                        >
+                      </div>
+                     
+                    </div>
+                    <div class="mt-4 flex gap-2">
+                      <button
+                        class="icon_color  text-white py-2 px-4 rounded hover:icon_color  w-full font-bold text-md"
+                      >
+                        Get Mohammadpur
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                 <div class="bg-white shadow-lg overflow-hidden border-2 border-gray-300  mx-auto w-full hover:border-purple-400 transition duration-500">
+                  <div class="relative">
+                    <img
+                      src="https://dreamlandadventuretourism.com/wp-content/uploads/2023/12/img-world-ticket-from-dream.webp"
+                      alt=""
+                      class="w-full h-80"
+                    />
+                    <div class="absolute top-0 left-0 p-2">
+                      <h3 class="text-white text-xl font-bold">Course Name</h3>
+                    </div>
+                  </div>
+                  <div class="p-4">
+                    <h2 class="text-gray-800 text-lg font-semibold text-center">
+                      Course Name
+                    </h2>
+                    <div class="flex items-center justify-center mb-4">
+                     
+                      <span class="ml-2  text-md font-bold text-blue-500"
+                        >Trainer Name</span
+                      >
+                    </div>
+                    <div class="flex gap-2 mb-4 flex-wrap">
+                      <span
+                        class="bg-yellow-100 text-gray-700 text-xs font-semibold px-2 py-1 rounded"
+                        >Photography</span
+                      >
+                      <span
+                        class="bg-yellow-100 text-gray-700 text-xs font-semibold px-2 py-1 rounded"
+                        >Light set up</span
+                      >
+                      <span
+                        class="bg-yellow-100 text-gray-700 text-xs font-semibold px-2 py-1 rounded"
+                        >Camera angle</span
+                      >
+                      <span
+                        class="bg-yellow-100 text-gray-700 text-xs font-semibold px-2 py-1 rounded"
+                        >Self Development</span
+                      >
+                    </div>
+                   
+                    <hr />
+                    <div class="mt-4 flex justify-between items-center">
+                      <div>
+                        <span class="line-through text-gray-400 text-sm"
+                          >Tk 800</span
+                        >
+                        <span class="text-green-600 text-md font-bold ml-2"
+                          >-70%</span
+                        >
+                        <span class="text-black text-lg font-bold ml-2"
+                          >Tk 240</span
+                        >
+                      </div>
+                     
+                    </div>
+                    <div class="mt-4 flex gap-2">
+                      <button
+                        class="icon_color  text-white py-2 px-4 rounded hover:icon_color  w-full font-bold text-md"
+                      >
+                        Get Mohammadpur
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 p-6 mt-6 bg-white border-2 border-gray-300 mx-auto w-full hover:border-purple-400 transition duration-500 cursor-pointer"
+              >
+                <!-- Card 1 -->
+                <div
+                  class="flex flex-col items-center border p-6 md:border-r md:border-b md:border-l md:border-t"
+                >
+                  <div class="w-12 h-12 mb-4">
+                    <img
+                      src="https://cdn.ostad.app/public/upload/2023-09-26T07-03-07.734Z-icon-1.png"
+                      alt="Video icon"
+                      class="object-contain w-full h-full"
+                    />
+                  </div>
+                  <h3 class="mb-2 text-xl font-bold text-center">
+                    ইন্টু্রি ফোকাসড লাইভ কোর্স
+                  </h3>
+                  <p class="text-sm text-center text-gray-600">
+                    জয়েন করুন গাইডলাইন সমৃদ্ধ ইন্টু্রি ফোকাসড লাইভ কোর্সে, শুরু
+                    করুন আপনার ক্যারিয়ার জার্নি।
+                  </p>
+                </div>
+
+                <!-- Card 2 -->
+                <div
+                  class="flex flex-col items-center border-b border-r border-l p-6 md:border-b md:border-r md:border-t"
+                >
+                  <div class="w-12 h-12 mb-4">
+                    <img
+                      src="https://cdn.ostad.app/public/upload/2023-09-26T07-03-27.927Z-icon-2.png"
+                      alt="Play icon"
+                      class="object-contain w-full h-full"
+                    />
+                  </div>
+                  <h3 class="mb-2 text-xl font-bold text-center">
+                    ইন্টারেক্টিভ লাইভ ক্লাস
+                  </h3>
+                  <p class="text-sm text-center text-gray-600">
+                    ইন্টু্রি প্রশ্নপত্রের সাথে নিয়মিত লাইভ ক্লাস, ক্লাসপরমূলক
+                    ক্লাস আর সাপোর্ট ক্লাস দিয়ে ডেভেলপমেন্ট এখন হবে একদম
+                    পরিপূর্ণ।
+                  </p>
+                </div>
+
+                <!-- Card 3 -->
+                <div
+                  class="flex flex-col items-center p-6 border-b border-r border-l md:border-b md:border-r md:border-t"
+                >
+                  <div class="w-12 h-12 mb-4">
+                    <img
+                      src="https://cdn.ostad.app/public/upload/2023-09-26T07-03-45.997Z-icon-3.png"
+                      alt="3D blocks icon"
+                      class="object-contain w-full h-full"
+                    />
+                  </div>
+                  <h3 class="mb-2 text-xl font-bold text-center">
+                    মডিউল ভিত্তিক স্টাডি প্ল্যান
+                  </h3>
+                  <p class="text-sm text-center text-gray-600">
+                    কুইজ, এসাইনমেন্ট আর লাইভ প্রশ্নাস দিয়ে সাজানো মডিউলভিত্তিক
+                    ভালোভাবে স্টাডিপ্ল্যানের সাথে চিন্তার দরকার কোনো চাপই নেই।
+                  </p>
+                </div>
+
+                <!-- Card 4 -->
+                <div
+                  class="flex flex-col items-center p-6 border-b border-r border-l md:border-r md:border-l md:border-b"
+                >
+                  <div class="w-12 h-12 mb-4">
+                    <img
+                      src="https://cdn.ostad.app/public/upload/2023-09-26T07-04-03.737Z-icon-4.png"
+                      alt="Chart icon"
+                      class="object-contain w-full h-full"
+                    />
+                  </div>
+                  <h3 class="mb-2 text-xl font-bold text-center">
+                    রিয়েলটাইম প্রোগ্রেস ট্র্যাকিং
+                  </h3>
+                  <p class="text-sm text-center text-gray-600">
+                    ট্র্যাক করুন আপনার প্রোগ্রেস রিয়েল টাইম, দেখে নিন নিজের
+                    বোর্ড আপনার পজিশন আর কম্পিটিশন এপ্রিয়ে যান সবার থেকে।
+                  </p>
+                </div>
+
+                <!-- Card 5 -->
+                <div
+                  class="flex flex-col items-center p-6 border-b border-r border-l md:border-r md:border-b"
+                >
+                  <div class="w-12 h-12 mb-4">
+                    <img
+                      src="https://cdn.ostad.app/public/upload/2023-09-26T07-04-21.951Z-icon-5.png"
+                      alt="Certificate icon"
+                      class="object-contain w-full h-full"
+                    />
+                  </div>
+                  <h3 class="mb-2 text-xl font-bold text-center">
+                    শিখুন ইন্টু্রি প্রশ্নপত্রের থেকে সাইট
+                  </h3>
+                  <p class="text-sm text-center text-gray-600">
+                    স্কিল ডেভেলপ করুন ইন্টু্রি সেরা প্রশ্নপত্রের সাথে, ধ্রুব
+                    করুন আর শিখে নিন সরাসরি, লাইভে।
+                  </p>
+                </div>
+
+                <!-- Card 6 -->
+                <div
+                  class="flex flex-col items-center p-6 border-b border-r border-l md:border-r"
+                >
+                  <div class="w-12 h-12 mb-4">
+                    <img
+                      src="https://cdn.ostad.app/public/upload/2023-09-26T07-04-44.253Z-icon-6.png"
+                      alt="Briefcase icon"
+                      class="object-contain w-full h-full"
+                    />
+                  </div>
+                  <h3 class="mb-2 text-xl font-bold text-center">
+                    ইন্টার্নিয়ে জব প্লেসমেন্ট সাপোর্ট
+                  </h3>
+                  <p class="text-sm text-center text-gray-600">
+                    কোর্স কমপ্লিট প্যাকেজ জব প্লেসমেন্ট থিমস থেকে লাইফটাইম ভিডি,
+                    প্রোগ্রাম ভিডে এবং তার প্রাক্টিকালসহ ইন্টানিয়ে জব
+                    প্লেসমেন্ট পাবেন।
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- second card -->
+            <!-- <div class="p-5 mt-16 border rounded-lg shadow ">
+                        <h2 class="flex items-center justify-center gap-2 my-6 text-center">
+                            <p class="text-3xl text-[rgb(16, 24, 40)] font-bold">আমাদের কোর্সসমুহ</p>
+                            <img src="https://cdn.ostad.app/public/upload/2023-09-19T06-53-08.819Z-book-2-icons.svg"
+                                alt="">
+                        </h2>
+                        <div class="relative">
+                           
+                            <div class="flex space-x-4 border-b ">
+                                <button id="tab1"
+                                    class="py-2 px-4 text-sm font-medium text-gray-700 hover:text-gray-900 border-b-2 border-transparent hover:border-gray-300 focus:outline-none">Tab
+                                    1</button>
+                                <button id="tab2"
+                                    class="py-2 px-4 text-sm font-medium text-gray-700 hover:text-gray-900 border-b-2 border-transparent hover:border-gray-300 focus:outline-none">Tab
+                                    2</button>
+                                <button id="tab3"
+                                    class="py-2 px-4 text-sm font-medium text-gray-700 hover:text-gray-900 border-b-2 border-transparent hover:border-gray-300 focus:outline-none">Tab
+                                    3</button>
+                            </div>
+
+                           
+                            <div id="tabContent1" class="grid grid-cols-3 gap-4 mt-4 hidden">
+                               
+                                <div
+                                    class="flex items-center h-full gap-3 p-2 bg-gray-800 border border-gray-300 rounded-lg">
+                                    <div class="p-1 bg-white rounded-full h-7 w-7">
+                                        <img src="https://cdn.ostad.app/public/upload/2023-06-22T06-40-41.054Z-code-box-line.png"
+                                            alt="">
+                                    </div>
+                                    <div>
+                                        <h2 class="text-sm font-medium text-white">Web & App Development</h2>
+                                        <p class="text-xs text-white">• ৩০ কোর্স • ৫ ওয়ার্কশপ</p>
+                                    </div>
+                                </div>
+                               
+                            </div>
+
+                            <div id="tabContent2" class="grid grid-cols-2 gap-4 mt-4 hidden">
+                               
+                                <div
+                                    class="flex items-center h-full gap-3 p-2 bg-gray-200 border border-gray-300 rounded-lg">
+                                    <div class="p-1 bg-white rounded-full h-7 w-7">
+                                        <img src="https://cdn.ostad.app/public/upload/2023-06-07T09-55-30.105Z-product-design.png"
+                                            alt="">
+                                    </div>
+                                    <div>
+                                        <h2 class="text-sm font-medium">Product Management & Design</h2>
+                                        <p class="text-xs">• ১২ কোর্স • ৩ ওয়ার্কশপ</p>
+                                    </div>
+                                </div>
+                               
+                            </div>
+
+                            <div id="tabContent3" class="grid grid-cols-1 gap-4 mt-4 hidden">
+                               
+                                <div
+                                    class="flex items-center h-full gap-3 p-2 bg-gray-200 border border-gray-300 rounded-lg">
+                                    <div class="p-1 bg-white rounded-full h-7 w-7">
+                                        <img src="https://cdn.ostad.app/public/upload/2023-06-07T09-54-47.357Z-business-and-marketing.png"
+                                            alt="">
+                                    </div>
+                                    <div>
+                                        <h2 class="text-sm font-medium">Business & Marketing</h2>
+                                        <p class="text-xs">• ১২ কোর্স </p>
+                                    </div>
+                                </div>
+                               
+                            </div>
+                        </div>
+                        <button
+                            class="flex items-center mt-4 justify-center w-1/2 h-12 gap-2 mx-auto text-sm font-medium text-black bg-gray-200 rounded-lg hover:bg-gray-300">
+                            <p>সব দেখুন</p>
+                            <img class="transition-all duration-200 w-6 h-6 min-w-[24px]"
+                                src="https://cdn.ostad.app/public/icons/arrow-right-line.svg" alt="">
+                        </button>
+                    </div> -->
+            <!-- testimonial section -->
+            <div class="">
+              <div
+                class="bg-white border-2 border-gray-300 py-10 mx-auto w-full hover:border-purple-400 transition duration-500"
+              >
+                <h2
+                  class="text-2xl lg:text-3xl text-[rgb(16, 24, 40)] font-bold text-center"
+                >
+                  দেখে নিন কি বলছেন ওস্তাদ গ্র্যাজুয়েটরা
+                </h2>
+                <p class="mt-2 text-center text-xs lg:text-base">
+                  ২০০০- র বেশি গ্র্যাজুয়েট যারা পেয়েছেন জব, দেখে নিন কি বলছেন
+                  তাদের একাংশ
+                </p>
+              </div>
+
+              <div class="flex flex-col lg:flex-row justify-between gap-2 my-4">
+                <div class="w-full lg:w-1/4">
+                  <div
+                    class="p-2 mb-2 bg-white border-2 border-gray-300 py-10 mx-auto w-full hover:border-purple-400 transition duration-500"
+                  >
+                    <p style="color: rgb(102, 112, 133); font-size: 14px">
+                      ওস্তাদ-এর MERN কোর্সটি স্কিল ডেভেলপমেন্টের জন্য অনেক
+                      হেল্পফুল একটি কোর্স। আমার প্রতিটি প্রবলেমই তারা লাইভ
+                      ক্লাসেই সলভ করার চেষ্টা করেছে। এছাড়াও সাপোর্ট
+                      ইন্সট্রাক্টররাও অনেক ভালো। এসব কারণেই MERN এর লার্নিং
+                      জার্নিটা আমার জন্য ছিল অসাধারণ।
+                    </p>
+                    <hr class="my-4 border-gray-300" />
+                    <p
+                      class="flex items-center justify-center p-2 mb-4 text-center text-white bg-black rounded-full w-9 h-9"
+                    >
+                      FA
+                    </p>
+                    <div class="flex items-start justify-between">
+                      <div>
+                        <h2 class="text-sm font-bold">Faisal Azam Siddiqui</h2>
+                        <p class="text-xs">
+                          Full Stack Web Development with MERN Batch 1
+                        </p>
+                      </div>
+                      <div>
+                        <img
+                          src="https://cdn.ostad.app/public/upload/2024-02-27T06-59-01.071Z-quote-up-circle-boom.svg"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="p-2 bg-white border-2 border-gray-300 py-10 mx-auto w-full hover:border-purple-400 transition duration-500"
+                  >
+                    <p style="color: rgb(102, 112, 133); font-size: 14px">
+                      এই কোর্সটি হচ্ছে আমার লাইফে করা one of the best course।
+                      লার্নিং এক্সপিরিয়েন্স বলেন বা ওস্তাদ টিমের সাপোর্ট বলেন,
+                      সবই ছিল অসাধারণ। একদম বেসিক থেকে এত সুন্দরভাবে ডিটেইলস
+                      শেখানো হয়েছে, যে আমি অনেক কিছুই শেখার সুযোগ পেয়েছি।
+                    </p>
+                    <hr class="my-4 border-gray-300" />
+                    <img
+                      class="mb-4 rounded-full w-9 h-9"
+                      src="https://cdn.ostad.app/public/upload/2023-08-06T10-43-26.987Z-2023-02-18T16-19-36.508Z-331049670_5912973425465146_8220712743907257929_n.jpg"
+                      alt=""
+                    />
+                    <div class="flex items-start justify-between">
+                      <div>
+                        <h2 class="text-sm font-bold">Jahid Hossain</h2>
+                        <p class="text-xs">
+                          Full Stack Web Development with MERN Batch 2
+                        </p>
+                      </div>
+                      <div>
+                        <img
+                          src="https://cdn.ostad.app/public/upload/2024-02-27T06-59-01.071Z-quote-up-circle-boom.svg"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="w-full lg:w-2/4 hidden lg:grid">
+                  <div
+                    class="p-2 mb-2 bg-white border-2 border-gray-300 py-10 mx-auto w-full hover:border-purple-400 transition duration-500"
+                  >
+                    <p style="color: rgb(102, 112, 133); font-size: 14px">
+                      Ostad এর বিশেষত্ত্ব হচ্ছে ওনারা ডিজাইনের চেয়েও ডিজাইন
+                      সাইকোলজিতে ফোকাস বেশি দেয়। যা একজন শিক্ষার্তীর চাকরির
+                      ক্ষেত্রে খুব কাজে দেয় ও অন্য দশজন থেকে নিজেকে আলাদা করা
+                      যায়। ইন্ডাস্ট্রি ফোকাসড এই প্র্যাক্টিস আমাকে প্রোফেশনালি
+                      অনেক হেল্প করেছে।
+                    </p>
+                    <hr class="my-4 border-gray-300" />
+                    <div class="flex gap-4">
+                      <p
+                        class="flex items-center justify-center p-2 mb-4 text-center text-white bg-black rounded-full w-9 h-9"
+                      >
+                        SR
+                      </p>
+                      <div class="flex items-start justify-between">
+                        <div>
+                          <h2 class="text-sm font-bold">Shafayet Rana</h2>
+                          <p class="text-xs">UX/UI Batch 6</p>
+                        </div>
+                        <div>
+                          <img
+                            src="https://cdn.ostad.app/public/upload/2024-02-27T06-59-01.071Z-quote-up-circle-boom.svg"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flex justify-between gap-2">
+                    <div
+                      style="max-height: 425px"
+                      class="flex-1 p-2 bg-white border-2 border-gray-300 py-10 mx-auto w-full hover:border-purple-400 transition duration-500"
+                    >
+                      <p style="color: rgb(102, 112, 133); font-size: 14px">
+                        Even though I come from a non-CS background, I felt that
+                        understanding data science would help me advance in my
+                        profession. In order to do so, I enrolled in an Ostad
+                        Data Science course. I believed it would be tough for me
+                        to understand without prior knowledge.Even though I come
+                        from a non-CS background, I felt that understanding data
+                        science would help me advance in my profession. In order
+                        to do so, I enrolled in an Ostad Data Science course. I
+                        believed it would be tough for me to understand without
+                        prior knowledge.
+                      </p>
+                      <hr class="my-4 border-gray-300" />
+                      <p
+                        class="flex items-center justify-center p-2 mb-4 text-center text-white bg-black rounded-full w-9 h-9"
+                      >
+                        MG
+                      </p>
+                      <div class="flex items-start justify-between">
+                        <div>
+                          <h2 class="text-sm font-bold">MD Galib Hasan</h2>
+                          <p class="text-xs">
+                            Data Science Certificate Program Batch 09
+                          </p>
+                        </div>
+                        <div>
+                          <img
+                            src="https://cdn.ostad.app/public/upload/2024-02-27T06-59-01.071Z-quote-up-circle-boom.svg"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="flex-1">
+                      <div
+                        class="p-2 mb-2 bg-white border-2 border-gray-300 py-10 mx-auto w-full hover:border-purple-400 transition duration-500"
+                      >
+                        <p style="color: rgb(102, 112, 133); font-size: 14px">
+                          সাজানো গোছানো একদম পরিপূর্ণ গাইডলাইন সমৃদ্ধ একটি
+                          কোর্স। আমার মতে এই কোর্স এর মডিউল এর বাইরে আলাদা করে
+                          আর কোনো সাহায্যের প্রয়োজন হয়না।
+                        </p>
+                        <hr class="my-4 border-gray-300" />
+                        <img
+                          class="mb-4 rounded-full w-9 h-9"
+                          src="https://cdn.ostad.app/public/upload/2023-08-06T10-47-40.618Z-626ffb21cc5b8d82e905f5ef.jfif"
+                          alt=""
+                        />
+                        <div class="flex items-start justify-between">
+                          <div>
+                            <h2 class="text-sm font-bold">
+                              Md Ashfaque Ul Hoque
+                            </h2>
+                            <p class="text-xs">UX/UI Batch 6</p>
+                          </div>
+                          <div>
+                            <img
+                              src="https://cdn.ostad.app/public/upload/2024-02-27T06-59-01.071Z-quote-up-circle-boom.svg"
+                              alt=""
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="p-2 bg-white border-2 border-gray-300 py-10 mx-auto w-full hover:border-purple-400 transition duration-500"
+                      >
+                        <p style="color: rgb(102, 112, 133); font-size: 14px">
+                          The Data Science program delivered by Ostad is perfect
+                          for me, I would recommend to anyone who might be
+                          interested to take the course.
+                        </p>
+                        <hr class="my-4 border-gray-300" />
+                        <img
+                          class="mb-4 rounded-full w-9 h-9"
+                          src="https://cdn.ostad.app/public/upload/2023-08-06T10-50-09.880Z-6322f980964ed3287cc73840.jfif"
+                          alt=""
+                        />
+                        <div class="flex items-start justify-between">
+                          <div>
+                            <h2 class="text-sm font-bold">ARM Salahuddin</h2>
+                            <p class="text-xs">
+                              Data Science Certificate Program batch 19
+                            </p>
+                          </div>
+                          <div>
+                            <img
+                              src="https://cdn.ostad.app/public/upload/2024-02-27T06-59-01.071Z-quote-up-circle-boom.svg"
+                              alt=""
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="w-full lg:w-1/4">
+                  <div
+                    class="p-2 mb-2 bg-white border-2 border-gray-300 py-10 mx-auto w-full hover:border-purple-400 transition duration-500"
+                  >
+                    <p style="color: rgb(102, 112, 133); font-size: 14px">
+                      ক্লাস আলহামদুলিল্লাহ যেভাবে চেয়েছি পেয়েছি। ক্লাসের থেকে
+                      অনেক কিছুই পেয়েছি। ইন্সট্রাক্টর অনেক ভালো ছিল। ওভারঅল অনেক
+                      এঞ্জয় করেছি, ওভারঅল স্যাটিসফাইড।
+                    </p>
+                    <hr class="my-4 border-gray-300" />
+                    <div class="flex gap-4">
+                      <p
+                        class="flex items-center justify-center p-2 mb-4 text-center text-white bg-black rounded-full w-9 h-9"
+                      >
+                        AH
+                      </p>
+                      <div class="flex items-start justify-between">
+                        <div>
+                          <h2 class="text-sm font-bold">Abu Hasan</h2>
+                          <p class="text-xs">UX/UI Batch 17</p>
+                        </div>
+                        <div>
+                          <img
+                            src="https://cdn.ostad.app/public/upload/2024-02-27T06-59-01.071Z-quote-up-circle-boom.svg"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="p-2 bg-white border-2 border-gray-300 py-10 mx-auto w-full hover:border-purple-400 transition duration-500"
+                  >
+                    <p style="color: rgb(102, 112, 133); font-size: 14px">
+                      MERN নিয়ে আমার এক্সপেক্টেশন ১০০% ফুলফিল হয়েছে। সব
+                      প্রয়োজনেই ওস্তাদ-এ পেয়েছি ইন্সট্যান্ট সাপোর্ট। এ কারণেই
+                      আমি ভুল করে করে শেখার সাহস করতে পেরেছি। ধন্যবাদ ওস্তাদকে।
+                      ওস্তাদের কোর্স আমি সবসময় রেকমেন্ড করবো।
+                    </p>
+                    <hr class="my-4 border-gray-300" />
+                    <p
+                      class="flex items-center justify-center p-2 mb-4 text-center text-white bg-black rounded-full w-9 h-9"
+                    >
+                      NI
+                    </p>
+                    <div class="flex items-start justify-between">
+                      <div>
+                        <h2 class="text-sm font-bold">Nayem Islam</h2>
+                        <p class="text-xs">
+                          Full Stack Web Development with MERN Batch 2
+                        </p>
+                      </div>
+                      <div>
+                        <img
+                          src="https://cdn.ostad.app/public/upload/2024-02-27T06-59-01.071Z-quote-up-circle-boom.svg"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- another card start -->
+          <div class="lg:py-8 mb-4 lg:mb-0">
+            <div
+              class="bg-white border-2 border-gray-300 py-10 mx-auto w-full hover:border-purple-400 transition duration-500"
+            >
+              <h2 class="text-xl lg:text-3xl font-bold text-center">
+                Itder থেকে আপনি কি কি সুবিধা পাবেন
+              </h2>
+            </div>
+
+            <div
+              class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 mt-4"
+            >
+              <!-- Benefit Card Start -->
+              <div
+                class="bg-white transform border-2 border-gray-300 hover:border-purple-400 py-10 transition-transform duration-300 hover:scale-105 hover:shadow-2xl p-10 text-center"
+              >
+                <img
+                  src="https://bohubrihi.com/_next/static/media/benefit-icon-1.84ccd2d2.svg"
+                  alt="Benefit Title"
+                  class="mx-auto mb-4 h-20 w-20"
+                />
+                <h3 class="text-lg font-semibold mb-2">Benefit Title</h3>
+                <p class="text-gray-600 text-sm">
+                  Benefit description goes here.
+                </p>
+              </div>
+              <div
+                class="bg-white transform border-2 border-gray-300 hover:border-purple-400 py-10 transition-transform duration-300 hover:scale-105 hover:shadow-2xl p-10 text-center"
+              >
+                <img
+                  src="https://bohubrihi.com/_next/static/media/benefit-icon-2.56e81151.svg"
+                  alt="Benefit Title"
+                  class="mx-auto mb-4 h-20 w-20"
+                />
+                <h3 class="text-lg font-semibold mb-2">Benefit Title</h3>
+                <p class="text-gray-600 text-sm">
+                  Benefit description goes here.
+                </p>
+              </div>
+              <div
+                class="bg-white transform border-2 border-gray-300 hover:border-purple-400 py-10 transition-transform duration-300 hover:scale-105 hover:shadow-2xl p-10 text-center"
+              >
+                <img
+                  src="https://bohubrihi.com/_next/static/media/benefit-icon-3.888619da.svg"
+                  alt="Benefit Title"
+                  class="mx-auto mb-4 h-20 w-20"
+                />
+                <h3 class="text-lg font-semibold mb-2">Benefit Title</h3>
+                <p class="text-gray-600 text-sm">
+                  Benefit description goes here.
+                </p>
+              </div>
+              <div
+                class="bg-white transform border-2 border-gray-300 hover:border-purple-400 py-10 transition-transform duration-300 hover:scale-105 hover:shadow-2xl p-10 text-center"
+              >
+                <img
+                  src="https://bohubrihi.com/_next/static/media/benefit-icon-4.2aa6311e.svg"
+                  alt="Benefit Title"
+                  class="mx-auto mb-4 h-20 w-20"
+                />
+                <h3 class="text-lg font-semibold mb-2">Benefit Title</h3>
+                <p class="text-gray-600 text-sm">
+                  Benefit description goes here.
+                </p>
+              </div>
+              <div
+                class="bg-white transform border-2 border-gray-300 hover:border-purple-400 py-10 transition-transform duration-300 hover:scale-105 hover:shadow-2xl p-10 text-center"
+              >
+                <img
+                  src="https://bohubrihi.com/_next/static/media/benefit-icon-4.2aa6311e.svg"
+                  alt="Benefit Title"
+                  class="mx-auto mb-4 h-20 w-20"
+                />
+                <h3 class="text-lg font-semibold mb-2">Benefit Title</h3>
+                <p class="text-gray-600 text-sm">
+                  Benefit description goes here.
+                </p>
+              </div>
+              <!-- Benefit Card End -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+       <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const container = document.querySelector('.group'); // Select the parent container
+        const dropdown = document.getElementById('dropdowns1'); // Select the dropdown element
+
+        // Show dropdown on hover
+        container.addEventListener('mouseenter', () => {
+            dropdown.classList.remove('hidden');
+        });
+
+        // Hide dropdown when not hovering
+        container.addEventListener('mouseleave', () => {
+            dropdown.classList.add('hidden');
+        });
+    });
+</script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/library-name@version/library.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/home.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000, // Global duration
+      });
+
+      const tab1 = document.getElementById("tab1");
+      const tab2 = document.getElementById("tab2");
+      const tab3 = document.getElementById("tab3");
+
+      const tabContent1 = document.getElementById("tabContent1");
+      const tabContent2 = document.getElementById("tabContent2");
+      const tabContent3 = document.getElementById("tabContent3");
+
+      tab1.addEventListener("click", () => {
+        tabContent1.classList.remove("hidden");
+        tabContent2.classList.add("hidden");
+        tabContent3.classList.add("hidden");
+      });
+
+      tab2.addEventListener("click", () => {
+        tabContent1.classList.add("hidden");
+        tabContent2.classList.remove("hidden");
+        tabContent3.classList.add("hidden");
+      });
+
+      tab3.addEventListener("click", () => {
+        tabContent1.classList.add("hidden");
+        tabContent2.classList.add("hidden");
+        tabContent3.classList.remove("hidden");
+      });
+    </script>
+  </body>
+</html>

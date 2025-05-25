@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrance Properties Limited</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+    <link href="./css/courses.css" rel="stylesheet">
+    <style>
+        .rotate-180 {
+            transform: rotate(180deg);
+        }
+        
+        body {
+            overflow: hidden;
+        }
+        /* Specific Element-এর Scrollbar Remove করতে */
+        
+        .container {
+            overflow: hidden;
+        }
+    </style>
+</head>
+
+<body class="font-sans leading-normal tracking-normal bg-gray-100">
+
+    <!-- Sidebar Component -->
+    <div class="flex w-full gap-4 ">
+        <!-- Sidebar -->
+        <div id="sidebar" class="fixed z-50 w-64 h-screen p-4 text-white bg-white transition-transform transform -translate-x-full md:translate-x-0">
+            <div class="w-full bg-white rounded">
+                <img class="object-contain w-full h-20 rounded" src="./assets/logo.png" alt="Logo" />
+            </div>
+            <!-- Menu Items -->
+            <div class="flex flex-col justify-between mt-2">
+                <ul id="sidebarMenu" class="w-full ">
+                    <!-- Overview Section -->
+                    <li class="font-bold text-sm text_color_primary my-2">Overview</li>
+                    <li class="mb-2">
+                        <a href="index.html" class="sidebar-link flex items-center gap-2 py-1.5  rounded hover:bg-gray-100 text-gray-700" id="homeLink">
+                            <i class="fas fa-home icon_color text-white p-2  text-xs rounded"></i>
+                            <span class="font-bold">Home</span>
+                        </a>
+                    </li>
+
+                    <li class="mb-2">
+                        <a href="about.html" class="sidebar-link flex items-center gap-2 py-1.5 rounded hover:bg-gray-100 text-gray-700" id="aboutLink">
+                            <i class="fas fa-home icon_color text-white p-2 text-xs rounded"></i>
+                            <span class="font-bold">About Us</span>
+                        </a>
+                    </li>
+
+                    <li class="mb-2">
+                        <a href="photo.html" class="sidebar-link flex items-center gap-2 py-1.5 rounded hover:bg-gray-100 text-gray-700" id="photoLink">
+                            <i class="fas fa-info-circle icon_color text-white p-2 text-xs rounded"></i>
+                            <span class="font-bold">Photo Gallery</span>
+                        </a>
+                    </li>
+
+                    <li class="mb-2">
+                        <a href="video.html" class="sidebar-link flex items-center gap-2 py-1.5 rounded hover:bg-gray-100 text-gray-700" id="videoLink">
+                            <i class="fas fa-info-circle icon_color text-white p-2 text-xs rounded"></i>
+                            <span class="font-bold">Video Gallery</span>
+                        </a>
+                    </li>
+
+                    <li class="mb-2">
+                        <a href="blog.html" class="sidebar-link flex items-center gap-2 py-1.5 rounded hover:bg-gray-100 text-gray-700" id="blogLink">
+                            <i class="fas fa-info-circle icon_color text-white p-2 text-xs rounded"></i>
+                            <span class="font-bold">Blog & Event</span>
+                        </a>
+                    </li>
+
+                    <li class="mb-2">
+                        <a href="contact.html" class="sidebar-link flex items-center gap-2 py-1.5 rounded hover:bg-gray-100 text-gray-700" id="contactLink">
+                            <i class="fas fa-info-circle icon_color text-white p-2 text-xs rounded"></i>
+                            <span class="font-bold">Contact Us</span>
+                        </a>
+                    </li>
+
+                    <li class="font-bold text-sm text_color_primary my-1">Our project</li>
+
+                    <li class="mb-2">
+                        <a href="bashundhara.html" class="sidebar-link flex items-center gap-2 py-1.5 rounded hover:bg-gray-100 text-gray-700" id="courseLinks">
+                            <i class="fas fa-info-circle icon_color text-white p-2 text-xs rounded"></i>
+                            <span class="font-bold">Basundhara</span>
+                        </a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="uttara.html" class="sidebar-link flex items-center gap-2 py-1.5 rounded hover:bg-gray-100 text-gray-700" id="serviceLink">
+                            <i class="fas fa-info-circle icon_color text-white p-2 text-xs rounded"></i>
+                            <span class="font-bold">Uttara</span>
+                        </a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="mirpur.html" class="sidebar-link flex items-center gap-2 py-1.5 rounded hover:bg-gray-100 text-gray-700" id="student_certificateLinkss">
+                            <i class="fas fa-info-circle icon_color text-white p-2 text-xs rounded"></i>
+                            <span class="font-bold">Mirpur</span>
+                        </a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="mohammadpur.html" class="sidebar-link flex items-center gap-2 py-1.5 rounded hover:bg-gray-100 text-gray-700" id="registration_formLinks">
+                            <i class="fas fa-info-circle icon_color text-white p-2 text-xs rounded"></i>
+                            <span class="font-bold">Student Registration</span>
+                        </a>
+                    </li>
+
+
+                </ul>
+            </div>
+        </div>
+        <!-- main content -->
+        <div class="md:ml-64 w-full">
+            <div class="fixed bg-white w-full lg:p-8  shadow-md flex flex-row z-40">
+                <div class="lg:hidden py-2 px-6 flex justify-between  gap-5 w-full">
+                    <div class="bg-white rounded w-full">
+                        <img class="rounded h-14 w-32 object-contain " src="./assets/logo.png" alt="Logo" />
+                    </div>
+                    <button id="menuButton" class="text-gray-800 focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+                <div>
+                </div>
+            </div>
+
+            <div class="mt-20 mx-4">
+                <div>
+                    <div>
+                        <div class="lg:relative  space-y-4 lg:overflow-hidden primary_font">
+                            <div style="background-color: #12b76a;" class="items-center justify-center py-3 hidden lg:flex text-white">
+                                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M13.9461 2.09411C12.8248 1.13855 11.1756 1.13856 10.0544 2.0941L8.70636 3.24286C8.54619 3.37935 8.34705 3.46183 8.13728 3.47857L6.3718 3.61946C4.90327 3.73665 3.73714 4.90278 3.61995 6.3713L3.47907 8.13678C3.46234 8.34654 3.37983 8.54573 3.24334 8.70589L2.09458 10.0539C1.13904 11.1752 1.13905 12.8243 2.0946 13.9455L3.24336 15.2936C3.37983 15.4538 3.46232 15.6529 3.47906 15.8627L3.61997 17.6281C3.73716 19.0966 4.9033 20.2627 6.37184 20.3799L8.13729 20.5209C8.34705 20.5376 8.54615 20.6201 8.70631 20.7566L10.0543 21.9053C11.1756 22.8608 12.8248 22.8609 13.9461 21.9053L15.2941 20.7566C15.4542 20.6201 15.6533 20.5376 15.8631 20.5208L17.6286 20.3799C19.0971 20.2628 20.2632 19.0967 20.3805 17.6281L20.5213 15.8627C20.538 15.6529 20.6206 15.4537 20.757 15.2935L21.9058 13.9456C22.8614 12.8243 22.8614 11.1751 21.9058 10.0539L20.757 8.70585C20.6205 8.54568 20.5381 8.34654 20.5214 8.13679L20.3805 6.37131C20.2633 4.9028 19.0971 3.73663 17.6286 3.61945L15.8631 3.47856C15.6533 3.46182 15.4542 3.37935 15.2941 3.24286L13.9461 2.09411ZM14.8284 7.75718L16.2426 9.1714L9.17151 16.2425L7.7573 14.8282L14.8284 7.75718ZM10.2322 10.232C9.64638 10.8178 8.69664 10.8178 8.11085 10.232C7.52506 9.6463 7.52506 8.69652 8.11085 8.11073C8.69664 7.52494 9.64638 7.52494 10.2322 8.11073C10.818 8.69652 10.818 9.6463 10.2322 10.232ZM13.7677 15.8889C13.1819 15.3031 13.1819 14.3534 13.7677 13.7676C14.3535 13.1818 15.3032 13.1818 15.889 13.7676C16.4748 14.3534 16.4748 15.3031 15.889 15.8889C15.3032 16.4747 14.3535 16.4747 13.7677 15.8889Z">
+                                </path>
+                            </svg>
+                                <p class="text-sm font-bold text-center text-white">
+
+                                    WP25 প্রোমো এপ্লাই করলে ২৫% ডিসকাউন্ট আর বাকি
+                                    <div style="color : #12b76a" class="flex items-center justify-center px-2 py-1 mx-1 font-bold bg-white">
+                                        <svg stroke="currentColor" fill="none" stroke-width="1.5" viewBox="0 0 24 24" aria-hidden="true" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"></path>
+                                </svg>
+                                        <p class="ml-1"> ১ দিন</p>
+                                    </div>
+                                    এপ্লাই করুন</p>
+                            </div>
+                            <button onclick="toggleModal()" class="fixed flex items-center gap-1 px-4 py-2 text-white transition-colors bg-blue-500 rounded-full right-4 bottom-5 call_btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                            </svg>
+                            কল করুন
+                        </button>
+                            <div id="modal" class="fixed inset-0 z-50 flex hidden items-center justify-center  bg-black bg-opacity-50">
+
+                                <div class="relative p-6 bg-white rounded-lg w-96">
+                                    <p onclick="toggleModal()" class="absolute cursor-pointer top-2 right-4 text-medium">X
+                                    </p>
+                                    <h2 class="mb-4 text-xl font-semibold">কথা বলুন ক্যারিয়ার কাউন্সিলরের সাথে</h2>
+                                    <div class="flex items-center justify-center">
+                                        <img class="w-28" src="https://cdn.ostad.app/public/upload/2023-01-14T06-21-42.433Z-user-help-line.svg" alt="">
+                                    </div>
+                                    <div class="flex items-center justify-between my-3">
+                                        <button style="background-color: #22c55e;" class="px-4 py-2 text-white rounded">WhatsApp</button>
+                                        <button class="px-4 py-2 text-white bg-blue-500 rounded hover:bg-blue-600">Call</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Main Section -->
+                        <div class="flex mt-5 flex-col justify-center  gap-4 lg:flex-row lg:h-screen ">
+                            <div class="w-full md:w-3/5 lg:overflow-y-scroll lg:scroll-smooth lg:mb-36">
+
+                                <!-- Navbar section end -->
+
+                                <div class=" flex flex-col lg:flex-row items-center justify-between gap-4  w-full ">
+                                    <div class="flex-1 px-8 py-5 bg-white border-2 border-gray-300  mx-auto  hover:border-purple-400 transition duration-500">
+                                        <div class="flex  items-center gap-2">
+                                            <h2 class="text-xl lg:text-3xl font-bold text-[rgb(16, 24, 40)] ">বাংলাদেশ শিখবে <span class="text-red-600 ">লাইভে</span> </h2>
+                                            <p class="w-3 h-3 ml-3 text-red-600 bg-red-600 rounded-full animate-grow-shrink hidden lg:flex">
+                                            </p>
+                                        </div>
+
+                                        <p class="my-6 text-sm font-bold">স্কিল শেখার মাধ্যমে বদলে ফেলুন নিজের ভবিষ্যৎ
+                                        </p>
+                                        <button class="flex items-center justify-center px-4 h-12 gap-2  py-3 text-sm font-medium text-black rounded-lg primary_btn">
+                                            শেখা শুরু করুন <i class="fas fa-arrow-right"></i>
+
+                                        </button>
+                                        <p class="mt-6 mb-4">৭০০০+ গ্র্যাজুয়েটরা কর্মরত আছেন বিভিন্ন দেশি ও বিদেশি প্রতিষ্ঠানে:
+                                        </p>
+                                        <div class="flex items-center gap-3">
+                                            <img class="w-auto h-4 grayscale-img" src="https://cdn.ostad.app/public/upload/2023-10-02T05-55-06.851Z-1%20Brainstation.webp" alt="">
+                                            <img class="w-auto h-4 grayscale-img" src="https://cdn.ostad.app/public/upload/2023-10-02T05-55-36.601Z-3%20TECHNOSOFT-LOGO.webp" alt="">
+                                            <img class="w-auto h-4 grayscale-img" src="https://cdn.ostad.app/public/upload/2023-10-02T05-55-48.664Z-4%20Excel.webp" alt="">
+                                            <img class="w-auto h-4 grayscale-img" src="https://cdn.ostad.app/public/upload/2023-10-02T05-56-16.690Z-5%20Gtr.webp" alt="">
+                                        </div>
+                                        <div class="flex flex-wrap items-center gap-3 mt-4">
+
+                                            <img class="w-auto h-4 grayscale-img" src="https://cdn.ostad.app/public/upload/2023-10-02T05-56-30.793Z-6%20ashtha%20it.webp" alt="">
+                                            <img class="w-auto h-4 grayscale-img" src="https://cdn.ostad.app/public/upload/2023-10-02T05-56-38.337Z-7%20Reve%20systems.webp" alt="">
+                                            <img class="w-auto h-4 grayscale-img" src="https://cdn.ostad.app/public/upload/2023-10-02T05-56-48.991Z-8%20Sofol%20it.webp" alt="">
+                                            <img class="w-auto h-4 grayscale-img" src="https://cdn.ostad.app/public/upload/2023-11-29T06-12-11.738Z-2.png" alt="">
+                                            <img class="w-auto h-4 grayscale-img" src="https://cdn.ostad.app/public/upload/2023-11-29T06-12-33.548Z-3.png" alt="">
+                                            <img class="w-auto h-4 grayscale-img" src="https://cdn.ostad.app/public/upload/2023-11-29T06-12-45.253Z-1.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="flex-1 grid lg:grid-cols-1 gap-6 py-16 px-8 bg-white border-2 border-gray-300   mx-auto w-full hover:border-purple-400 transition duration-500 ">
+                                        <img class="w-full h-full]" src="./assets/logo.png" alt="">
+
+                                    </div>
+
+                                </div>
+
+                                <div class="flex-1 grid lg:grid-cols-2 gap-6 py-7 px-8 mt-4  bg-white border-2 border-gray-300   mx-auto w-full hover:border-purple-400 transition duration-500 ">
+                                    <div style="background-color: #d1fadf;" class="p-6 ">
+                                        <h2 class="mb-3 text-3xl font-bold ">৭০০০+</h2>
+                                        <p>জব প্লেসমেন্ট</p>
+                                    </div>
+                                    <div style="background-color: #dae4ff;" class="p-6 ">
+                                        <h2 class="mb-3 text-3xl font-bold ">১৫,০০০+</h2>
+                                        <p>লার্নার</p>
+                                    </div>
+                                    <div style="background-color: #ffe8db;" class="p-6 ">
+                                        <h2 class="mb-3 text-3xl font-bold ">৯০%</h2>
+                                        <p>কোর্স কমপ্লিশন রেট</p>
+                                    </div>
+                                    <div style="background-color: #fff2cc;" class="p-6 ">
+                                        <h2 class="mb-3 text-3xl font-bold ">৪৬</h2>
+                                        <p>লাইভ কোর্স</p>
+                                    </div>
+                                </div>
+                                <div class="my-4">
+
+                                    <div class="bg-white border-2 border-gray-300 py-10  mx-auto w-full hover:border-purple-400 transition duration-500">
+                                        <h2 class="text-2xl lg:text-3xl text-[rgb(16, 24, 40)] font-bold text-center">কি কি পাচ্ছেন লাইভ কোর্সে
+                                        </h2>
+                                        <p class="mt-4 text-center text-xs lg:text-base">দেখে নিন কি কি পাচ্ছেন ওস্তাদের লাইভ কোর্সে জয়েন করলে
+                                        </p>
+                                    </div>
+
+                                    <div class="grid grid-cols-1 md:grid-cols-1  lg:grid-cols-3 p-6 mt-6 bg-white border-2 border-gray-300   mx-auto w-full hover:border-purple-400 transition duration-500 ">
+                                        <!-- Card 1 -->
+                                        <div class="flex flex-col items-center  p-6  ">
+                                            <div class="w-12 h-12 mb-4">
+                                                <img src="https://cdn.ostad.app/public/upload/2023-09-26T07-03-07.734Z-icon-1.png" alt="Video icon" class="object-contain w-full h-full">
+                                            </div>
+                                            <h3 class="mb-2 text-xl font-bold text-center">ইন্টু্রি ফোকাসড লাইভ কোর্স
+                                            </h3>
+                                            <p class="text-sm text-center text-gray-600">জয়েন করুন গাইডলাইন সমৃদ্ধ ইন্টু্রি ফোকাসড লাইভ কোর্সে, শুরু করুন আপনার ক্যারিয়ার জার্নি।</p>
+                                        </div>
+
+                                        <!-- Card 2 -->
+                                        <div class="flex flex-col items-center  p-6 ">
+                                            <div class="w-12 h-12 mb-4">
+                                                <img src="https://cdn.ostad.app/public/upload/2023-09-26T07-03-27.927Z-icon-2.png" alt="Play icon" class="object-contain w-full h-full">
+                                            </div>
+                                            <h3 class="mb-2 text-xl font-bold text-center">ইন্টারেক্টিভ লাইভ ক্লাস</h3>
+                                            <p class="text-sm text-center text-gray-600">ইন্টু্রি প্রশ্নপত্রের সাথে নিয়মিত লাইভ ক্লাস, ক্লাসপরমূলক ক্লাস আর সাপোর্ট ক্লাস দিয়ে ডেভেলপমেন্ট এখন হবে একদম পরিপূর্ণ।</p>
+                                        </div>
+
+                                        <!-- Card 3 -->
+                                        <div class="flex flex-col items-center p-6 ">
+                                            <div class="w-12 h-12 mb-4">
+                                                <img src="https://cdn.ostad.app/public/upload/2023-09-26T07-03-45.997Z-icon-3.png" alt="3D blocks icon" class="object-contain w-full h-full">
+                                            </div>
+                                            <h3 class="mb-2 text-xl font-bold text-center">মডিউল ভিত্তিক স্টাডি প্ল্যান
+                                            </h3>
+                                            <p class="text-sm text-center text-gray-600">কুইজ, এসাইনমেন্ট আর লাইভ প্রশ্নাস দিয়ে সাজানো মডিউলভিত্তিক ভালোভাবে স্টাডিপ্ল্যানের সাথে চিন্তার দরকার কোনো চাপই নেই।</p>
+                                        </div>
+
+                                        <!-- Card 4 -->
+                                        <div class="flex flex-col items-center p-6 b">
+                                            <div class="w-12 h-12 mb-4">
+                                                <img src="https://cdn.ostad.app/public/upload/2023-09-26T07-04-03.737Z-icon-4.png" alt="Chart icon" class="object-contain w-full h-full">
+                                            </div>
+                                            <h3 class="mb-2 text-xl font-bold text-center">রিয়েলটাইম প্রোগ্রেস ট্র্যাকিং
+                                            </h3>
+                                            <p class="text-sm text-center text-gray-600">ট্র্যাক করুন আপনার প্রোগ্রেস রিয়েল টাইম, দেখে নিন নিজের বোর্ড আপনার পজিশন আর কম্পিটিশন এপ্রিয়ে যান সবার থেকে।
+                                            </p>
+                                        </div>
+
+                                        <!-- Card 5 -->
+                                        <div class="flex flex-col items-center p-6 ">
+                                            <div class="w-12 h-12 mb-4">
+                                                <img src="https://cdn.ostad.app/public/upload/2023-09-26T07-04-21.951Z-icon-5.png" alt="Certificate icon" class="object-contain w-full h-full">
+                                            </div>
+                                            <h3 class="mb-2 text-xl font-bold text-center">শিখুন ইন্টু্রি প্রশ্নপত্রের থেকে সাইট
+                                            </h3>
+                                            <p class="text-sm text-center text-gray-600">স্কিল ডেভেলপ করুন ইন্টু্রি সেরা প্রশ্নপত্রের সাথে, ধ্রুব করুন আর শিখে নিন সরাসরি, লাইভে।</p>
+                                        </div>
+
+                                        <!-- Card 6 -->
+                                        <div class="flex flex-col items-center p-6 ">
+                                            <div class="w-12 h-12 mb-4">
+                                                <img src="https://cdn.ostad.app/public/upload/2023-09-26T07-04-44.253Z-icon-6.png" alt="Briefcase icon" class="object-contain w-full h-full">
+                                            </div>
+                                            <h3 class="mb-2 text-xl font-bold text-center">ইন্টার্নিয়ে জব প্লেসমেন্ট সাপোর্ট
+                                            </h3>
+                                            <p class="text-sm text-center text-gray-600">কোর্স কমপ্লিট প্যাকেজ জব প্লেসমেন্ট থিমস থেকে লাইফটাইম ভিডি, প্রোগ্রাম ভিডে এবং তার প্রাক্টিকালসহ ইন্টানিয়ে জব প্লেসমেন্ট পাবেন।</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="">
+                                    <div class="bg-white border-2 border-gray-300  py-10 mx-auto w-full hover:border-purple-400 transition duration-500">
+                                        <h2 class="text-2xl lg:text-3xl text-[rgb(16, 24, 40)] font-bold text-center ">
+                                            দেখে নিন কি বলছেন ওস্তাদ গ্র্যাজুয়েটরা
+                                        </h2>
+                                        <p class="mt-2 text-center text-xs lg:text-base">২০০০- র বেশি গ্র্যাজুয়েট যারা পেয়েছেন জব, দেখে নিন কি বলছেন তাদের একাংশ
+                                        </p>
+                                    </div>
+
+
+                                    <div class="flex  flex-col lg:flex-row justify-between gap-2 my-4">
+                                        <div class="w-full lg:w-1/4">
+                                            <div class="p-2 mb-2 bg-white border-2 border-gray-300  py-10 mx-auto w-full hover:border-purple-400 transition duration-500">
+                                                <p style="color: rgb(102, 112, 133); font-size: 14px;">ওস্তাদ-এর MERN কোর্সটি স্কিল ডেভেলপমেন্টের জন্য অনেক হেল্পফুল একটি কোর্স। আমার প্রতিটি প্রবলেমই তারা লাইভ ক্লাসেই সলভ করার চেষ্টা করেছে। এছাড়াও সাপোর্ট ইন্সট্রাক্টররাও অনেক ভালো। এসব কারণেই MERN এর লার্নিং
+                                                    জার্নিটা আমার জন্য ছিল অসাধারণ।</p>
+                                                <hr class="my-4 border-gray-300">
+                                                <p class="flex items-center justify-center p-2 mb-4 text-center text-white bg-black rounded-full w-9 h-9">
+                                                    FA</p>
+                                                <div class="flex items-start justify-between">
+                                                    <div>
+                                                        <h2 class="text-sm font-bold">Faisal Azam Siddiqui</h2>
+                                                        <p class="text-xs">Full Stack Web Development with MERN Batch 1
+                                                        </p>
+                                                    </div>
+                                                    <div>
+                                                        <img src="https://cdn.ostad.app/public/upload/2024-02-27T06-59-01.071Z-quote-up-circle-boom.svg" alt="">
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="p-2 bg-white border-2 border-gray-300  py-10 mx-auto w-full hover:border-purple-400 transition duration-500">
+                                                <p style="color: rgb(102, 112, 133); font-size: 14px;">এই কোর্সটি হচ্ছে আমার লাইফে করা one of the best course। লার্নিং এক্সপিরিয়েন্স বলেন বা ওস্তাদ টিমের সাপোর্ট বলেন, সবই ছিল অসাধারণ। একদম বেসিক থেকে এত সুন্দরভাবে ডিটেইলস শেখানো হয়েছে, যে আমি অনেক কিছুই শেখার
+                                                    সুযোগ পেয়েছি।</p>
+                                                <hr class="my-4 border-gray-300">
+                                                <img class="mb-4 rounded-full w-9 h-9" src="https://cdn.ostad.app/public/upload/2023-08-06T10-43-26.987Z-2023-02-18T16-19-36.508Z-331049670_5912973425465146_8220712743907257929_n.jpg" alt="">
+                                                <div class="flex items-start justify-between">
+                                                    <div>
+                                                        <h2 class="text-sm font-bold">Jahid Hossain</h2>
+                                                        <p class="text-xs">Full Stack Web Development with MERN Batch 2
+                                                        </p>
+                                                    </div>
+                                                    <div>
+                                                        <img src="https://cdn.ostad.app/public/upload/2024-02-27T06-59-01.071Z-quote-up-circle-boom.svg" alt="">
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="w-full lg:w-2/4 hidden lg:grid">
+                                            <div class="p-2 mb-2 bg-white border-2 border-gray-300  py-10 mx-auto w-full hover:border-purple-400 transition duration-500">
+                                                <p style="color: rgb(102, 112, 133); font-size: 14px;">Ostad এর বিশেষত্ত্ব হচ্ছে ওনারা ডিজাইনের চেয়েও ডিজাইন সাইকোলজিতে ফোকাস বেশি দেয়। যা একজন শিক্ষার্তীর চাকরির ক্ষেত্রে খুব কাজে দেয় ও অন্য দশজন থেকে নিজেকে আলাদা করা যায়। ইন্ডাস্ট্রি ফোকাসড এই প্র্যাক্টিস
+                                                    আমাকে প্রোফেশনালি অনেক হেল্প করেছে।
+                                                </p>
+                                                <hr class="my-4 border-gray-300">
+                                                <div class="flex gap-4">
+                                                    <p class="flex items-center justify-center p-2 mb-4 text-center text-white bg-black rounded-full w-9 h-9">
+                                                        SR
+                                                    </p>
+                                                    <div class="flex items-start justify-between">
+                                                        <div>
+                                                            <h2 class="text-sm font-bold">Shafayet Rana</h2>
+                                                            <p class="text-xs">UX/UI Batch 6</p>
+                                                        </div>
+                                                        <div>
+                                                            <img src="https://cdn.ostad.app/public/upload/2024-02-27T06-59-01.071Z-quote-up-circle-boom.svg" alt="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="flex justify-between gap-2">
+                                                <div style="max-height: 425px;" class="flex-1 p-2 bg-white border-2 border-gray-300  py-10 mx-auto w-full hover:border-purple-400 transition duration-500">
+                                                    <p style="color: rgb(102, 112, 133); font-size: 14px;">Even though I come from a non-CS background, I felt that understanding data science would help me advance in my profession. In order to do so, I enrolled in an Ostad Data Science course. I believed it
+                                                        would be tough for me to understand without prior knowledge.Even though I come from a non-CS background, I felt that understanding data science would help me advance in my profession. In order to
+                                                        do so, I enrolled in an Ostad Data Science course. I believed it would be tough for me to understand without prior knowledge.</p>
+                                                    <hr class="my-4 border-gray-300">
+                                                    <p class="flex items-center justify-center p-2 mb-4 text-center text-white bg-black rounded-full w-9 h-9">
+                                                        MG
+                                                    </p>
+                                                    <div class="flex items-start justify-between">
+                                                        <div>
+                                                            <h2 class="text-sm font-bold">MD Galib Hasan</h2>
+                                                            <p class="text-xs">Data Science Certificate Program Batch 09
+                                                            </p>
+                                                        </div>
+                                                        <div>
+                                                            <img src="https://cdn.ostad.app/public/upload/2024-02-27T06-59-01.071Z-quote-up-circle-boom.svg" alt="">
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                                <div class="flex-1">
+                                                    <div class="p-2 mb-2 bg-white border-2 border-gray-300  py-10 mx-auto w-full hover:border-purple-400 transition duration-500">
+                                                        <p style="color: rgb(102, 112, 133); font-size: 14px;">সাজানো গোছানো একদম পরিপূর্ণ গাইডলাইন সমৃদ্ধ একটি কোর্স। আমার মতে এই কোর্স এর মডিউল এর বাইরে আলাদা করে আর কোনো সাহায্যের প্রয়োজন হয়না।</p>
+                                                        <hr class="my-4 border-gray-300">
+                                                        <img class="mb-4 rounded-full w-9 h-9" src="https://cdn.ostad.app/public/upload/2023-08-06T10-47-40.618Z-626ffb21cc5b8d82e905f5ef.jfif" alt="">
+                                                        <div class="flex items-start justify-between">
+                                                            <div>
+                                                                <h2 class="text-sm font-bold">Md Ashfaque Ul Hoque</h2>
+                                                                <p class="text-xs">UX/UI Batch 6</p>
+                                                            </div>
+                                                            <div>
+                                                                <img src="https://cdn.ostad.app/public/upload/2024-02-27T06-59-01.071Z-quote-up-circle-boom.svg" alt="">
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="p-2 bg-white border-2 border-gray-300  py-10 mx-auto w-full hover:border-purple-400 transition duration-500">
+                                                        <p style="color: rgb(102, 112, 133); font-size: 14px;">The Data Science program delivered by Ostad is perfect for me, I would recommend to anyone who might be interested to take the course.
+                                                        </p>
+                                                        <hr class="my-4 border-gray-300">
+                                                        <img class="mb-4 rounded-full w-9 h-9" src="https://cdn.ostad.app/public/upload/2023-08-06T10-50-09.880Z-6322f980964ed3287cc73840.jfif" alt="">
+                                                        <div class="flex items-start justify-between">
+                                                            <div>
+                                                                <h2 class="text-sm font-bold">ARM Salahuddin</h2>
+                                                                <p class="text-xs">Data Science Certificate Program batch 19
+                                                                </p>
+                                                            </div>
+                                                            <div>
+                                                                <img src="https://cdn.ostad.app/public/upload/2024-02-27T06-59-01.071Z-quote-up-circle-boom.svg" alt="">
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="w-full lg:w-1/4">
+                                            <div class="p-2 mb-2 bg-white border-2 border-gray-300  py-10 mx-auto w-full hover:border-purple-400 transition duration-500">
+                                                <p style="color: rgb(102, 112, 133); font-size: 14px;">ক্লাস আলহামদুলিল্লাহ যেভাবে চেয়েছি পেয়েছি। ক্লাসের থেকে অনেক কিছুই পেয়েছি। ইন্সট্রাক্টর অনেক ভালো ছিল। ওভারঅল অনেক এঞ্জয় করেছি, ওভারঅল স্যাটিসফাইড।</p>
+                                                <hr class="my-4 border-gray-300">
+                                                <div class="flex gap-4">
+                                                    <p class="flex items-center justify-center p-2 mb-4 text-center text-white bg-black rounded-full w-9 h-9">
+                                                        AH</p>
+                                                    <div class="flex items-start justify-between">
+                                                        <div>
+                                                            <h2 class="text-sm font-bold">Abu Hasan</h2>
+                                                            <p class="text-xs">UX/UI Batch 17
+
+                                                            </p>
+                                                        </div>
+                                                        <div>
+                                                            <img src="https://cdn.ostad.app/public/upload/2024-02-27T06-59-01.071Z-quote-up-circle-boom.svg" alt="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="p-2 bg-white border-2 border-gray-300  py-10 mx-auto w-full hover:border-purple-400 transition duration-500">
+                                                <p style="color: rgb(102, 112, 133); font-size: 14px;">MERN নিয়ে আমার এক্সপেক্টেশন ১০০% ফুলফিল হয়েছে। সব প্রয়োজনেই ওস্তাদ-এ পেয়েছি ইন্সট্যান্ট সাপোর্ট। এ কারণেই আমি ভুল করে করে শেখার সাহস করতে পেরেছি। ধন্যবাদ ওস্তাদকে। ওস্তাদের কোর্স আমি সবসময় রেকমেন্ড করবো।</p>
+                                                <hr class="my-4 border-gray-300">
+                                                <p class="flex items-center justify-center p-2 mb-4 text-center text-white bg-black rounded-full w-9 h-9">
+                                                    NI
+                                                </p>
+                                                <div class="flex items-start justify-between">
+                                                    <div>
+                                                        <h2 class="text-sm font-bold">Nayem Islam</h2>
+                                                        <p class="text-xs">Full Stack Web Development with MERN Batch 2
+                                                        </p>
+                                                    </div>
+                                                    <div>
+                                                        <img src="https://cdn.ostad.app/public/upload/2024-02-27T06-59-01.071Z-quote-up-circle-boom.svg" alt="">
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>``````````````````````
+                                <footer style="background: #fffbee;" class="p-8 mt-32 ">
+                                    <div class="grid justify-between grid-cols-4 gap-4">
+                                        <div>
+                                            <img class="w-24" src="https://cdn.ostad.app/public/upload/2024-03-20T04-26-32.799Z-ostad_logo_light@512x%20(2).png" alt="">
+                                            <p class="my-6 text-sm">অনলাইন লাইভ স্কিল ডেভেলপমেন্ট প্ল্যাটফর্ম।</p>
+                                            <p class="font-bold">ডাউনলোড করুন ওস্তাদ অ্যাপ</p>
+                                            <div class="flex justify-between gap-2 my-4">
+                                                <button class="px-4 py-2 bg-gray-800 rounded-lg hover:bg-gray-700">
+                                                    <img src="https://cdn.ostad.app/public/upload/2023-05-07T03-18-52.463Z-icon-g-play.svg"
+                                                        alt="paly store">
+                                                </button>
+                                                <button class="px-4 py-2 bg-gray-800 rounded-lg hover:bg-gray-700">
+                                                    <img src="https://cdn.ostad.app/public/upload/2023-05-07T03-24-39.366Z-icon-app-store.svg"
+                                                        alt="">
+                                                </button>
+                                                <button class="px-4 py-2 bg-gray-800 rounded-lg hover:bg-gray-700">
+                                                    <img src="https://cdn.ostad.app/public/upload/2023-05-07T03-25-05.663Z-icon-win-store.svg"
+                                                        alt="windows">
+                                                </button>
+                                            </div>
+                                            <p class="text-sm">কমিউনিটি -এর সাথে কানেক্টেড থাকতে</p>
+                                            <div class="flex gap-2">
+                                                <img style="background-color: #ffffff; border: 1px solid #cacac9;" onmouseover="this.style.backgroundColor='#FFE699'" onmouseout="this.style.backgroundColor='#fffbee'" class="w-8 p-1 rounded-lg cursor-pointer" src="https://cdn.ostad.app/public/upload/2022-11-29T10-22-57.171Z-image12.svg"
+                                                    alt="">
+                                                <img style="background-color: #ffffff; border: 1px solid #cacac9;" onmouseover="this.style.backgroundColor='#FFE699'" onmouseout="this.style.backgroundColor='#fffbee'" class="w-8 p-1 rounded-lg cursor-pointer" src="https://cdn.ostad.app/public/upload/2022-11-29T10-26-20.794Z-image13.svg"
+                                                    alt="">
+                                                <img style="background-color: #ffffff; border: 1px solid #cacac9;" onmouseover="this.style.backgroundColor='#FFE699'" onmouseout="this.style.backgroundColor='#fffbee'" class="w-8 p-1 rounded-lg cursor-pointer" src="https://cdn.ostad.app/public/upload/2022-11-29T10-29-50.991Z-image5.svg"
+                                                    alt="">
+                                                <img style="background-color: #ffffff; border: 1px solid #cacac9;" onmouseover="this.style.backgroundColor='#FFE699'" onmouseout="this.style.backgroundColor='#fffbee'" class="w-8 p-1 rounded-lg cursor-pointer" src="https://cdn.ostad.app/public/upload/2022-11-29T10-31-54.169Z-image11.svg"
+                                                    alt="">
+                                                <img style="background-color: #ffffff; border: 1px solid #cacac9;" onmouseover="this.style.backgroundColor='#FFE699'" onmouseout="this.style.backgroundColor='#fffbee'" class="w-8 p-1 rounded-lg cursor-pointer" src="https://cdn.ostad.app/public/upload/2024-05-21T04-59-24.972Z-LinkedIn.webp"
+                                                    alt="">
+                                            </div>
+                                        </div>
+                                        <div class="flex flex-col gap-4">
+                                            <h2 class="font-bold">কুইক লিংক</h2>
+                                            <a class="text-sm underline cursor-pointer hover:text-red-400" href="">আপকামিং
+                                                লাইভ ব্যাচ</a>
+                                            <a class="text-sm underline cursor-pointer hover:text-red-400" href="">ফ্রি
+                                                কোর্সসমূহ</a>
+                                            <a class="text-sm underline cursor-pointer hover:text-red-400" href="">লাইভ
+                                                ওয়ার্কশপ</a>
+                                            <a class="text-sm underline cursor-pointer hover:text-red-400" href="">ব্লগ</a>
+                                        </div>
+                                        <div>
+                                            <h2 class="font-bold">যোগাযোগ</h2>
+                                            <div class="flex items-center gap-2 my-4 cursor-pointer">
+                                                <img class="w-4" src="https://cdn.ostad.app/images/homepage/icons/mail-unread-line.svg" alt="">
+                                                <p class="hover:text-red-400 hover:underline">support@ostad.app</p>
+                                            </div>
+                                            <div class="flex items-center gap-2 cursor-pointer">
+                                                <img class="w-4" src="https://cdn.ostad.app/public/icons/map-pin-line.svg" alt="">
+                                                <p class="hover:text-red-400 hover:underline">Ka-6/a, Navana Sylvania, Baridhara Road, Nadda, Gulshan-2, Dhaka-1212</p>
+                                            </div>
+                                        </div>
+                                        <div class="flex flex-col gap-4">
+                                            <h2 class="font-bold">কোম্পানি</h2>
+                                            <a class="text-sm underline cursor-pointer hover:text-red-400" href="">আমাদের
+                                                সম্পর্কে</a>
+                                            <a class="text-sm underline cursor-pointer hover:text-red-400" href="">রিফান্ড
+                                                পলিসি</a>
+                                            <a class="text-sm underline cursor-pointer hover:text-red-400" href="">প্রাইভেসী
+                                                পলিসি</a>
+                                            <a class="text-sm underline cursor-pointer hover:text-red-400" href="">টার্মস
+                                                এবং শর্তাবলী</a>
+                                        </div>
+                                    </div>
+                                    <div class="my-4">
+                                        <img src="https://cdn.ostad.app/public/upload/2023-10-02T07-41-28.162Z-supported-payments.webp" alt="">
+                                    </div>
+                                </footer>
+                            </div>
+                            <!-- Second Card (YouTube Embed) -->
+                            <div class="w-full md:w-2/5 ">
+                                <div>
+                                    <iframe width="560" height="250" src="https://www.youtube.com/embed/Uox3eCkzXPI?si=dTfOSg8BGJsKOGTr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                    <div class="flex items-center justify-center gap-2 my-6">
+                                        <div class="flex items-center inline-block gap-2 px-2 py-1" style="background-color: #fff1e9;">
+                                            <img class="w-4" src="https://static-00.iconduck.com/assets.00/time-icon-2048x2048-oly5dfp7.png" alt="">
+                                            <p class="font-bold"> ৪ দিন বাকি</p>
+                                        </div>
+                                        <div class="flex items-center inline-block gap-2 px-2 py-1" style="background-color: #f0e1fb;">
+                                            <img class="w-4" src="https://cdn.iconscout.com/icon/premium/png-256-thumb/check-user-3960140-3292288.png?f=webp&w=256" alt="">
+                                            <p class="font-bold"> ৮১ সিট বাকি</p>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="flex items-center justify-between my-4">
+                                        <h2 style="color: #ff8c4b;" class="text-2xl font-bold">৳৮,০০০</h2>
+                                        <p class="text-xl font-bold">প্রোমো কোড</p>
+                                    </div>
+                                    <button class="flex items-center justify-center w-full h-12 gap-2 px-16 py-3 text-sm font-medium text-black primary_btn">
+                                        <p>ব্যাচে ভর্তি হোন</p>
+                                        <img class=" transition-all duration-200 w-6 h-6 min-w-[24px] "
+                                            src="https://cdn.ostad.app/public/icons/arrow-right-s-line.svg" alt="">
+                                    </button>
+                                    <h2 class="mt-4 font-bold">এই কোর্সে আপনি পাচ্ছেন:</h2>
+                                    <div class="flex justify-between gap-4 my-6 text-xs">
+                                        <div class="space-y-2">
+                                            <p> <i class="mr-3 fa-regular fa-circle-check"></i>একদম ব্যাসিক HTML, CSS, JavaScript থেকে শুরু</p>
+                                            <p><i class="mr-3 fa-regular fa-circle-check"></i> হেডার, ফুটার, ব্লগ লেআউট
+                                            </p>
+                                            <p><i class="mr-3 fa-regular fa-circle-check"></i> টেস্টিমোনিয়াল, ব্লগ, পোর্টফোলিও পেইজ তৈরি</p>
+                                            <p><i class="mr-3 fa-regular fa-circle-check"></i> Woocommerce ব্যাসিক টু এডভান্সড
+                                            </p>
+                                            <p><i class="mr-3 fa-regular fa-circle-check"></i> ৪৬ টি লাইভ ক্লাস</p>
+                                            <p><i class="mr-3 fa-regular fa-circle-check"></i> দিনে ১ বেলা সাপোর্ট ক্লাস
+                                            </p>
+                                        </div>
+                                        <div class="space-y-2">
+                                            <p><i class="mr-3 fa-regular fa-circle-check"></i> ওয়ার্ডপ্রেসের জন্য প্রয়োজনীয় PHP
+                                            </p>
+                                            <p><i class="mr-3 fa-regular fa-circle-check"></i> এলিমেন্টর ও অ্যাডভান্সড এলিমেন্টর উইজেটস</p>
+                                            <p><i class="mr-3 fa-regular fa-circle-check"></i> এবাউট মি পেইজ, সার্ভিস পেইজ
+                                            </p>
+                                            <p><i class="mr-3 fa-regular fa-circle-check"></i> থিমফরেস্ট ও মার্কেটপ্লেসের জন্য ইনকাম গাইডলাইন</p>
+                                            <p><i class="mr-3 fa-regular fa-circle-check"></i> ২০০+ প্রিরেকর্ডেড ভিডিও
+                                            </p>
+
+                                            <p><i class="mr-3 fa-regular fa-circle-check"></i> সকল লাইভ ক্লাস রেকর্ডিং এর লাইফটাইম এক্সেস</p>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <p class="mt-4 text-sm"><span style="color: #ff8c4b;;"><i
+                                                class="fa-solid fa-phone"></i>
+                                            কল করুন +8801940444476</span>
+                                        <span>(সকাল ১০টা থেকে রাত ১০টা)</span>
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/library-name@version/library.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/home.js"></script>
+    <script>
+        const dropdownButton = document.getElementById('dropdownButton');
+        const dropdownMenu = document.getElementById('dropdownMenu');
+        const arrowIcon = document.getElementById('arrowIcon');
+
+        dropdownButton.addEventListener('click', () => {
+            dropdownMenu.classList.toggle('hidden');
+            arrowIcon.classList.toggle('rotate-180');
+        });
+
+
+        document.addEventListener('click', (event) => {
+            if (!dropdownButton.contains(event.target) && !dropdownMenu.contains(event.target)) {
+                dropdownMenu.classList.add('hidden');
+                arrowIcon.classList.remove('rotate-180');
+            }
+        });
+        // for open modal
+        function toggleModal() {
+            const modal = document.getElementById('modal');
+            modal.classList.toggle('hidden');
+        }
+
+        AOS.init({
+            duration: 1000, // Global duration
+        });
+    </script>
+
+
+</body>
+
+</html>

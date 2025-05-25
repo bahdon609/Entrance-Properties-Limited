@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrance Properties Limited</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+    <link href="./css/style.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100 font-sans leading-normal tracking-normal">
+    <!-- Sidebar Component -->
+    <div class="flex  gap-4 w-full ">
+        <!-- Sidebar -->
+        <div id="sidebar" class="w-64 shadow-md z-50 bg-white text-white h-screen fixed p-4 transition-transform transform -translate-x-full md:translate-x-0">
+            <div class="bg-white rounded w-full">
+                <img class="rounded h-20 object-contain w-full" src="./assets/logo.png" alt="Logo" />
+            </div>
+            <!-- Menu Items -->
+            <div class="flex flex-col justify-between mt-2">
+                <ul id="sidebarMenu" class="w-full">
+                    <!-- Overview Section -->
+                    <li class="font-bold text-sm text_color_primary my-2">Overview</li>
+                    <li class="mb-2">
+                        <a href="index.html" class="sidebar-link flex items-center gap-2 p-2 rounded hover:bg-gray-100 text-gray-700" id="homeLink">
+                            <i class="fas fa-home icon_color text-white p-2 text-xs rounded"></i>
+                            <span class="font-bold">Home</span>
+                        </a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="about.html" class="sidebar-link flex items-center gap-2 p-2 rounded hover:bg-gray-100 text-gray-700" id="aboutLink">
+                            <i class="fas fa-home icon_color text-white p-2 text-xs rounded"></i>
+                            <span class="font-bold">About Us</span>
+                        </a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="bashundhara.html" class="sidebar-link flex items-center gap-2 p-2 rounded hover:bg-gray-100 text-gray-700" id="courseLink">
+                            <i class="fas fa-info-circle icon_color text-white p-2 text-xs rounded"></i>
+                            <span class="font-bold">Basundhara</span>
+                        </a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="uttara.html" class="sidebar-link flex items-center gap-2 p-2 rounded hover:bg-gray-100 text-gray-700" id="serviceLink">
+                            <i class="fas fa-info-circle icon_color text-white p-2 text-xs rounded"></i>
+                            <span class="font-bold">Uttara</span>
+                        </a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="software.html" class="sidebar-link flex items-center gap-2 p-2 rounded hover:bg-gray-100 text-gray-700" id="softwareLink">
+                            <i class="fas fa-info-circle icon_color text-white p-2 text-xs rounded"></i>
+                            <span class="font-bold">Our Softwares</span>
+                        </a>
+                    </li>
+
+                    <li class="mb-2">
+                        <a href="photo.html" class="sidebar-link flex items-center gap-2 p-2 rounded hover:bg-gray-100 text-gray-700" id="photoLink">
+                            <i class="fas fa-info-circle icon_color text-white p-2 text-xs rounded"></i>
+                            <span class="font-bold">Photo Gallery</span>
+                        </a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="video.html" class="sidebar-link flex items-center gap-2 p-2 rounded hover:bg-gray-100 text-gray-700" id="videoLink">
+                            <i class="fas fa-info-circle icon_color text-white p-2 text-xs rounded"></i>
+                            <span class="font-bold">Video Gallery</span>
+                        </a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="blog.html" class="sidebar-link flex items-center gap-2 p-2 rounded hover:bg-gray-100 text-gray-700" id="blogLink">
+                            <i class="fas fa-info-circle icon_color text-white p-2 text-xs rounded"></i>
+                            <span class="font-bold">Blog & Event</span>
+                        </a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="contact.html" class="sidebar-link flex items-center gap-2 p-2 rounded hover:bg-gray-100 text-gray-700" id="contactLink">
+                            <i class="fas fa-info-circle icon_color text-white p-2 text-xs rounded"></i>
+                            <span class="font-bold">Contact Us</span>
+                        </a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="student_regi.html" class="sidebar-link flex items-center gap-2 p-2 rounded hover:bg-gray-100 text-gray-700" id="student_regiLink">
+                            <i class="fas fa-info-circle icon_color text-white p-2 text-xs rounded"></i>
+                            <span class="font-bold">Student Registration</span>
+                        </a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="student_veri.html" class="sidebar-link flex items-center gap-2 p-2 rounded hover:bg-gray-100 text-gray-700" id="student_veriLink">
+                            <i class="fas fa-info-circle icon_color text-white p-2 text-xs rounded"></i>
+                            <span class="font-bold">Student Verification</span>
+                        </a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="course_details.html" class="sidebar-link flex items-center gap-2 p-2 rounded hover:bg-gray-100 text-gray-700" id="courseDetailsLink">
+                            <i class="fas fa-info-circle icon_color text-white p-2 text-xs rounded"></i>
+                            <span class="font-bold">Course Details</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+        <!-- main content -->
+        <div class="md:ml-64 w-full">
+            <div class="bg-white w-full lg:p-8 fixed shadow-md flex flex-row z-40">
+                <div class="lg:hidden p-6 flex justify-between  gap-5 w-full">
+                    <h1 class=" "></h1>
+                    <button id="menuButton" class="text-gray-800 focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+            <!-- first card -->
+            <div class="text-center mt-20 px-8">
+                <h2 class="text-3xl font-semibold mb-5 bg-blue-500 py-12">Registration</h2>
+            </div>
+            <div class="flex items-center space-x-3">
+                <div class="w-1/3  bg-white ml-8 p-4 rounded-md shadow-2xl">
+                    <div class="space-y-4">
+                        <div class="accordion-item">
+                            <button class="accordion-button w-full text-left p-4 bg-gray-100 rounded-md flex justify-between items-center focus:outline-none">
+                      <span>আমি কিভাবে শুরু করতে পারি?</span>
+                      <span class="accordion-icon text-xl">+</span>
+                    </button>
+                            <div class="accordion-content hidden p-4 bg-gray-50 rounded-b-md">
+                                <p>আমার ক্লায়েন্ট ব্যবহার করার জন্য আপনাকে অবশ্যই নিবন্ধন করতে হবে নিবন্ধন আপনি মোবাইল অ্যাপ ব্যবহার করে বা ওয়েব সাইট ব্রাউজ করে কম্পিউটারের মাধ্যমে খুব সহজেই করতে পারবেন ।</p>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <button class="accordion-button w-full text-left p-4 bg-gray-100 rounded-md flex justify-between items-center focus:outline-none">
+                      <span>আমাকে প্রতি মাসে কত পেমেন্ট করতে হবে ?</span>
+                      <span class="accordion-icon text-xl">+</span>
+                    </button>
+                            <div class="accordion-content hidden p-4 bg-gray-50 rounded-md">
+                                <p>আপনাকে প্রতি মাসে সফটওয়্যারটি ব্যবহারের জন্য 250 টাকা সার্ভিস চার্জ প্রদান করতে হবে। আমাদের মাসিক প্যাকেজ টি 30 দিনের জন্য হয় ।</p>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <button class="accordion-button w-full text-left p-4 bg-gray-100 rounded-md flex justify-between items-center focus:outline-none">
+                      <span>আমি কি ট্রায়াল নিয়ে দেখতে পারি ?</span>
+                      <span class="accordion-icon text-xl">+</span>
+                    </button>
+                            <div class="accordion-content hidden p-4 bg-gray-50 rounded-md">
+                                <p>অবশ্যই আপনি ট্রায়াল নিয়ে দেখতে পারেন। ট্রায়াল ব্যবহার করতে প্রমোশনাল কোড ব্যবহার করুন trial । এই কোডটি ব্যবহার করলে আপনি তিন দিন ট্রায়াল হিসাবে আমার ক্লায়েন্ট ব্যবহার করতে পারবেন।</p>
+                            </div>
+                        </div>
+                    </div>
+                    <script>
+                        document.querySelectorAll('.accordion-button').forEach(button => {
+                            button.addEventListener('click', () => {
+                                const icon = button.querySelector('.accordion-icon');
+                                const content = button.nextElementSibling;
+
+                                // Toggle visibility of the content
+                                content.classList.toggle('hidden');
+
+                                // Toggle icon between plus and minus
+                                if (content.classList.contains('hidden')) {
+                                    icon.textContent = '+';
+                                } else {
+                                    icon.textContent = '−';
+                                }
+                            });
+                        });
+                    </script>
+
+                </div>
+
+                <div class="w-2/3"></div>
+            </div>
+
+
+
+
+
+        </div>
+        <!-- Scripts -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/library-name@version/library.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="./js/home.js"></script>
+</body>
+
+</html>

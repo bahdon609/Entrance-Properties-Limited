@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Previewer</title>
+  <style>
+    .hidden {
+      display: none;
+    }
+  </style>
+  <script>
+    // Function to trigger file input
+    function triggerFileInput(inputId) {
+      document.getElementById(inputId).click(); // Programmatically click the hidden file input
+    }
+
+    // Function to preview the uploaded image
+    function previewImage(event, previewId, imageId, iconId) {
+      const file = event.target.files[0]; // Get the selected file
+      if (file) {
+        const imageUrl = URL.createObjectURL(file); // Create a URL for the file
+        const uploadedImage = document.getElementById(imageId); // Get the image element
+
+        uploadedImage.src = imageUrl; // Set the image source to the file URL
+        document.getElementById(previewId).classList.remove("hidden"); // Show the preview section
+        document.getElementById(iconId).classList.add("hidden"); // Hide the upload icon
+      }
+    }
+
+    // Function to remove the uploaded image
+    function removeImage(inputId, previewId, iconId) {
+      document.getElementById(inputId).value = ""; // Clear the file input value
+      document.getElementById(previewId).classList.add("hidden"); // Hide the preview section
+      document.getElementById(iconId).classList.remove("hidden"); // Show the upload icon
+    }
+  </script>
+</head>
+<body>
+  <div class="floating-label-group pt-4">
+    <div class="relative w-full">
+      <!-- Icon to trigger file input -->
+      <p class="pb-2">Student Image</p>
+      <div id="uploadIcon" class="flex items-center justify-center w-[600px] h-[800px] 
+        border-dashed border-2 border-gray-500 rounded cursor-pointer" onclick="triggerFileInput('imageInput')">
+        <p class="text-gray-500 py-20">Click to Upload</p>
+      </div>
+      <!-- Hidden File Input -->
+      <input
+        type="file"
+        id="imageInput"
+        accept="image/*"
+        class="hidden"
+        onchange="previewImage(event, 'imagePreview', 'uploadedImage', 'uploadIcon')"
+      >
+      <!-- Preview Section -->
+      <div id="imagePreview" class="mt-2 hidden relative">
+        <img id="uploadedImage" class="w-[300px] h-[300px] object-cover border rounded" alt="Uploaded Preview">
+        <button onclick="removeImage('imageInput', 'imagePreview', 'uploadIcon')" class="absolute top-2 right-2 bg-red-500 text-white px-4 py-1 hover:bg-red-600">
+          ✕
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="floating-label-group pt-4 flex items-center gap-4">
+    <!-- NID Front Section -->
+    <div class="relative w-full">
+      <p class="pb-2">NID Front</p>
+      <div id="uploadIconFront" class="flex items-center justify-center w-[600px] h-[800px] border-dashed border-2 border-gray-500 rounded cursor-pointer" onclick="triggerFileInput('imageInputFront')">
+        <p class="text-gray-500 py-20">Click to Upload</p>
+      </div>
+      <input
+        type="file"
+        id="imageInputFront"
+        accept="image/*"
+        class="hidden"
+        onchange="previewImage(event, 'imagePreviewFront', 'uploadedImageFront', 'uploadIconFront')"
+      >
+      <div id="imagePreviewFront" class="mt-2 hidden relative">
+        <img id="uploadedImageFront" class="w-[300px] h-[300px] object-cover border rounded" alt="Uploaded Preview">
+        <button onclick="removeImage('imageInputFront', 'imagePreviewFront', 'uploadIconFront')" class="absolute top-2 right-2 bg-red-500 text-white px-4 py-1 hover:bg-red-600">
+          ✕
+        </button>
+      </div>
+    </div>
+
+    <!-- NID Back Section -->
+    <div class="relative w-full">
+      <p class="pb-2">NID Back</p>
+      <div id="uploadIconBack" class="flex items-center justify-center w-[600px] h-[800px] border-dashed border-2 border-gray-500 rounded cursor-pointer" onclick="triggerFileInput('imageInputBack')">
+        <p class="text-gray-500 py-20">Click to Upload</p>
+      </div>
+      <input
+        type="file"
+        id="imageInputBack"
+        accept="image/*"
+        class="hidden"
+        onchange="previewImage(event, 'imagePreviewBack', 'uploadedImageBack', 'uploadIconBack')"
+      >
+      <div id="imagePreviewBack" class="mt-2 hidden relative">
+        <img id="uploadedImageBack" class="w-[300px] h-[300px] object-cover border rounded" alt="Uploaded Preview">
+        <button onclick="removeImage('imageInputBack', 'imagePreviewBack', 'uploadIconBack')" class="absolute top-2 right-2 bg-red-500 text-white px-4 py-1 hover:bg-red-600">
+          ✕
+        </button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrance Properties Limited</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
+    <link href="./css/regi_Form.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100 font-sans leading-normal tracking-normal">
+
+    <!-- Sidebar Component -->
+    <div class="flex gap-4 w-full">
+        <!-- Sidebar -->
+        <div id="sidebar" class="w-64 shadow-md z-50 bg-white text-white h-screen fixed p-4 transition-transform transform -translate-x-full md:translate-x-0">
+            <div class="bg-white rounded w-full">
+                <img class="rounded h-20 object-contain w-full" src="./assets/ENTRANCE.png" alt="Logo" />
+            </div>
+            <!-- Menu Items -->
+            <div class="flex flex-col justify-between mt-2">
+                <ul id="sidebarMenu" class="w-full ">
+                    <!-- Overview Section -->
+                    <li class="font-bold text-sm text_color_primary my-2">Overview</li>
+                    <li class="mb-2">
+                        <a href="index.html" class="sidebar-link flex items-center gap-2 py-1.5  rounded hover:bg-gray-100 text-gray-700" id="homeLink">
+                            <i class="fas fa-home icon_color text-white p-2  text-xs rounded"></i>
+                            <span class="font-bold">Home</span>
+                        </a>
+                    </li>
+
+                    <li class="mb-2">
+                        <a href="about.html" class="sidebar-link flex items-center gap-2 py-1.5 rounded hover:bg-gray-100 text-gray-700" id="aboutLink">
+                            <i class="fas fa-home icon_color text-white p-2 text-xs rounded"></i>
+                            <span class="font-bold">About Us</span>
+                        </a>
+                    </li>
+
+                    <li class="mb-2">
+                        <a href="photo.html" class="sidebar-link flex items-center gap-2 py-1.5 rounded hover:bg-gray-100 text-gray-700" id="photoLink">
+                            <i class="fas fa-info-circle icon_color text-white p-2 text-xs rounded"></i>
+                            <span class="font-bold">Photo Gallery</span>
+                        </a>
+                    </li>
+
+                    <li class="mb-2">
+                        <a href="video.html" class="sidebar-link flex items-center gap-2 py-1.5 rounded hover:bg-gray-100 text-gray-700" id="videoLink">
+                            <i class="fas fa-info-circle icon_color text-white p-2 text-xs rounded"></i>
+                            <span class="font-bold">Video Gallery</span>
+                        </a>
+                    </li>
+
+                    <li class="mb-2">
+                        <a href="blog.html" class="sidebar-link flex items-center gap-2 py-1.5 rounded hover:bg-gray-100 text-gray-700" id="blogLink">
+                            <i class="fas fa-info-circle icon_color text-white p-2 text-xs rounded"></i>
+                            <span class="font-bold">Blog & Event</span>
+                        </a>
+                    </li>
+
+                    <li class="mb-2">
+                        <a href="contact.html" class="sidebar-link flex items-center gap-2 py-1.5 rounded hover:bg-gray-100 text-gray-700" id="contactLink">
+                            <i class="fas fa-info-circle icon_color text-white p-2 text-xs rounded"></i>
+                            <span class="font-bold">Contact Us</span>
+                        </a>
+                    </li>
+
+                    <li class="font-bold text-sm text_color_primary my-1">Our project</li>
+
+                    <li class="mb-2">
+                        <a href="bashundhara.html" class="sidebar-link flex items-center gap-2 py-1.5 rounded hover:bg-gray-100 text-gray-700" id="courseLinks">
+                            <i class="fas fa-info-circle icon_color text-white p-2 text-xs rounded"></i>
+                            <span class="font-bold">Basundhara</span>
+                        </a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="uttara.html" class="sidebar-link flex items-center gap-2 py-1.5 rounded hover:bg-gray-100 text-gray-700" id="serviceLink">
+                            <i class="fas fa-info-circle icon_color text-white p-2 text-xs rounded"></i>
+                            <span class="font-bold">Uttara</span>
+                        </a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="mirpur.html" class="sidebar-link flex items-center gap-2 py-1.5 rounded hover:bg-gray-100 text-gray-700" id="student_certificateLinkss">
+                            <i class="fas fa-info-circle icon_color text-white p-2 text-xs rounded"></i>
+                            <span class="font-bold">Mirpur</span>
+                        </a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="mohammadpur.html" class="sidebar-link flex items-center gap-2 py-1.5 rounded hover:bg-gray-100 text-gray-700" id="registration_formLinks">
+                            <i class="fas fa-info-circle icon_color text-white p-2 text-xs rounded"></i>
+                            <span class="font-bold">Mohammadpur</span>
+                        </a>
+                    </li>
+
+
+                </ul>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="md:ml-64 w-full">
+
+
+
+            <!-- Banner and Gallery Section -->
+            <div class="mt-4 mx-4">
+                <div class="  overflow-hidden">
+                    <div class="">
+                        <!-- Header Section -->
+                        <div class="icon_color text-white text-center py-6 px-[15px]">
+                            <h1 class="text-4xl font-bold">Contact Us</h1>
+                            <p class="text-base mt-2">Memorable moments of our association</p>
+                        </div>
+
+                        <div class="flex flex-col md:flex-row gap-4 mt-5">
+                            <!-- Contact Information Section -->
+                            <div class="flex items-center justify-center hover:border-purple-400 bg-white border-2 border-gray-300  px-4 py-4 mx-auto w-full md:w-1/2">
+                                <div class="text-lg mx-auto text-center">
+                                    <h1 class="font-bold text-3xl">Contact Information</h1>
+                                    <p>
+                                        <span class="font-bold">Email:</span> itderbd@gmail.com
+                                    </p>
+                                    <p>
+                                        <span class="font-bold">Phone:</span> +88-01601-510251
+                                    </p>
+                                    <p>
+                                        <span class="font-bold">Address:</span> House-375 3rd Floor, Road-28 Mohakhali DOHS, Dhaka
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Contact Form Section -->
+                            <div class=" bg-white text-lg mx-auto flex-1 border-2 hover:border-purple-400 border-gray-300 p-8 w-full md:w-1/2">
+
+                                <form id="contactForm">
+
+                                    <div class="flex flex-col  justify-between items-center gap-10 ">
+                                        <div class="flex items-end w-full  floating-label-group">
+                                            <div class="relative w-full">
+                                                <input type="text" placeholder=" " class="border-b border-gray-500 w-full py-1  focus:outline-none focus:border-purple-500">
+                                                <label class="absolute left-0 top-1/3 transform  -translate-y-1/2 text-gray-500 transition-all duration-200 pointer-events-none">
+                                                    Full Name
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="flex items-end w-full  floating-label-group">
+                                            <div class="relative w-full">
+                                                <input type="email" placeholder=" " class="border-b border-gray-500 w-full  py-1 focus:outline-none focus:border-purple-500">
+                                                <label class="absolute left-0 top-1/3 transform -translate-y-1/2 text-gray-500 transition-all duration-200 pointer-events-none">
+                                                    Email
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-col  justify-between items-center gap-10 mt-10 ">
+                                        <div class="flex items-end w-full  floating-label-group">
+                                            <div class="relative w-full">
+                                                <input type="number" placeholder=" " class="border-b border-gray-500 w-full py-1  focus:outline-none focus:border-purple-500">
+                                                <label class="absolute left-0 top-1/3 transform  -translate-y-1/2 text-gray-500 transition-all duration-200 pointer-events-none">
+                                                   Number
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="flex items-end w-full  floating-label-group">
+                                            <div class="relative w-full">
+                                                <input type="text" placeholder=" " class="border-b border-gray-500 w-full  py-1 focus:outline-none focus:border-purple-500">
+                                                <label class="absolute left-0 top-1/3 transform -translate-y-1/2 text-gray-500 transition-all duration-200 pointer-events-none">
+                                                    Message
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="form-control mt-10">
+                                        <button type="submit" class="btn_primary w-full">Submit</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const container = document.querySelector('.group'); // Select the parent container
+            const dropdown = document.getElementById('dropdowns1'); // Select the dropdown element
+
+            // Show dropdown on hover
+            container.addEventListener('mouseenter', () => {
+                dropdown.classList.remove('hidden');
+            });
+
+            // Hide dropdown when not hovering
+            container.addEventListener('mouseleave', () => {
+                dropdown.classList.add('hidden');
+            });
+        });
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/home.js"></script>
+    <script src="./js/photo.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+        });
+    </script>
+</body>
+
+</html>

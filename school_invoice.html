@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money Receipt</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+
+    <style>
+        @media print {
+            body {
+                -webkit-print-color-adjust: exact;
+                /* For Safari/Chrome */
+                print-color-adjust: exact;
+                /* For modern browsers */
+            }
+        }
+
+        }
+
+.titleTextSize{
+    font-size: 16px !important;
+}
+
+.textSize{
+    font-size: 14px !important;
+}
+
+.flatpickr-calendar.open {
+    background-color: white;
+    border: 3px solid rgb(255, 255, 255);
+  }
+
+  .image-container {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    
+  
+  }
+  .rotated-image {
+    width: 150px;
+    height: 150px;
+    transform: rotate(-10deg); /* Rotate by 45 degrees */
+    display: block; /* Ensure it behaves like a block-level element */
+  }
+  .base_color{
+    color: #75459b;
+  }
+  .border_base_color{
+    border-color: #75459b;
+
+  }
+  .table_bg{
+    background-color:  #CDBCE4;
+  }
+  .base_bg_color{
+    background-color: #75459b;
+  }
+    </style>
+</head>
+
+<body class="m-4">
+    <section class="max-w-3xl mx-auto">
+        <div class="mb-4 flex justify-between items-center">
+            <img class="w-[180px] h-[65px]" src="assets/itder/logo.png" alt="">
+            <div class="flex gap-4 items-center">
+                <div class="text-sm font-bold base_color">
+                    <p>+880 1774444000</p>
+                    <p>+880 9696863000</p>
+                </div>
+                <i class="fa-solid fa-phone-volume base text-lg text-white px-2 py-1 base_bg_color"></i>
+            </div>
+        </div>
+        <!--============================= Company & Customer Info start ====================================-->
+        <table class="border-collapse  w-full mt-1">
+            <thead>
+                <tr class="table_bg">
+                    <th class="border py-[6px] border_base_color font-bold text-center headerTextSize w-6/12">
+                        Company Information</th>
+                    <th class="border 6 border_base_color font-bold text-center headerTextSize w-6/12">
+                        <button id="modal" class="coursor-pointer" onclick="customer_modal.showModal()">
+                            Client Information
+                        </button>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="border px-2 py-1 border_base_color textSize font-semibold text-center w-6/12">
+                        <div class="flex justify-between">
+                            <ul class="text-left space-y-1 textSize w-3/12">
+                                <li class="font-bold">Company</li>
+                                <li class="font-bold">Email</li>
+                                <li class="font-bold">Phone</li>
+                                <li class="font-bold">Address</li>
+                            </ul>
+                            <ul class="text-left space-y-1 textSize w-9/12">
+                                <li class="font-semibold ">It Development Education & Research</li>
+                                <li class="font-semibold">itderbd@gmail.com</li>
+                                <li class="font-semibold">+8801774444000</li>
+                                <li class="font-semibold">Choy Rastar Mor, Dinajpur
+                                </li>
+                            </ul>
+                        </div>
+                    </td>
+                    <td class="border px-2 py-1 border_base_color font-semibold text-center w-6/12">
+                        <div class="flex justify-between ">
+                            <ul class="text-left space-y-1 textSize w-4/12">
+                                <li class="font-bold">Client Name</li>
+                                <li class="font-bold">School Name</li>
+                                <li class="font-bold">Phone</li>
+                                <li class="font-bold">Address</li>
+                            </ul>
+                            <ul class="text-left space-y-1 textSize w-8/12">
+                                <li class="font-semibold " id="customerName">Helal Sir</li>
+                                <li class="font-semibold " id="customerID">Birol Residential Model School </li>
+                                <li class="font-semibold" id="customerPhone">01309494465</li>
+                                <li class="font-semibold" id="customerAddress">Birol, Dinajpur</li>
+                            </ul>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="border px-2 py-1 border_base_color text-xs font-semibold h-5 text-center">
+                        <div class="flex justify-between">
+                            <ul class="text-left space-y-1 textSize w-3/12">
+
+                                <li class="font-bold ">Invoice ID</li>
+
+                            </ul>
+                            <ul class="text-left space-y-1 w-9/12">
+
+                                <li class="font-semibold textSize" id="receiptID">20001</li>
+
+                            </ul>
+                        </div>
+                    </td>
+
+                    <td class="border px-2 py-1 border_base_color text-xs font-semibold h-5 text-center">
+                        <div class="flex justify-between">
+                            <ul class="text-left space-y-1 textSize w-4/12">
+
+                                <li class="font-bold ">Invoice Date</li>
+
+                            </ul>
+                            <ul class="text-left space-y-1 w-8/12">
+                                <li class="font-semibold textSize " id="paymentDate">30-12-2024</li>
+
+                            </ul>
+                        </div>
+                    </td>
+                    <!-- <td class="border px-2 py-1 border_base_color text-xs font-semibold h-5 text-center"
+                      >
+
+                      <div class="flex justify-between">
+                        <ul class="text-left space-y-1 textSize w-5/12">
+                                
+                            <li class="font-bold uppercase">Invoice Date-</li>
+                          
+                        </ul>
+
+                       
+                       
+                    </div>
+                      
+                    </td> -->
+
+                </tr>
+            </tbody>
+        </table>
+        <!--============================= Company & Customer Info end ====================================-->
+
+
+        <!--============================= Reference Invoice (Before Payment) Start ====================================-->
+        <table class="border-collapse border w-full mt-1">
+            <h2 class="text-center font-bold base_color mt-1 titleTextSize uppercase">Product/Service Invoice</h2>
+            <thead>
+                <tr class="table_bg">
+                    <th class="headerTextSize border p-[8px] border_base_color font-bold py-[6px]  w-[8%]">
+                        Serial
+                    </th>
+
+                    <th class="border border_base_color font-bold text-cente headerTextSize w-[40%]">
+
+                        Product/Service Name
+
+                    </th>
+                    <th class="border border_base_color font-bold text-cente headerTextSize w-[15%]">Course Fee
+                    </th>
+                    <th class="border border_base_color font-bold text-cente headerTextSize w-[15%]">Discount
+                    </th>
+                    <th class="border border_base_color font-bold text-cente headerTextSize w-[15%]">Final Amount
+                    </th>
+
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="border p-[2px] border_base_color textSize font-semibold text-center">1
+                    </td>
+                    <td class=" border p-[2px] border_base_color textSize font-semibold text-center"
+                        id="product_proposal_1"> Logo Design
+                    </td>
+                    <td class="border p-[2px] border_base_color textSize font-semibold text-center">
+                        <div id="modal" class="w-full ">
+                            <span id="product_des_1">300</span>
+                        </div>
+                    </td>
+                    <td class="border p-[2px] border_base_color textSize font-semibold text-center"
+                        id="product_price_1"> 00
+                    </td>
+                    <td class="border p-[2px] border_base_color textSize font-semibold text-center"
+                        id="product_price_1"> 300
+                    </td>
+                </tr>
+                 <tr>
+                    <td class="border p-[2px] border_base_color textSize font-semibold text-center">2
+                    </td>
+                    <td class=" border p-[2px] border_base_color textSize font-semibold text-center"
+                        id="product_proposal_1"> Result Printing 550 Pc X 5 Taka
+
+
+
+                    </td>
+                    <td class="border p-[2px] border_base_color textSize font-semibold text-center">
+                        <div id="modal" class="w-full ">
+                            <span id="product_des_1">2750</span>
+                        </div>
+                    </td>
+                    <td class="border p-[2px] border_base_color textSize font-semibold text-center"
+                        id="product_price_1"> 00
+                    </td>
+                    <td class="border p-[2px] border_base_color textSize font-semibold text-center"
+                        id="product_price_1"> 2750
+                    </td>
+                </tr>
+                 <tr>
+                    <td class="border p-[2px] border_base_color textSize font-semibold text-center">3
+                    </td>
+                    <td class=" border p-[2px] border_base_color textSize font-semibold text-center"
+                        id="product_proposal_1"> Monthly Charge For School Management System December 2024 (488 Students)
+                    </td>
+                    <td class="border p-[2px] border_base_color textSize font-semibold text-center">
+                        <div id="modal" class="w-full ">
+                            <span id="product_des_1">5000</span>
+                        </div>
+                    </td>
+                    <td class="border p-[2px] border_base_color textSize font-semibold text-center"
+                        id="product_price_1"> 00
+                    </td>
+                    <td class="border p-[2px] border_base_color textSize font-semibold text-center"
+                        id="product_price_1"> 5000
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <td class="border p-[2px] border-r-white border_base_color textSize font-semibold text-center">
+                    </td>
+                    <td class="border p-[2px] border-r-white border_base_color textSize font-semibold text-center">
+                    </td>
+                    <td
+                        class="border p-[2px] border-r-white border_base_color border_base_color textSize font-semibold text-center">
+                    </td>
+                    <td class=" px-[2px] py-1 border_base_color font-bold text-right headerTextSize border text-xs md:text-base">Total Amount
+                    </td>
+                    <td class="border p-[2px] border_base_color textSize font-bold text-center table_bg"
+                       >8050</td>
+                </tr>
+            </tbody>
+        </table>
+        <!--============================= Reference Invoice (Before Payment) end ====================================-->
+
+
+        <!--=================================== after Payment  Start =======================================-->
+        <table class="border-collapse border w-full mt-1">
+            <h2 class="text-center font-bold base_color mt-1 titleTextSize uppercase">Payment Information</h2>
+            <thead>
+                <tr class="table_bg">
+                    <th class="headerTextSize border p-[6px] border_base_color font-bold w-1/12">Serial</th>
+                    <th class="headerTextSize border border_base_color font-bold w-2.75/12">Payment ID</th>
+                    <th class="headerTextSize border border_base_color font-bold text-center w-2.75/12">Invoice ID
+                    </th>
+                    <th class="headerTextSize border border_base_color font-bold text-center w-2.75/12">Paid Amount
+                    </th>
+                    <th class="headerTextSize border border_base_color font-bold text-center w-2.75/12">Payment Date
+                    </th>
+
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="border p-[2px] border_base_color textSize font-semibold h-5 text-center">1</td>
+                    <td class="border p-[2px] border_base_color textSize font-semibold h-5 text-center" id="pay_date">
+                        32098</td>
+                    <td class="border p-[2px] border_base_color textSize font-semibold h-5 text-center" id="pay_date">
+                        20001 </td>
+
+                    <td class="border p-[2px] border_base_color textSize font-semibold h-5 text-center " id="pay_name">
+                      8050</td>
+                    <td class="border p-[2px] border_base_color textSize font-semibold h-5 text-center">
+                        <span id="pay_price">30-12-2024</span>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <!--=================================== Payment Info end =======================================-->
+
+
+
+        <!--=================================== Bank Info end =======================================-->
+
+
+        <!--================================== Closing Calculation start ======================================-->
+        <table class="border-collapse border w-full mt-1">
+            <h2 class="text-center font-bold base_color my-1 titleTextSize uppercase">Closing Calculation</h2>
+            <thead>
+                <tr class="table_bg">
+                    <th class="headerTextSize border py-[6px] border_base_color font-bold  text-center ">Total
+                        Amount</th>
+                    <th class="headerTextSize border py-[6px] border_base_color font-bold  text-center ">Paid
+                        Amount</th>
+                    <th class="headerTextSize border py-[6px] border_base_color font-bold  text-center ">Due
+                        Amount</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="border p-[2px] border_base_color textSize font-semibold h-5 text-center">
+                        <div id="closingTotal">8050</div>
+                    </td>
+                    <td class="border p-[2px] border_base_color textSize font-semibold h-5 text-center"
+                        id="closingPaid">8050
+                    </td>
+                    <td class="border p-[2px] border_base_color textSize font-semibold h-5 text-center "
+                        id="closingDue">00
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <!--=================================== Closing Calculation end =======================================-->
+
+        <!--=================================== Signature part start =======================================-->
+        <div class="flex items-start gap-3 mt-5">
+            <div class="w-[60%]">
+           
+            </div>
+            <div class="image-container w-[40%] ">
+                <img src="./assets/itder/download2.png" alt="Rotated Image" class="rotated-image" />
+            </div>
+        </div>
+
+        <!--=================================== Signature part end =======================================-->
+
+
+
+    </section>
+
+
+    <script src="wbSoftwaresNew.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="datepicker.js"></script>
+    </script>
+</body>
+
+</html>

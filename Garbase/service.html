@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrance Properties Limited</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+    <link href="./css/style.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100 font-sans leading-normal tracking-normal">
+    <!-- Sidebar Component -->
+    <div class="flex  gap-4 w-full ">
+        <!-- Sidebar -->
+        <div id="sidebar" class="w-64 shadow-md z-50 bg-white text-white h-screen fixed p-4 transition-transform transform -translate-x-full md:translate-x-0">
+            <div class="bg-white rounded w-full">
+                <img class="rounded h-20 object-contain w-full" src="./assets/logo.png" alt="Logo" />
+            </div>
+            <!-- Menu Items -->
+            <div class="flex flex-col justify-between mt-2">
+                <ul id="sidebarMenu" class="w-full">
+                    <!-- Overview Section -->
+                    <li class="font-bold text-sm text_color_primary my-2">Overview</li>
+                    <li class="mb-2">
+                        <a href="index.html" class="sidebar-link flex items-center gap-2 p-2 rounded hover:bg-gray-100 text-gray-700" id="homeLink">
+                            <i class="fas fa-home icon_color text-white p-2 text-xs rounded"></i>
+                            <span class="font-bold">Home</span>
+                        </a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="about.html" class="sidebar-link flex items-center gap-2 p-2 rounded hover:bg-gray-100 text-gray-700" id="aboutLink">
+                            <i class="fas fa-home icon_color text-white p-2 text-xs rounded"></i>
+                            <span class="font-bold">About Us</span>
+                        </a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="bashundhara.html" class="sidebar-link flex items-center gap-2 p-2 rounded hover:bg-gray-100 text-gray-700" id="courseLink">
+                            <i class="fas fa-info-circle icon_color text-white p-2 text-xs rounded"></i>
+                            <span class="font-bold">Basundhara</span>
+                        </a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="uttara.html" class="sidebar-link flex items-center gap-2 p-2 rounded hover:bg-gray-100 text-gray-700" id="serviceLink">
+                            <i class="fas fa-info-circle icon_color text-white p-2 text-xs rounded"></i>
+                            <span class="font-bold">Uttara</span>
+                        </a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="software.html" class="sidebar-link flex items-center gap-2 p-2 rounded hover:bg-gray-100 text-gray-700" id="softwareLink">
+                            <i class="fas fa-info-circle icon_color text-white p-2 text-xs rounded"></i>
+                            <span class="font-bold">Our Softwares</span>
+                        </a>
+                    </li>
+
+                    <li class="mb-2">
+                        <a href="photo.html" class="sidebar-link flex items-center gap-2 p-2 rounded hover:bg-gray-100 text-gray-700" id="photoLink">
+                            <i class="fas fa-info-circle icon_color text-white p-2 text-xs rounded"></i>
+                            <span class="font-bold">Photo Gallery</span>
+                        </a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="video.html" class="sidebar-link flex items-center gap-2 p-2 rounded hover:bg-gray-100 text-gray-700" id="videoLink">
+                            <i class="fas fa-info-circle icon_color text-white p-2 text-xs rounded"></i>
+                            <span class="font-bold">Video Gallery</span>
+                        </a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="blog.html" class="sidebar-link flex items-center gap-2 p-2 rounded hover:bg-gray-100 text-gray-700" id="blogLink">
+                            <i class="fas fa-info-circle icon_color text-white p-2 text-xs rounded"></i>
+                            <span class="font-bold">Blog & Event</span>
+                        </a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="contact.html" class="sidebar-link flex items-center gap-2 p-2 rounded hover:bg-gray-100 text-gray-700" id="contactLink">
+                            <i class="fas fa-info-circle icon_color text-white p-2 text-xs rounded"></i>
+                            <span class="font-bold">Contact Us</span>
+                        </a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="student_regi.html" class="sidebar-link flex items-center gap-2 p-2 rounded hover:bg-gray-100 text-gray-700" id="student_regiLink">
+                            <i class="fas fa-info-circle icon_color text-white p-2 text-xs rounded"></i>
+                            <span class="font-bold">Student Registration</span>
+                        </a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="student_veri.html" class="sidebar-link flex items-center gap-2 p-2 rounded hover:bg-gray-100 text-gray-700" id="student_veriLink">
+                            <i class="fas fa-info-circle icon_color text-white p-2 text-xs rounded"></i>
+                            <span class="font-bold">Student Verification</span>
+                        </a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="course_details.html" class="sidebar-link flex items-center gap-2 p-2 rounded hover:bg-gray-100 text-gray-700" id="courseDetailsLink">
+                            <i class="fas fa-info-circle icon_color text-white p-2 text-xs rounded"></i>
+                            <span class="font-bold">Course Details</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+        <!-- main content -->
+        <div class="md:ml-64 w-full">
+            <div class="bg-white w-full lg:p-8 fixed shadow-md flex flex-row z-40">
+                <div class="lg:hidden p-6 flex justify-between  gap-5 w-full">
+                    <h1 class=" "></h1>
+                    <button id="menuButton" class="text-gray-800 focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+            <!-- first card -->
+            <div class="text-center mt-20 px-8">
+                <h2 class="text-3xl font-semibold mb-5">Courses</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6">
+                    <!-- Course Card Start -->
+
+                    <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                        <div class="relative">
+                            <img src="https://itderbd.nextwebservice.com/storage/uploads/course/7496351728743462.jpg" alt="" class="w-full h-auto" />
+                            <div class="absolute top-0 left-0 p-2">
+                                <h3 class="text-white text-xl font-bold">Course Name</h3>
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <h2 class="text-gray-800 text-lg font-semibold mb-2">Course Name</h2>
+                            <div class="flex items-center justify-between mb-4">
+                                <span class="flex text-blue-500 text-md">★★★★★</span>
+                                <span class="ml-2 text-gray-600 text-md font-bold">6,452 students</span>
+                            </div>
+                            <div class="flex gap-2 mb-4 flex-wrap">
+                                <span class="bg-yellow-100 text-gray-700 text-xs font-semibold px-2 py-1 rounded">Photography</span>
+                                <span class="bg-yellow-100 text-gray-700 text-xs font-semibold px-2 py-1 rounded">Light
+                                    set up</span>
+                                <span class="bg-yellow-100 text-gray-700 text-xs font-semibold px-2 py-1 rounded">Camera
+                                    angle</span>
+                                <span class="bg-yellow-100 text-gray-700 text-xs font-semibold px-2 py-1 rounded">Self
+                                    Development</span>
+                            </div>
+                            <p class="text-gray-600 text-md mb-4">
+                                স্মৃতি ধরে রাখার সব গল্পগুলোকে... <span class="text-blue-500">Show
+                                    Details</span>
+                            </p>
+                            <hr />
+                            <div class="mt-4 flex justify-between items-center">
+                                <div>
+                                    <span class="line-through text-gray-400 text-sm">Tk 800</span>
+                                    <span class="text-green-600 text-md font-bold ml-2">-70%</span>
+                                    <span class="text-black text-lg font-bold ml-2">Tk 240</span>
+                                </div>
+                                <span class="text-green-600 text-sm">Earn Tk 48</span>
+                            </div>
+                            <div class="mt-4 flex gap-2">
+                                <button class="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 w-full font-bold text-md">Add
+                                    To Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                        <div class="relative">
+                            <img src="https://itderbd.nextwebservice.com/storage/uploads/course/7496351728743462.jpg" alt="" class="w-full h-auto" />
+                            <div class="absolute top-0 left-0 p-2">
+                                <h3 class="text-white text-xl font-bold">Course Name</h3>
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <h2 class="text-gray-800 text-lg font-semibold mb-2">Course Name</h2>
+                            <div class="flex items-center justify-between mb-4">
+                                <span class="flex text-blue-500 text-md">★★★★★</span>
+                                <span class="ml-2 text-gray-600 text-md font-bold">6,452 students</span>
+                            </div>
+                            <div class="flex gap-2 mb-4 flex-wrap">
+                                <span class="bg-yellow-100 text-gray-700 text-xs font-semibold px-2 py-1 rounded">Photography</span>
+                                <span class="bg-yellow-100 text-gray-700 text-xs font-semibold px-2 py-1 rounded">Light
+                                    set up</span>
+                                <span class="bg-yellow-100 text-gray-700 text-xs font-semibold px-2 py-1 rounded">Camera
+                                    angle</span>
+                                <span class="bg-yellow-100 text-gray-700 text-xs font-semibold px-2 py-1 rounded">Self
+                                    Development</span>
+                            </div>
+                            <p class="text-gray-600 text-md mb-4">
+                                স্মৃতি ধরে রাখার সব গল্পগুলোকে... <span class="text-blue-500">Show
+                                    Details</span>
+                            </p>
+                            <hr />
+                            <div class="mt-4 flex justify-between items-center">
+                                <div>
+                                    <span class="line-through text-gray-400 text-sm">Tk 800</span>
+                                    <span class="text-green-600 text-md font-bold ml-2">-70%</span>
+                                    <span class="text-black text-lg font-bold ml-2">Tk 240</span>
+                                </div>
+                                <span class="text-green-600 text-sm">Earn Tk 48</span>
+                            </div>
+                            <div class="mt-4 flex gap-2">
+                                <button class="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 w-full font-bold text-md">Add
+                                    To Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                        <div class="relative">
+                            <img src="https://itderbd.nextwebservice.com/storage/uploads/course/7496351728743462.jpg" alt="" class="w-full h-auto" />
+                            <div class="absolute top-0 left-0 p-2">
+                                <h3 class="text-white text-xl font-bold">Course Name</h3>
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <h2 class="text-gray-800 text-lg font-semibold mb-2">Course Name</h2>
+                            <div class="flex items-center justify-between mb-4">
+                                <span class="flex text-blue-500 text-md">★★★★★</span>
+                                <span class="ml-2 text-gray-600 text-md font-bold">6,452 students</span>
+                            </div>
+                            <div class="flex gap-2 mb-4 flex-wrap">
+                                <span class="bg-yellow-100 text-gray-700 text-xs font-semibold px-2 py-1 rounded">Photography</span>
+                                <span class="bg-yellow-100 text-gray-700 text-xs font-semibold px-2 py-1 rounded">Light
+                                    set up</span>
+                                <span class="bg-yellow-100 text-gray-700 text-xs font-semibold px-2 py-1 rounded">Camera
+                                    angle</span>
+                                <span class="bg-yellow-100 text-gray-700 text-xs font-semibold px-2 py-1 rounded">Self
+                                    Development</span>
+                            </div>
+                            <p class="text-gray-600 text-md mb-4">
+                                স্মৃতি ধরে রাখার সব গল্পগুলোকে... <span class="text-blue-500">Show
+                                    Details</span>
+                            </p>
+                            <hr />
+                            <div class="mt-4 flex justify-between items-center">
+                                <div>
+                                    <span class="line-through text-gray-400 text-sm">Tk 800</span>
+                                    <span class="text-green-600 text-md font-bold ml-2">-70%</span>
+                                    <span class="text-black text-lg font-bold ml-2">Tk 240</span>
+                                </div>
+                                <span class="text-green-600 text-sm">Earn Tk 48</span>
+                            </div>
+                            <div class="mt-4 flex gap-2">
+                                <button class="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 w-full font-bold text-md">Add
+                                    To Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                        <div class="relative">
+                            <img src="https://itderbd.nextwebservice.com/storage/uploads/course/7496351728743462.jpg" alt="" class="w-full h-auto" />
+                            <div class="absolute top-0 left-0 p-2">
+                                <h3 class="text-white text-xl font-bold">Course Name</h3>
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <h2 class="text-gray-800 text-lg font-semibold mb-2">Course Name</h2>
+                            <div class="flex items-center justify-between mb-4">
+                                <span class="flex text-blue-500 text-md">★★★★★</span>
+                                <span class="ml-2 text-gray-600 text-md font-bold">6,452 students</span>
+                            </div>
+                            <div class="flex gap-2 mb-4 flex-wrap">
+                                <span class="bg-yellow-100 text-gray-700 text-xs font-semibold px-2 py-1 rounded">Photography</span>
+                                <span class="bg-yellow-100 text-gray-700 text-xs font-semibold px-2 py-1 rounded">Light
+                                    set up</span>
+                                <span class="bg-yellow-100 text-gray-700 text-xs font-semibold px-2 py-1 rounded">Camera
+                                    angle</span>
+                                <span class="bg-yellow-100 text-gray-700 text-xs font-semibold px-2 py-1 rounded">Self
+                                    Development</span>
+                            </div>
+                            <p class="text-gray-600 text-md mb-4">
+                                স্মৃতি ধরে রাখার সব গল্পগুলোকে... <span class="text-blue-500">Show
+                                    Details</span>
+                            </p>
+                            <hr />
+                            <div class="mt-4 flex justify-between items-center">
+                                <div>
+                                    <span class="line-through text-gray-400 text-sm">Tk 800</span>
+                                    <span class="text-green-600 text-md font-bold ml-2">-70%</span>
+                                    <span class="text-black text-lg font-bold ml-2">Tk 240</span>
+                                </div>
+                                <span class="text-green-600 text-sm">Earn Tk 48</span>
+                            </div>
+                            <div class="mt-4 flex gap-2">
+                                <button class="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 w-full font-bold text-md">Add
+                                    To Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                        <div class="relative">
+                            <img src="https://itderbd.nextwebservice.com/storage/uploads/course/7496351728743462.jpg" alt="" class="w-full h-auto" />
+                            <div class="absolute top-0 left-0 p-2">
+                                <h3 class="text-white text-xl font-bold">Course Name</h3>
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <h2 class="text-gray-800 text-lg font-semibold mb-2">Course Name</h2>
+                            <div class="flex items-center justify-between mb-4">
+                                <span class="flex text-blue-500 text-md">★★★★★</span>
+                                <span class="ml-2 text-gray-600 text-md font-bold">6,452 students</span>
+                            </div>
+                            <div class="flex gap-2 mb-4 flex-wrap">
+                                <span class="bg-yellow-100 text-gray-700 text-xs font-semibold px-2 py-1 rounded">Photography</span>
+                                <span class="bg-yellow-100 text-gray-700 text-xs font-semibold px-2 py-1 rounded">Light
+                                    set up</span>
+                                <span class="bg-yellow-100 text-gray-700 text-xs font-semibold px-2 py-1 rounded">Camera
+                                    angle</span>
+                                <span class="bg-yellow-100 text-gray-700 text-xs font-semibold px-2 py-1 rounded">Self
+                                    Development</span>
+                            </div>
+                            <p class="text-gray-600 text-md mb-4">
+                                স্মৃতি ধরে রাখার সব গল্পগুলোকে... <span class="text-blue-500">Show
+                                    Details</span>
+                            </p>
+                            <hr />
+                            <div class="mt-4 flex justify-between items-center">
+                                <div>
+                                    <span class="line-through text-gray-400 text-sm">Tk 800</span>
+                                    <span class="text-green-600 text-md font-bold ml-2">-70%</span>
+                                    <span class="text-black text-lg font-bold ml-2">Tk 240</span>
+                                </div>
+                                <span class="text-green-600 text-sm">Earn Tk 48</span>
+                            </div>
+                            <div class="mt-4 flex gap-2">
+                                <button class="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 w-full font-bold text-md">Add
+                                    To Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Course Card End -->
+
+
+
+                </div>
+            </div>
+            <!-- second card -->
+
+            <div class="p-5 mt-16 border rounded-lg shadow mx-8">
+                <h2 class="flex items-center justify-center gap-2 my-6 text-center">
+                    <p class="text-3xl text-[rgb(16, 24, 40)] font-bold">আমাদের কোর্সসমুহ</p>
+                    <img src="https://cdn.ostad.app/public/upload/2023-09-19T06-53-08.819Z-book-2-icons.svg" alt="">
+                </h2>
+                <div class="relative grid grid-cols-3 gap-4">
+                    <div class="flex items-center h-full gap-3 p-2 bg-gray-800 border border-gray-300 rounded-lg">
+                        <div class="p-1 bg-white rounded-full h-7 w-7">
+                            <img src="https://cdn.ostad.app/public/upload/2023-06-22T06-40-41.054Z-code-box-line.png" alt="">
+                        </div>
+                        <div>
+                            <h2 class="text-sm font-medium text-white">Web & App Development</h2>
+                            <p class="text-xs text-white">• ৩০ কোর্স • ৫ ওয়ার্কশপ</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center h-full gap-3 p-2 bg-gray-200 border border-gray-300 rounded-lg">
+                        <div class="p-1 bg-white rounded-full h-7 w-7">
+                            <img src="https://cdn.ostad.app/public/upload/2023-06-07T09-55-30.105Z-product-design.png" alt="">
+                        </div>
+                        <div>
+                            <h2 class="text-sm font-medium">Product Management & Design</h2>
+                            <p class="text-xs">• ১২ কোর্স • ৩ ওয়ার্কশপ</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center h-full gap-3 p-2 bg-gray-200 border border-gray-300 rounded-lg">
+                        <div class="p-1 bg-white rounded-full h-7 w-7">
+                            <img src="https://cdn.ostad.app/public/upload/2023-06-07T09-54-47.357Z-business-and-marketing.png" alt="">
+                        </div>
+                        <div>
+                            <h2 class="text-sm font-medium">Business & Marketing</h2>
+                            <p class="text-xs">• ১২ কোর্স </p>
+                        </div>
+                    </div>
+                    <div class="absolute -right-3 top-2">
+                        <h2 class="flex items-center justify-center text-xl font-medium bg-white border border-gray-300 rounded-full h-9 w-9">
+                            ></h2>
+                    </div>
+                </div>
+                <div class="grid grid-cols-4 gap-5 my-6">
+                    <div class="flex flex-col h-full border border-gray-300 rounded-lg hover:border-gray-500 ">
+                        <img class="rounded-t-lg" src="https://cdn.ostad.app/course/cover/2024-11-07T11-20-54.741Z-Course%20Thumbnail%2008%20(1).jpg" alt="">
+                        <div class="flex items-center justify-between gap-2 p-3">
+                            <p class="inline-block px-3 py-1 text-xs bg-gray-200 rounded">ব্যাচ ৬ </p>
+                            <p class="inline-block px-3 py-1 text-xs bg-gray-200 rounded"> ১৪৭ সিট বাকি
+                            </p>
+                            <p class="inline-block px-3 py-1 text-xs bg-gray-200 rounded"> ১৯ দিন বাকি
+                            </p>
+                        </div>
+                        <hr class="border-gray-400">
+                        <div class="flex-grow p-3 ">
+                            <h2 class="text-xl font-bold">Full Stack Web Development with PHP, Laravel & Vue Js</h2>
+                        </div>
+
+                        <div style="background-color: #f9f9fa;" class="rounded-b-lg">
+                            <div class="p-3 mt-auto">
+                                <button class="flex items-center justify-center w-full h-12 gap-2 text-sm font-medium text-black bg-gray-200 rounded-lg hover:bg-gray-300">
+                                    <p>বিস্তারিত দেখি</p>
+                                    <img class="transition-all duration-200 w-6 h-6 min-w-[24px]"
+                                        src="https://cdn.ostad.app/public/icons/arrow-right-line.svg" alt="">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col h-full border border-gray-300 rounded-lg hover:border-gray-500 ">
+                        <img class="rounded-t-lg" src="https://cdn.ostad.app/course/cover/2024-10-02T14-53-18.212Z-Course%20Thumbnail%2006.jpg" alt="">
+                        <div class="flex items-center justify-between gap-2 p-3">
+                            <p class="inline-block px-3 py-1 text-xs bg-gray-200 rounded"> ব্যাচ ৯ </p>
+                            <p class="inline-block px-3 py-1 text-xs bg-gray-200 rounded">২৭ সিট বাকি
+                            </p>
+                            <p class="inline-block px-3 py-1 text-xs bg-gray-200 rounded">১৮ দিন বাকি
+                            </p>
+                        </div>
+                        <hr class="border-gray-400">
+                        <div class="flex-grow p-3">
+                            <h2 class="text-xl font-bold">App Development with Flutter</h2>
+                        </div>
+
+                        <div style="background-color: #f9f9fa;" class="rounded-b-lg">
+                            <div class="p-3 mt-auto">
+                                <button class="flex items-center justify-center w-full h-12 gap-2 text-sm font-medium text-black bg-gray-200 rounded-lg hover:bg-gray-300">
+                                    <p>বিস্তারিত দেখি</p>
+                                    <img class="transition-all duration-200 w-6 h-6 min-w-[24px]"
+                                        src="https://cdn.ostad.app/public/icons/arrow-right-line.svg" alt="">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col h-full border border-gray-300 rounded-lg hover:border-gray-500 ">
+                        <img class="rounded-t-lg" src="https://cdn.ostad.app/course/cover/2024-05-03T08-13-25.897Z-Coding-Interview-Preparation-(Local+Remote-Job).jpg" alt="">
+                        <div class="flex items-center justify-between gap-2 p-3">
+                            <p class="inline-block px-3 py-1 text-xs bg-gray-200 rounded">ব্যাচ ৪ </p>
+                            <p class="inline-block px-3 py-1 text-xs bg-gray-200 rounded"> ১০৭ সিট বাকি
+                            </p>
+                            <p class="inline-block px-3 py-1 text-xs bg-gray-200 rounded"> ১৬ দিন বাকি
+                            </p>
+                        </div>
+                        <hr class="border-gray-400">
+                        <div class="flex-grow p-3">
+                            <h2 class="text-xl font-bold">Coding Interview Preparation (Local+Remote Job)
+                            </h2>
+                        </div>
+
+                        <div style="background-color: #f9f9fa;" class="rounded-b-lg">
+                            <div class="p-3 mt-auto">
+                                <button class="flex items-center justify-center w-full h-12 gap-2 text-sm font-medium text-black bg-gray-200 rounded-lg hover:bg-gray-300">
+                                    <p>বিস্তারিত দেখি</p>
+                                    <img class="transition-all duration-200 w-6 h-6 min-w-[24px]"
+                                        src="https://cdn.ostad.app/public/icons/arrow-right-line.svg" alt="">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col h-full border border-gray-300 rounded-lg hover:border-gray-500 ">
+                        <img class="rounded-t-lg" src="https://cdn.ostad.app/course/cover/2024-08-27T12-45-24.989Z-WhatsApp%20Image%202024-08-27%20at%2018.44.14_428d3031.jpg" alt="">
+                        <div class="flex items-center justify-between gap-2 p-3">
+                            <p class="inline-block px-3 py-1 text-xs bg-gray-200 rounded">ব্যাচ ৯ </p>
+                            <p class="inline-block px-3 py-1 text-xs bg-gray-200 rounded"> ১৫ সিট বাকি
+                            </p>
+                            <p class="inline-block px-3 py-1 text-xs bg-gray-200 rounded"> ১৫ দিন বাকি
+                            </p>
+                        </div>
+                        <hr class="border-gray-400">
+                        <div class="flex-grow p-3">
+                            <h2 class="text-xl font-bold">SQA: Manual & Automated Testing</h2>
+                        </div>
+
+                        <div style="background-color: #f9f9fa;" class="rounded-b-lg">
+                            <div class="p-3 mt-auto">
+                                <button class="flex items-center justify-center w-full h-12 gap-2 text-sm font-medium text-black bg-gray-200 rounded-lg hover:bg-gray-300">
+                                    <p>বিস্তারিত দেখি</p>
+                                    <img class="transition-all duration-200 w-6 h-6 min-w-[24px]"
+                                        src="https://cdn.ostad.app/public/icons/arrow-right-line.svg" alt="">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col h-full border border-gray-300 rounded-lg hover:border-gray-500 ">
+                        <img class="rounded-t-lg" src="https://cdn.ostad.app/course/cover/2024-10-02T14-42-04.811Z-Course%20Thumbnail%2005%20v2.jpg" alt="">
+                        <div class="flex items-center justify-between gap-2 p-3">
+                            <p class="inline-block px-3 py-1 text-xs bg-gray-200 rounded">ব্যাচ ৯ </p>
+                            <p class="inline-block px-3 py-1 text-xs bg-gray-200 rounded"> ১১৮ সিট বাকি
+                            </p>
+                            <p class="inline-block px-3 py-1 text-xs bg-gray-200 rounded"> ৪৬ দিন বাকি
+                            </p>
+                        </div>
+                        <hr class="border-gray-400">
+                        <div class="flex-grow p-3">
+                            <h2 class="text-xl font-bold">Full Stack Web Development with JavaScript (MERN)
+                            </h2>
+                        </div>
+
+                        <div style="background-color: #f9f9fa;" class="rounded-b-lg">
+                            <div class="p-3 mt-auto">
+                                <button class="flex items-center justify-center w-full h-12 gap-2 text-sm font-medium text-black bg-gray-200 rounded-lg hover:bg-gray-300">
+                                    <p>বিস্তারিত দেখি</p>
+                                    <img class="transition-all duration-200 w-6 h-6 min-w-[24px]"
+                                        src="https://cdn.ostad.app/public/icons/arrow-right-line.svg" alt="">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col h-full border border-gray-300 rounded-lg hover:border-gray-500">
+                        <img class="rounded-t-lg" src="https://cdn.ostad.app/course/cover/2024-10-17T12-24-54.341Z-63%20Thumbnail%2016-9.jpg" alt="">
+                        <div class="flex items-center justify-between gap-2 p-3">
+                            <p class="inline-block px-3 py-1 text-xs bg-gray-200 rounded">ব্যাচ ৪ </p>
+                            <p class="inline-block px-3 py-1 text-xs bg-gray-200 rounded"> ৩৬ সিট বাকি
+                            </p>
+                            <p class="inline-block px-3 py-1 text-xs bg-gray-200 rounded"> ১২ দিন বাকি
+                            </p>
+                        </div>
+                        <hr class="border-gray-400">
+                        <div class="flex-grow p-3">
+                            <h2 class="text-xl font-bold">Mastering Webflow</h2>
+                        </div>
+
+                        <div style="background-color: #f9f9fa;" class="rounded-b-lg">
+                            <div class="p-3 mt-auto">
+                                <button class="flex items-center justify-center w-full h-12 gap-2 text-sm font-medium text-black bg-gray-200 rounded-lg hover:bg-gray-300">
+                                    <p>বিস্তারিত দেখি</p>
+                                    <img class="transition-all duration-200 w-6 h-6 min-w-[24px]"
+                                        src="https://cdn.ostad.app/public/icons/arrow-right-line.svg" alt="">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <button class="flex items-center justify-center w-1/2 h-12 gap-2 mx-auto text-sm font-medium text-black bg-gray-200 rounded-lg hover:bg-gray-300">
+                    <p>সব দেখুন</p>
+                    <img class="transition-all duration-200 w-6 h-6 min-w-[24px]"
+                        src="https://cdn.ostad.app/public/icons/arrow-right-line.svg" alt="">
+                </button>
+            </div>
+
+            <!-- Free seminar section -->
+            <div class="relative p-5 my-16 bg-gray-900 border rounded-lg shadow mx-8">
+                <img class="absolute opacity-50 left-20 top-20 w-14" src="https://cdn.ostad.app/public/upload/2024-02-28T09-51-22.343Z-idea-lightbulb.svg" alt="">
+                <img class="absolute w-20 opacity-50 top-10 right-10" src="https://cdn.ostad.app/public/upload/2024-02-28T09-50-36.664Z-setting-2.svg" alt="">
+                <img class="absolute opacity-50 w-14 bottom-10 left-40" src="https://cdn.ostad.app/public/upload/2024-02-28T09-51-48.479Z-megaphone.svg" alt="">
+                <h2 style="color: #12b76a;" class="my-4 text-3xl font-bold text-center">ফ্রি ওয়েবিনার দেখুন
+                </h2>
+                <p class="text-center text-white">দেখে নিন কি কি পাচ্ছেন ওস্তাদের লাইভ কোর্সে জয়েন করলে
+                </p>
+                <div class="flex items-center mt-10 mb-6">
+                    <div class="flex items-center w-2/5 gap-2">
+                        <img src="https://cdn.ostad.app/public/upload/2024-02-18T07-00-30.968Z-Webinar123.svg" alt="">
+                        <h2 class="text-2xl font-bold text-white">আপকামিং লাইভ ওয়েবিনার</h2>
+                    </div>
+                    <div style="background:#475467; height: 1px;" class="w-3/5"></div>
+                </div>
+                <div class="grid grid-cols-3 gap-5">
+                    <div class="flex flex-col h-full p-5 bg-white border border-gray-300 rounded-lg cursor-pointer hover:border-2 hover:border-yellow-700">
+                        <img class="rounded-lg" src="https://cdn.ostad.app/course/photo/2024-11-07T09-42-27.782Z-next.jpg" alt="">
+                        <p class="my-4 text-xs ">Frontend Web Development with React.Js and Next.Js</p>
+                        <h2 class="flex-grow mb-4 text-xl font-bold">Kickstart your Frontend career with Next.js and React.js</h2>
+                        <div>
+                            <div style="color: rgb(255,140,75);" class="flex items-center gap-2 mb-5">
+                                <i class="text-xl fa-solid fa-calendar-days"></i>
+                                <p class="text-sm">রবিবার, ১০ নভেম্বর, রাত ৯:৩০</p>
+                            </div>
+                            <button style="background-color: #fffbee; border: 1px solid #FFC000;" onmouseover="this.style.backgroundColor='#FFE699'" onmouseout="this.style.backgroundColor='#fffbee'" class="flex items-center justify-center w-full h-12 gap-2 text-sm font-medium text-black rounded-lg">
+                                <p>বিস্তারিত দেখি</p>
+                            </button>
+                        </div>
+
+                    </div>
+                    <div class="flex flex-col h-full p-5 bg-white border border-gray-300 rounded-lg cursor-pointer hover:border-2 hover:border-yellow-700">
+                        <img class="rounded-lg" src="https://cdn.ostad.app/course/photo/2024-05-03T08-13-25.897Z-Coding-Interview-Preparation-(Local+Remote-Job).jpg" alt="">
+                        <p class="my-4 text-xs">Coding Interview Preparation (Local+Remote Job)</p>
+                        <h2 class="flex-grow mb-4 text-xl font-bold">কোডিং ইন্টারভিউ ক্র্যাক করার হ্যাকস
+                        </h2>
+                        <div>
+                            <div style="color: rgb(255,140,75);" class="flex items-center gap-2 mb-5">
+                                <i class="text-xl fa-solid fa-calendar-days"></i>
+                                <p class="text-sm">সোমবার, ১১ নভেম্বর, রাত ৯:০০</p>
+                            </div>
+                            <button style="background-color: #fffbee; border: 1px solid #FFC000;" onmouseover="this.style.backgroundColor='#FFE699'" onmouseout="this.style.backgroundColor='#fffbee'" class="flex items-center justify-center w-full h-12 gap-2 text-sm font-medium text-black rounded-lg">
+                                <p>বিস্তারিত দেখি</p>
+                            </button>
+                        </div>
+
+                    </div>
+                    <div class="flex flex-col h-full p-5 bg-white border border-gray-300 rounded-lg cursor-pointer hover:border-2 hover:border-yellow-700">
+                        <img class="rounded-lg" src="https://cdn.ostad.app/course/photo/2024-11-05T12-45-05.911Z-Thumbnail%20(1)%20(1)%20(1).jpg" alt="">
+                        <p class="my-4 text-xs">UI UX Design Career Track Program</p>
+                        <h2 class="flex-grow mb-4 text-xl font-bold">Top Job Platforms for UI/UX Designers
+                        </h2>
+                        <div>
+                            <div style="color: rgb(255,140,75);" class="flex items-center gap-2 mb-5">
+                                <i class="text-xl fa-solid fa-calendar-days"></i>
+                                <p class="text-sm">সোমবার, ১১ নভেম্বর, রাত ৯:০০</p>
+                            </div>
+                            <button style="background-color: #fffbee; border: 1px solid #FFC000;" onmouseover="this.style.backgroundColor='#FFE699'" onmouseout="this.style.backgroundColor='#fffbee'" class="flex items-center justify-center w-full h-12 gap-2 text-sm font-medium text-black rounded-lg">
+                                বিস্তারিত দেখি
+                            </button>
+                        </div>
+
+                    </div>
+
+
+                </div>
+                <div class="flex items-center mt-10 mb-6">
+                    <div class="flex items-center w-1/3 gap-2">
+                        <img src="https://cdn.ostad.app/public/upload/2024-02-18T07-04-26.051Z-VideosBLUE.svg" alt="">
+                        <h2 class="text-2xl font-bold text-white">পূর্ববর্তী ওয়েবিনারসমূহ</h2>
+                    </div>
+                    <div style="background:#475467; height: 1px;" class="w-2/3"></div>
+                </div>
+                <div class="grid grid-cols-3 gap-5">
+                    <div class="flex flex-col h-full p-5 bg-white border border-gray-300 rounded-lg cursor-pointer hover:border-2 hover:border-yellow-700">
+                        <img class="rounded-lg" src="https://cdn.ostad.app/course/photo/2024-11-07T13-34-17.205Z-Untitled-1%20(18).jpg" alt="">
+                        <p class="my-4 text-xs ">Data Science & Machine Learning with Python for Beginners
+                        </p>
+                        <h2 class="flex-grow mb-4 text-xl font-bold">ডাটা এনালিস্ট হবার রোডম্যাপ ২০২৫
+                        </h2>
+                        <div>
+                            <p class="text-xs">ফ্রি ওয়েবিনারটি হয়েছে</p>
+                            <div class="flex items-center gap-2 mb-5">
+                                <i class="text-xl fa-solid fa-calendar-days"></i>
+                                <p class="text-sm">রবিবার, ১০ নভেম্বর, রাত ৯:৩০</p>
+                            </div>
+                            <button class="flex items-center justify-center w-full h-12 gap-2 text-sm font-medium text-white bg-gray-900 rounded-lg hover:bg-gray-700">
+                                <p>বিস্তারিত দেখি</p>
+                            </button>
+                        </div>
+
+                    </div>
+                    <div class="flex flex-col h-full p-5 bg-white border-2 rounded-lg cursor-pointer hover:border-2 hover:border-yellow-700">
+                        <img class="rounded-lg" src="https://cdn.ostad.app/course/photo/2024-09-12T12-32-56.185Z-Digital-Product-Management-copy1.jpg" alt="">
+                        <p class="my-4 text-xs ">Digital Product Management</p>
+                        <h2 class="flex-grow mb-4 text-xl font-bold">প্রোডাক্ট ম্যানেজার হবার রোডম্যাপ ২০২৫
+                        </h2>
+                        <div>
+                            <p class="text-xs">ফ্রি ওয়েবিনারটি হয়েছে</p>
+                            <div class="flex items-center gap-2 mb-5">
+                                <i class="text-xl fa-solid fa-calendar-days"></i>
+                                <p class="text-sm">রবিবার, ১০ নভেম্বর, রাত ৯:৩০</p>
+                            </div>
+                            <button class="flex items-center justify-center w-full h-12 gap-2 text-sm font-medium text-white bg-gray-900 rounded-lg hover:bg-gray-700">
+                                <p>বিস্তারিত দেখি</p>
+                            </button>
+                        </div>
+
+                    </div>
+                    <div class="flex flex-col h-full p-5 bg-white border border-gray-300 rounded-lg cursor-pointer hover:border-2 hover:border-yellow-700">
+                        <img class="rounded-lg" src="https://cdn.ostad.app/course/photo/2024-10-02T14-53-18.212Z-Course%20Thumbnail%2006.jpg" alt="">
+                        <p class="my-4 text-xs ">App Development with Flutter</p>
+                        <h2 class="flex-grow mb-4 text-xl font-bold">কোডিং ব্যাকগ্রাউন্ড ছাড়াই Flutter শিখে কীভাবে ক্যারিয়ার শুরু করবেন?
+                        </h2>
+                        <div>
+                            <p class="text-xs">ফ্রি ওয়েবিনারটি হয়েছে</p>
+                            <div class="flex items-center gap-2 mb-5">
+                                <i class="text-xl fa-solid fa-calendar-days"></i>
+                                <p class="text-sm">রবিবার, ১০ নভেম্বর, রাত ৯:৩০</p>
+                            </div>
+                            <button class="flex items-center justify-center w-full h-12 gap-2 text-sm font-medium text-white bg-gray-900 rounded-lg hover:bg-gray-700">
+                                <p>বিস্তারিত দেখি</p>
+                            </button>
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+                <button class="flex items-center justify-center w-1/3 h-12 gap-2 mx-auto my-6 text-sm font-medium text-black bg-gray-200 rounded-lg hover:bg-gray-300">
+                    <p>সব ওয়েবিনার দেখুন</p>
+                    <img class="transition-all duration-200 w-6 h-6 min-w-[24px]"
+                        src="https://cdn.ostad.app/public/icons/arrow-right-line.svg" alt="">
+                </button>
+
+            </div>
+
+
+
+
+
+
+        </div>
+    </div>
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/library-name@version/library.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/home.js"></script>
+</body>
+
+</html>

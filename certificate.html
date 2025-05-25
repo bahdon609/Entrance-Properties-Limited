@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Entrance Properties Limited</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+    <link href="./css/style.css" rel="stylesheet" />
+    <link href="./css/courses.css" rel="stylesheet" />
+</head>
+
+<body class="bg-gray-100 font-sans leading-normal tracking-normal">
+    <!-- Sidebar Component -->
+    <div class="flex gap-4 w-full">
+        <!-- Sidebar -->
+        <div id="sidebar" class="w-64 shadow-md z-50 bg-white text-white h-screen overflow-y-auto fixed p-4 transition-transform transform -translate-x-full md:translate-x-0">
+            <div class="bg-white rounded w-full">
+                <img class="rounded h-20 object-contain w-full" src="./assets/logo.png" alt="Logo" />
+            </div>
+            <!-- Menu Items -->
+            <div class="flex flex-col justify-between mt-2">
+                <ul id="sidebarMenu" class="w-full">
+                    <!-- Overview Section -->
+                    <li class="font-bold text-sm text_color_primary my-2">Overview</li>
+                    <li class="mb-2">
+                        <a href="index.html" class="sidebar-link flex items-center gap-2 py-1.5 rounded hover:bg-gray-100 text-gray-700" id="homeLink">
+                            <i class="fas fa-home icon_color text-white p-2 text-xs rounded"></i>
+                            <span class="font-bold">Home</span>
+                        </a>
+                    </li>
+
+                    <li class="mb-2">
+                        <a href="about.html" class="sidebar-link flex items-center gap-2 py-1.5 rounded hover:bg-gray-100 text-gray-700" id="aboutLink">
+                            <i class="fas fa-home icon_color text-white p-2 text-xs rounded"></i>
+                            <span class="font-bold">About Us</span>
+                        </a>
+                    </li>
+
+                    <li class="mb-2">
+                        <a href="photo.html" class="sidebar-link flex items-center gap-2 py-1.5 rounded hover:bg-gray-100 text-gray-700" id="photoLink">
+                            <i class="fas fa-info-circle icon_color text-white p-2 text-xs rounded"></i>
+                            <span class="font-bold">Photo Gallery</span>
+                        </a>
+                    </li>
+
+                    <li class="mb-2">
+                        <a href="video.html" class="sidebar-link flex items-center gap-2 py-1.5 rounded hover:bg-gray-100 text-gray-700" id="videoLink">
+                            <i class="fas fa-info-circle icon_color text-white p-2 text-xs rounded"></i>
+                            <span class="font-bold">Video Gallery</span>
+                        </a>
+                    </li>
+
+                    <li class="mb-2">
+                        <a href="blog.html" class="sidebar-link flex items-center gap-2 py-1.5 rounded hover:bg-gray-100 text-gray-700" id="blogLink">
+                            <i class="fas fa-info-circle icon_color text-white p-2 text-xs rounded"></i>
+                            <span class="font-bold">Blog & Event</span>
+                        </a>
+                    </li>
+
+                    <li class="mb-2">
+                        <a href="contact.html" class="sidebar-link flex items-center gap-2 py-1.5 rounded hover:bg-gray-100 text-gray-700" id="contactLink">
+                            <i class="fas fa-info-circle icon_color text-white p-2 text-xs rounded"></i>
+                            <span class="font-bold">Contact Us</span>
+                        </a>
+                    </li>
+
+                    <li class="font-bold text-sm text_color_primary my-1">
+                        Uttara
+                    </li>
+
+                    <li class="mb-2">
+                        <a href="bashundhara.html" class="sidebar-link flex items-center gap-2 py-1.5 rounded hover:bg-gray-100 text-gray-700" id="courseLinks">
+                            <i class="fas fa-info-circle icon_color text-white p-2 text-xs rounded"></i>
+                            <span class="font-bold">Basundhara</span>
+                        </a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="uttara.html" class="sidebar-link flex items-center gap-2 py-1.5 rounded hover:bg-gray-100 text-gray-700" id="serviceLink">
+                            <i class="fas fa-info-circle icon_color text-white p-2 text-xs rounded"></i>
+                            <span class="font-bold">Uttara</span>
+                        </a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="mirpur.html" class="sidebar-link flex items-center gap-2 py-1.5 rounded hover:bg-gray-100 text-gray-700" id="student_certificateLinkss">
+                            <i class="fas fa-info-circle icon_color text-white p-2 text-xs rounded"></i>
+                            <span class="font-bold">Mirpur</span>
+                        </a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="mohammadpur.html" class="sidebar-link flex items-center gap-2 py-1.5 rounded hover:bg-gray-100 text-gray-700" id="registration_formLinks">
+                            <i class="fas fa-info-circle icon_color text-white p-2 text-xs rounded"></i>
+                            <span class="font-bold">Mohammadpur</span>
+                        </a>
+                    </li>
+
+
+                </ul>
+            </div>
+        </div>
+        <!-- main content -->
+        <div class="md:ml-64 w-full">
+            <div class="bg-white w-full lg:px-8 fixed shadow-md flex flex-row  z-40 ">
+                <div class="justify-end items-end w-full pr-60 relative hidden lg:flex">
+                    <div class="relative group">
+                        <img class="rounded-full h-16 py-2 w-16 object-contain cursor-pointer" src="https://dubaitickets.tours/wp-content/uploads/2023/03/img-worlds-of-adventure-dubai-ticket-9.jpg" alt="Logo" />
+                        <div id="dropdowns1" class="absolute right-0  w-44 bg-white  shadow-lg hidden">
+                            <ul class="">
+                                <li><a href="#" class="block text-gray-700  p-2 purple_color ">Login</a></li>
+                                <li><a href="#" class="block text-gray-700 p-2 purple_color ">Mohammadpur</a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:hidden py-2 px-6  flex justify-between  gap-5 w-full">
+                    <div class="bg-white rounded w-full">
+                        <img class="rounded h-14 w-32 object-contain " src="./assets/logo.png" alt="Logo" />
+                    </div>
+                    <button id="menuButton" class="text-gray-800 focus:outline-none">
+            <i class="fas fa-bars text-2xl"></i>
+          </button>
+                </div>
+            </div>
+
+            <div class="mt-20 mx-4">
+                <div class="max-w-4xl mx-auto bg-white shadow-md p-6 rounded-lg">
+                    <!-- Header Section -->
+                    <div class="text-center border-b pb-4">
+                        <h1 class="text-lg font-bold">Premium College</h1>
+                        <p class="text-sm">Dumuria, Khulna - 9250</p>
+                        <p class="text-sm">https://demopremium.edu.bd</p>
+                    </div>
+
+                    <!-- Mohammadpur Information -->
+                    <div class="mt-4">
+                        <h2 class="text-md font-bold mb-2 border-b pb-2">Mohammadpur Information</h2>
+                        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm">
+                            <div><span class="font-bold">Type:</span> HSC</div>
+                            <div><span class="font-bold">Class:</span> Eleven</div>
+                            <div><span class="font-bold">Year:</span> 2023</div>
+                            <div><span class="font-bold">Session:</span> 2021-2022</div>
+                            <div><span class="font-bold">Shift:</span> Day</div>
+                            <div><span class="font-bold">Section:</span> A</div>
+                            <div><span class="font-bold">Reg. No:</span> 4352345</div>
+                            <div><span class="font-bold">Board Roll:</span> 1245678</div>
+                            <div><span class="font-bold">Category:</span> General</div>
+                            <div><span class="font-bold">Discount:</span> </div>
+                            <div><span class="font-bold">Class Roll:</span> 1007</div>
+                            <div><span class="font-bold">Mohammadpur Date:</span> 26 September 2023</div>
+                        </div>
+                    </div>
+
+                    <!-- Personal Information -->
+                    <div class="mt-6">
+                        <h2 class="text-md font-bold mb-2 border-b pb-2">Personal Information</h2>
+                        <div class="flex items-start gap-4">
+                            <div class="w-3/4">
+                                <p class="text-sm"><span class="font-bold">Name:</span> Lila Nag</p>
+                                <p class="text-sm"><span class="font-bold">Phone:</span> 01727800000</p>
+                                <p class="text-sm"><span class="font-bold">Permanent Address:</span> Dumuria - 9250, Dumuria, Khulna.</p>
+                                <p class="text-sm"><span class="font-bold">Nationality:</span> Bangladeshi</p>
+                                <p class="text-sm"><span class="font-bold">National ID No.:</span> 456374563465</p>
+                                <p class="text-sm"><span class="font-bold">Date of Birth:</span> 01 Jun 2024</p>
+                                <p class="text-sm"><span class="font-bold">Marital Status:</span> Unmarried</p>
+                                <p class="text-sm"><span class="font-bold">Religion:</span> Sanatan</p>
+                                <p class="text-sm"><span class="font-bold">Blood Group:</span> O+</p>
+                            </div>
+                            <div class="w-1/4">
+                                <img src="https://via.placeholder.com/100" alt="Student Image" class="rounded-lg shadow-md">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Family Information -->
+                    <div class="mt-6 grid grid-cols-1 md:grid-cols-3 gap-4">
+                        <div>
+                            <h3 class="font-bold border-b pb-1">Father Information</h3>
+                            <p class="text-sm">Name: Hemonto Nag</p>
+                            <p class="text-sm">Phone: 01920700000</p>
+                        </div>
+                        <div>
+                            <h3 class="font-bold border-b pb-1">Mother Information</h3>
+                            <p class="text-sm">Name: Nilanjana Nag</p>
+                        </div>
+                        <div>
+                            <h3 class="font-bold border-b pb-1">Guardian Information</h3>
+                            <p class="text-sm">Name: Hemonto Nag</p>
+                            <p class="text-sm">Phone: 01920700000</p>
+                        </div>
+                    </div>
+
+                    <!-- Subjects -->
+                    <div class="mt-6">
+                        <h2 class="text-md font-bold mb-2 border-b pb-2">Student Subjects</h2>
+                        <ul class="list-disc list-inside text-sm">
+                            <li>101 - Bangla 1st</li>
+                            <li>107 - English 1st</li>
+                            <li>275 - ICT</li>
+                            <li>174 - Physics 1st</li>
+                            <li>176 - Chemistry 1st</li>
+                            <li>178 - Biology 1st</li>
+                            <li>265 - Higher Math 1st (4th)</li>
+                        </ul>
+                    </div>
+
+                    <!-- Footer Section -->
+                    <div class="mt-6 flex justify-between items-center text-sm border-t pt-4">
+                        <div>
+                            <p class="font-bold">Signature of Student</p>
+                            <p>Lila Nag</p>
+                        </div>
+                        <div class="text-right">
+                            <p class="font-bold">Signature</p>
+                            <p>Demo Principal</p>
+                            <p>Principal (In Charge)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const container = document.querySelector('.group'); // Select the parent container
+            const dropdown = document.getElementById('dropdowns1'); // Select the dropdown element
+
+            // Show dropdown on hover
+            container.addEventListener('mouseenter', () => {
+                dropdown.classList.remove('hidden');
+            });
+
+            // Hide dropdown when not hovering
+            container.addEventListener('mouseleave', () => {
+                dropdown.classList.add('hidden');
+            });
+        });
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/library-name@version/library.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/home.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000, // Global duration
+        });
+
+        const tab1 = document.getElementById("tab1");
+        const tab2 = document.getElementById("tab2");
+        const tab3 = document.getElementById("tab3");
+
+        const tabContent1 = document.getElementById("tabContent1");
+        const tabContent2 = document.getElementById("tabContent2");
+        const tabContent3 = document.getElementById("tabContent3");
+
+        tab1.addEventListener("click", () => {
+            tabContent1.classList.remove("hidden");
+            tabContent2.classList.add("hidden");
+            tabContent3.classList.add("hidden");
+        });
+
+        tab2.addEventListener("click", () => {
+            tabContent1.classList.add("hidden");
+            tabContent2.classList.remove("hidden");
+            tabContent3.classList.add("hidden");
+        });
+
+        tab3.addEventListener("click", () => {
+            tabContent1.classList.add("hidden");
+            tabContent2.classList.add("hidden");
+            tabContent3.classList.remove("hidden");
+        });
+    </script>
+</body>
+
+</html>

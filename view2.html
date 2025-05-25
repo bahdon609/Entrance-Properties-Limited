@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Entrance Properties Limited</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+    <link href="./css/style.css" rel="stylesheet" />
+    <link href="./css/regi_Form.css" rel="stylesheet" />
+
+    <style>
+        @media print {
+            body {
+                -webkit-print-color-adjust: exact;
+                /* For Safari/Chrome */
+                print-color-adjust: exact;
+                /* For modern browsers */
+            }
+        }
+        /* Custom CSS for the label transition */
+        
+        .floating-label-group input:focus~label,
+        .floating-label-group input:not(:placeholder-shown)~label {
+            transform: translateY(-1.5rem);
+            font-size: 0.75rem;
+            color: #8a2be2;
+            /* Adjust to desired color */
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100 font-sans leading-normal tracking-normal">
+    <section>
+        <div class="bg-white w-full lg:max-w-3xl lg:mx-auto my-2">
+            <!-- Header Section -->
+            <!-- <div class="flex justify-between items-start  ">
+                <div class="w-6/12 h-12 base_color">
+                    <img class="h-full w-full  pb-2 text-white  object-contain" src="./assets/i1.png"
+                        alt="">
+                </div>
+                <div class="w-6/12 ">
+                    <h1 class="base_color h-12 text-white text-center text-xl py-2 uppercase ">Trainee
+                        Information
+                    </h1>
+                </div>
+            </div> -->
+            <div class="px-6">
+                <div class="flex justify-between items-start">
+                    <div class="text-center">
+                        <div class="mt-6">
+
+                            <h2 class="text_base_color text-3xl uppercase font-extrabold bg-purple-100 px-2">
+                                Trainee Mohammadpur Form
+                            </h2>
+                        </div>
+                        <div class="flex mt-6">
+                            <div class="font-bold text_color">
+                                Form No:
+                                <input type="text" class="inline-block w-32 px-2 focus:outline-none focus:border-gray-500" />
+                            </div>
+                            <div class="font-bold text_color">
+                                Reference Name :<input type="text" class="px-2 w-32 focus:outline-none focus:border-gray-500 ml-2" />
+                            </div>
+                        </div>
+                        <div class="flex mt-3 text_color">
+                            <div class="font-bold ">
+                                Print Date :<input type="" class="px-2 w-28 focus:outline-none focus:border-gray-500 ml-2" />
+                            </div>
+
+                            <div class="font-bold">
+                                Mohammadpur Date :<input type="number" class="px-2 w-32 focus:outline-none focus:border-gray-500 ml-2" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border-purple-800 w-36 h-42 flex items-center justify-center text-gray-500 p-2 text-center font-bold text-base">
+                        <!-- Passport Size Photo -->
+                        <img class="w-full h-full object-cover" src="https://erp.bau.edu.bd/public/photos/employee_photo/99547160965b8b7edef2cb81632ed2a9.jpg" alt="" />
+                    </div>
+                </div>
+
+                <!-- Form and Date -->
+
+                <div class="base_color text-white font-semibold p-1 text-center mt-2">
+                    Student Information
+                </div>
+                <!-- Form Fields -->
+                <form class="space-y-3 pt-4">
+                    <div class="flex justify-between items-center gap-5">
+                        <div class="flex items-end w-6/12 text-sm font-normal">
+                            Full Name :<input type="text" placeholder="Full Name" class="border-b text-sm border-gray-500 inline-block flex-grow px-2 focus:outline-none focus:border-gray-500 ml-2" />
+                        </div>
+                        <div class="flex items-end w-6/12 text-sm font-normal">
+                            National ID :
+                            <input type="text" placeholder="Phone Number" class="border-b border-gray-500 inline-block flex-grow px-2 focus:outline-none focus:border-gray-500 ml-2" />
+                        </div>
+                    </div>
+
+                    <div class="flex justify-between items-center gap-5 text-sm font-normal">
+                        <div class="flex items-end w-6/12">
+                            Mobile Number :<input type="text" placeholder="Mobile Number" class="border-b border-gray-500 inline-block flex-grow px-2 focus:outline-none focus:border-gray-500 ml-2" />
+                        </div>
+                        <div class="flex items-end w-6/12">
+                            Occupation :
+                            <input type="text" placeholder="Occupation" class="border-b border-gray-500 inline-block flex-grow px-2 focus:outline-none focus:border-gray-500 ml-2" />
+                        </div>
+
+
+                    </div>
+
+                    <div class="flex justify-between items-center gap-5 text-sm font-normal">
+                        <div class="flex items-end w-6/12">
+                            Email Address :<input type="text" placeholder="Email Address" class="border-b border-gray-500 inline-block flex-grow px-2 focus:outline-none focus:border-gray-500 ml-2" />
+                        </div>
+                        <div class="flex items-end w-6/12">
+                            Blood Group :
+                            <input type="text" placeholder="Blood Group" class="border-b border-gray-500 inline-block flex-grow px-2 focus:outline-none focus:border-gray-500 ml-2" />
+                        </div>
+                    </div>
+
+                    <div class="flex justify-between items-center gap-5 text-sm font-normal">
+                        <div class="flex items-end w-6/12">
+                            Date of Birth :<input type="text" placeholder=" Date of Birth" class="border-b border-gray-500 inline-block flex-grow px-2 focus:outline-none focus:border-gray-500 ml-2" />
+                        </div>
+                        <div class="flex items-end w-6/12 text-sm font-normal">
+                            Gender :
+                            <input type="text" placeholder="Gender" class="border-b border-gray-500 inline-block flex-grow px-2 focus:outline-none focus:border-gray-500 ml-2" />
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="flex justify-between items-center gap-5 text-sm font-normal">
+                        <div class="flex items-end w-6/12">
+                            Father's Name :<input type="text" placeholder="Father's Name" class="border-b border-gray-500 inline-block flex-grow px-2 focus:outline-none focus:border-gray-500 ml-2" />
+                        </div>
+                        <div class="flex items-end w-6/12">
+                            Number :
+                            <input type="text" placeholder="Number" class="border-b border-gray-500 inline-block flex-grow px-2 focus:outline-none focus:border-gray-500 ml-2" />
+                        </div>
+                    </div>
+                    <div class="flex justify-between items-center gap-5 text-sm font-normal">
+                        <div class="flex items-end w-6/12">
+                            Mother's Name :<input type="text" placeholder="Mother's Name" class="border-b border-gray-500 inline-block flex-grow px-2 focus:outline-none focus:border-gray-500 ml-2" />
+                        </div>
+                        <div class="flex items-end w-6/12">
+                            Number :
+                            <input type="number" placeholder="Number" class="border-b border-gray-500 inline-block flex-grow px-2 focus:outline-none focus:border-gray-500 ml-2" />
+                        </div>
+                    </div>
+
+                    <div class="flex justify-between items-center gap-5 text-sm font-normal">
+                        <div class="flex items-end w-6/12">
+                            Local Guardian's :<input type="text" placeholder="Local Guardian Name" class="border-b border-gray-500 inline-block flex-grow px-2 focus:outline-none focus:border-gray-500 ml-2" />
+                        </div>
+                        <div class="flex items-end w-6/12 text-sm font-normal">
+                            Number :
+                            <input type="number" placeholder="Number" class="border-b border-gray-500 inline-block flex-grow px-2 focus:outline-none focus:border-gray-500 ml-2" />
+                        </div>
+                    </div>
+                    <div class="flex items-end text-sm font-normal">
+                        School/College :
+                        <input type="text" placeholder="School/College" class="border-b text-sm border-gray-500 inline-block flex-grow px-2 focus:outline-none focus:border-gray-500 ml-2" />
+                    </div>
+
+                    <div class="flex items-end text-sm font-normal">
+                        Present Address :
+                        <input type="text" placeholder=" Present Address" class="border-b border-gray-500 inline-block flex-grow px-2 focus:outline-none focus:border-gray-500 ml-2" />
+                    </div>
+                    <div class="flex items-end text-sm font-normal">
+                        Permanent Address :
+                        <input type="text" placeholder="Permanent Address" class="border-b text-sm border-gray-500 inline-block flex-grow px-2 focus:outline-none focus:border-gray-500 ml-2" />
+                    </div>
+
+
+                </form>
+                <!-- Office Only Section -->
+                <div class="base_color text-white font-semibold p-1 mb-4 text-center mt-4">
+                    Course Information
+                </div>
+                <!-- Office Form Fields -->
+                <form class="space-y-3 text-sm font-normal">
+                    <div class="flex justify-between items-center gap-5">
+                        <div class="flex items-end w-6/12">
+                            Course Name :
+                            <input type="text" placeholder="Course Name" class="border-b border-gray-500 inline-block flex-grow px-2 focus:outline-none focus:border-gray-500 ml-2" />
+                        </div>
+                        <div class="flex items-end w-6/12">
+                            Course Fee :
+                            <input type="number" placeholder="Course Fee " class="border-b border-gray-500 inline-block px-2 focus:outline-none focus:border-gray-500 ml-2 flex-grow" />
+                        </div>
+                    </div>
+                    <div class="flex justify-between items-center gap-5 pb-2">
+                        <div class="flex items-end w-6/12">
+                            Batch Name :
+                            <input type="text" placeholder="Batch Name" class="border-b border-gray-500 inline-block px-2 focus:outline-none focus:border-gray-500 ml-2 flex-grow" />
+                        </div>
+                        <div class="flex items-end w-6/12">
+                            ID Card No :
+                            <input type="number" placeholder="ID Card No" class="border-b border-gray-500 inline-block flex-grow px-2 focus:outline-none focus:border-gray-500 ml-2" />
+                        </div>
+                    </div>
+
+
+
+                    <div class="base_color text-white font-semibold p-1 mb-4 text-base text-center mt-6 ">
+                        Terms and Condition
+                    </div>
+
+                    <div class="flex justify-between items-end text-sm font-normal">
+                        <!-- Declaration -->
+                        <div class="text-start text-sm italic text-gray-700 mt-2 flex items-start gap-5">
+                            <div class="flex-1">
+                                <p>
+                                    I am declaring that the information mentioned in the application form is true. Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque neque eveniet illo, ipsa vitae incidunt corrupti voluptatibus aut officia expedita illum atque reprehenderit!
+                                    Voluptatem aspernatur eveniet repellendus commodi, cumque facilis! Lorem ipsum dolor sit.
+                                </p>
+                            </div>
+                            <div class="flex-1">
+                                <p>
+                                    I will obey the rules and regulations of the institution.Doloremque neque eveniet illo, ipsa vitae incidunt corrupti voluptatibus aut officia expedita illum atque reprehenderit! Voluptatem aspernatur eveniet repellendus commodi, cumque facilis! Lorem
+                                    ipsum dolor sit.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex justify-between pt-10 pb-6 text-sm">
+                        <div class="text-center">
+                            <span class="block border-b font-bold border-gray-400 w-52 mx-auto"></span> Trainee Signature
+                        </div>
+
+                        <div class="text-center">
+                            <span class="block border-b font-bold border-gray-400 w-52 mx-auto"></span> Admin Signature
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/library-name@version/library.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/home.js"></script>
+</body>
+
+</html>

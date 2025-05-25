@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Lobster&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.primary_font {
+    font-family: "Hind Siliguri", sans-serif;
+}
+
+.primary_btn {
+    background: #ffcd33;
+}
+
+.primary_btn:hover {
+    background: #fec210;
+}
+
+.grayscale-img {
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+}
+
+.grayscale-img:hover {
+    filter: grayscale(0%);
+}
+
+.selected {
+    background-color: #72C2E7 !important;
+    color: white;
+}
+
+.icon_color {
+    background-color: #72C2E7;
+}
+
+.text_color_primary {
+    color: #0317A4;
+}
+
+.text_color_title {
+    color: #141D38;
+}
+
+.text_color_paragraph {
+    color: #737887;
+}
+
+.gray_color_background {
+    background-color: #EFF1F9;
+}
+
+.button_primary {
+    background-color: #72C2E7;
+    color: white;
+    border-radius: 2px;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px 14px;
+    border: none;
+    transition: .3s all ease-in-out;
+}
+
+.button_primary:hover {
+    background-color: #29439A;
+}
+
+.call_btn {
+    background-color: #00C853;
+}
+
+.call_btn:hover {
+    background-color: #00B84D;
+}
+
+@keyframes grow-shrink {
+    0%,
+    100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.5);
+    }
+}
+
+.animate-grow-shrink {
+    animation: grow-shrink 1s ease-in-out infinite;
+}

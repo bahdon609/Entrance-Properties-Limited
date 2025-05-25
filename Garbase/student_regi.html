@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrance Properties Limited</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+    <link href="./css/style.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100 font-sans leading-normal tracking-normal">
+    <!-- Sidebar Component -->
+    <div class="flex  gap-4 w-full ">
+        <!-- Sidebar -->
+        <div id="sidebar" class="w-64 shadow-md z-50 bg-white text-white h-screen fixed p-4 transition-transform transform -translate-x-full md:translate-x-0">
+            <div class="bg-white rounded w-full">
+                <img class="rounded h-20 object-contain w-full" src="./assets/logo.png" alt="Logo" />
+            </div>
+            <!-- Menu Items -->
+            <div class="flex flex-col justify-between mt-2">
+                <ul id="sidebarMenu" class="w-full">
+                    <!-- Overview Section -->
+                    <li class="font-bold text-sm text_color_primary my-2">Overview</li>
+                    <li class="mb-2">
+                        <a href="index.html" class="sidebar-link flex items-center gap-2 p-2 rounded hover:bg-gray-100 text-gray-700" id="homeLink">
+                            <i class="fas fa-home icon_color text-white p-2 text-xs rounded"></i>
+                            <span class="font-bold">Home</span>
+                        </a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="about.html" class="sidebar-link flex items-center gap-2 p-2 rounded hover:bg-gray-100 text-gray-700" id="aboutLink">
+                            <i class="fas fa-home icon_color text-white p-2 text-xs rounded"></i>
+                            <span class="font-bold">About Us</span>
+                        </a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="bashundhara.html" class="sidebar-link flex items-center gap-2 p-2 rounded hover:bg-gray-100 text-gray-700" id="courseLink">
+                            <i class="fas fa-info-circle icon_color text-white p-2 text-xs rounded"></i>
+                            <span class="font-bold">Basundhara</span>
+                        </a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="uttara.html" class="sidebar-link flex items-center gap-2 p-2 rounded hover:bg-gray-100 text-gray-700" id="serviceLink">
+                            <i class="fas fa-info-circle icon_color text-white p-2 text-xs rounded"></i>
+                            <span class="font-bold">Uttara</span>
+                        </a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="software.html" class="sidebar-link flex items-center gap-2 p-2 rounded hover:bg-gray-100 text-gray-700" id="softwareLink">
+                            <i class="fas fa-info-circle icon_color text-white p-2 text-xs rounded"></i>
+                            <span class="font-bold">Our Softwares</span>
+                        </a>
+                    </li>
+
+                    <li class="mb-2">
+                        <a href="photo.html" class="sidebar-link flex items-center gap-2 p-2 rounded hover:bg-gray-100 text-gray-700" id="photoLink">
+                            <i class="fas fa-info-circle icon_color text-white p-2 text-xs rounded"></i>
+                            <span class="font-bold">Photo Gallery</span>
+                        </a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="video.html" class="sidebar-link flex items-center gap-2 p-2 rounded hover:bg-gray-100 text-gray-700" id="videoLink">
+                            <i class="fas fa-info-circle icon_color text-white p-2 text-xs rounded"></i>
+                            <span class="font-bold">Video Gallery</span>
+                        </a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="blog.html" class="sidebar-link flex items-center gap-2 p-2 rounded hover:bg-gray-100 text-gray-700" id="blogLink">
+                            <i class="fas fa-info-circle icon_color text-white p-2 text-xs rounded"></i>
+                            <span class="font-bold">Blog & Event</span>
+                        </a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="contact.html" class="sidebar-link flex items-center gap-2 p-2 rounded hover:bg-gray-100 text-gray-700" id="contactLink">
+                            <i class="fas fa-info-circle icon_color text-white p-2 text-xs rounded"></i>
+                            <span class="font-bold">Contact Us</span>
+                        </a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="student_regi.html" class="sidebar-link flex items-center gap-2 p-2 rounded hover:bg-gray-100 text-gray-700" id="student_regiLink">
+                            <i class="fas fa-info-circle icon_color text-white p-2 text-xs rounded"></i>
+                            <span class="font-bold">Student Registration</span>
+                        </a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="student_veri.html" class="sidebar-link flex items-center gap-2 p-2 rounded hover:bg-gray-100 text-gray-700" id="student_veriLink">
+                            <i class="fas fa-info-circle icon_color text-white p-2 text-xs rounded"></i>
+                            <span class="font-bold">Student Verification</span>
+                        </a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="course_details.html" class="sidebar-link flex items-center gap-2 p-2 rounded hover:bg-gray-100 text-gray-700" id="courseDetailsLink">
+                            <i class="fas fa-info-circle icon_color text-white p-2 text-xs rounded"></i>
+                            <span class="font-bold">Course Details</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+        <!-- main content -->
+        <div class="md:ml-64 w-full">
+            <div class="bg-white w-full lg:p-8 fixed shadow-md flex flex-row z-40 ">
+                <div class="lg:hidden p-6 flex justify-between  gap-5 w-full">
+                    <h1 class=" "></h1>
+                    <button id="menuButton" class="text-gray-800 focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="bg-white shadow-lg rounded-lg w-full mt-20 p-6 max-w-5xl mx-auto">
+                <!-- Header Section -->
+                <div class="flex justify-between items-center mb-4">
+                    <div class="text-purple-700 font-semibold text-xl uppercase">Let's skill up your career</div>
+                    <div class="text-center">
+                        <h1 class="text-purple-700 text-lg font-bold">Trainee</h1>
+                        <h2 class="text-purple-700 text-3xl font-extrabold">Mohammadpur Form</h2>
+                    </div>
+                    <div class="border-2 border-purple-700 w-24 h-32 flex items-center justify-center text-gray-500 text-sm">
+                        Passport Size Photo
+                    </div>
+                </div>
+                <!-- Form and Date -->
+                <div class="flex justify-between text-sm mb-4">
+                    <div>Form no: <span class="border-b border-gray-500 inline-block w-24"></span></div>
+                    <div>Date: <span class="border-b border-gray-500 inline-block w-24"></span></div>
+                </div>
+                <!-- Trainee Information Section -->
+                <div class="bg-purple-600 text-white font-semibold p-2 text-center mb-4">
+                    Trainee Information
+                </div>
+                <!-- Form Fields -->
+                <form class="space-y-4">
+                    <div class="flex items-center">
+                        <label class="w-1/4">Full Name:</label>
+                        <input type="text" class="border border-gray-400 w-full p-2 rounded-md" placeholder="Enter full name">
+                    </div>
+                    <div class="flex items-center">
+                        <label class="w-1/4">Father/Mother Name:</label>
+                        <input type="text" class="border border-gray-400 w-2/3 p-2 rounded-md" placeholder="Enter parent name">
+                        <label class="ml-4">Number:</label>
+                        <input type="text" class="border border-gray-400 w-1/4 p-2 rounded-md" placeholder="Enter number">
+                    </div>
+                    <div class="flex items-center">
+                        <label class="w-1/4">School/College:</label>
+                        <input type="text" class="border border-gray-400 w-full p-2 rounded-md" placeholder="Enter school/college">
+                    </div>
+                    <div class="flex items-center">
+                        <label class="w-1/4">Job Information:</label>
+                        <input type="text" class="border border-gray-400 w-full p-2 rounded-md" placeholder="Enter job information">
+                    </div>
+                    <div class="flex items-center">
+                        <label class="w-1/4">Email:</label>
+                        <input type="email" class="border border-gray-400 w-2/3 p-2 rounded-md" placeholder="Enter email">
+                        <div class="flex items-center">
+                            <label class="w-1/4">Gender:</label>
+                            <select class="border border-gray-400 w-1/4 p-2 rounded-md">
+                                    <option value="">Select Gender</option>
+                                    <option value="male">Male</option>
+                                    <option value="female">Female</option>
+                                    <option value="other">Other</option>
+                                </select>
+                        </div>
+                    </div>
+                    <div class="flex items-center">
+                        <label class="w-1/4">Present Address:</label>
+                        <input type="text" class="border border-gray-400 w-full p-2 rounded-md" placeholder="Enter present address">
+                    </div>
+                    <div class="flex items-center">
+                        <label class="w-1/4">Permanent Address:</label>
+                        <input type="text" class="border border-gray-400 w-full p-2 rounded-md" placeholder="Enter permanent address">
+                    </div>
+                    <div class="flex items-center">
+                        <label class="w-1/4">NID Number:</label>
+                        <input type="text" class="border border-gray-400 w-full p-2 rounded-md" placeholder="Enter NID number">
+                    </div>
+                    <div class="flex items-center">
+                        <label class="w-1/4">Mobile No:</label>
+                        <input type="text" class="border border-gray-400 w-2/3 p-2 rounded-md" placeholder="Enter mobile number">
+                        <label class="ml-4">Number:</label>
+                        <input type="text" class="border border-gray-400 w-1/4 p-2 rounded-md" placeholder="Enter number">
+                    </div>
+                    <div class="flex items-center">
+                        <label class="w-1/4">Local Guardian's Name:</label>
+                        <input type="text" class="border border-gray-400 w-full p-2 rounded-md" placeholder="Enter guardian's name">
+                    </div>
+                    <div class="flex items-center">
+                        <label class="w-1/4">Date of Birth:</label>
+                        <input type="date" class="border border-gray-400 w-2/3 p-2 rounded-md">
+                        <label class="ml-4">Blood Group:</label>
+                        <input type="text" class="border border-gray-400 w-1/4 p-2 rounded-md" placeholder="Enter blood group">
+                    </div>
+
+                    <!-- Declaration -->
+                    <p class="text-center text-sm italic text-gray-700 mt-4">
+                        I am declaring that the information mentioned in the application form is true.<br> I will obey the rules and regulations of the institution.
+                    </p>
+
+                    <!-- Signature Section -->
+                    <div class="flex justify-between mt-6 text-sm">
+                        <div class="text-center">
+                            <span class="block border-b border-gray-400 w-32 mx-auto mb-2"></span> Reference Signature
+                        </div>
+                        <div class="text-center">
+                            <span class="block border-b border-gray-400 w-32 mx-auto mb-2"></span> Trainee Signature
+                        </div>
+                    </div>
+                </form>
+
+                <!-- Header Section -->
+                <div class="bg-purple-600 text-white font-semibold p-2 mb-4 text-center">
+                    Only For Office
+                </div>
+
+                <!-- Form Fields -->
+                <form class="space-y-4">
+                    <div class="flex items-center">
+                        <label class="w-1/4">Course Name:</label>
+                        <input type="text" class="border border-gray-400 w-full p-2 rounded-md" placeholder="Enter course name">
+                    </div>
+                    <div class="flex items-center">
+                        <label class="w-1/4">Batch No:</label>
+                        <input type="text" class="border border-gray-400 w-1/4 p-2 rounded-md" placeholder="Enter batch no">
+                        <label class="ml-4">Batch Time:</label>
+                        <input type="text" class="border border-gray-400 w-1/4 p-2 rounded-md" placeholder="Enter batch time">
+                    </div>
+                    <div class="flex items-center">
+                        <label class="w-1/4">ID Card No:</label>
+                        <input type="text" class="border border-gray-400 w-1/4 p-2 rounded-md" placeholder="Enter ID card no">
+                        <label class="ml-4">Season No:</label>
+                        <input type="text" class="border border-gray-400 w-1/4 p-2 rounded-md" placeholder="Enter season no">
+                    </div>
+                    <div class="flex items-center">
+                        <label class="w-1/4">Reference:</label>
+                        <input type="text" class="border border-gray-400 w-full p-2 rounded-md" placeholder="Enter reference">
+                    </div>
+                    <div class="flex items-center">
+                        <label class="w-1/4">Course Fee Installment:</label>
+                        <span class="ml-2">1st</span>
+                        <input type="text" class="border border-gray-400 w-1/4 p-2 mx-2 rounded-md" placeholder="Enter 1st installment">
+                        <span>2nd</span>
+                        <input type="text" class="border border-gray-400 w-1/4 p-2 mx-2 rounded-md" placeholder="Enter 2nd installment">
+                    </div>
+                </form>
+
+                <!-- Signature Section -->
+                <div class="flex justify-between mt-6 text-sm">
+                    <div class="text-center">
+                        <span class="block border-b border-gray-400 w-32 mx-auto mb-2"></span> Admin Signature
+                    </div>
+                    <div class="text-center">
+                        <span class="block border-b border-gray-400 w-32 mx-auto mb-2"></span> Receiver Signature
+                    </div>
+                </div>
+
+                <!-- Footer Section -->
+                <div class="bg-purple-700 text-white flex justify-between items-center p-2 mt-6 text-xs">
+                    <div class="flex items-center space-x-2">
+                        <span>📞</span>
+                        <span>01601510251</span>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <span>✉️</span>
+                        <span>itderbd@gmail.com</span>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <span>🌐</span>
+                        <span>www.itder.com</span>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <span>📍</span>
+                        <span>4th Floor, Walton Plaza, Fulbari Bus Stand, Dinajpur</span>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+        </div>
+
+
+    </div>
+    </div>
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/library-name@version/library.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/home.js"></script>
+</body>
+
+</html>

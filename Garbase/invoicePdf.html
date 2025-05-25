@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Invoice Pdf </title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+    <link href="./css/style.css" rel="stylesheet">
+    <link href="./css/courses.css" rel="stylesheet">
+
+</head>
+
+<body class="">
+    <div class="max-w-5xl mx-auto my-8 font-sans text-gray-800 p-10 bg-gray-50 min-h-screen">
+        <!-- Header -->
+        <div class="flex flex-col md:flex-row items-center md:items-start justify-between px-4 mb-6">
+            <div class="mt-2">
+                <h6 class="text-4xl font-bold text-gray-700">Invoice</h6>
+            </div>
+            <div class="flex flex-col items-center md:items-end text-gray-600 mt-5">
+                <h6><span class="font-bold">Branch:</span> Test Branch</h6>
+                <h6 class="mb-1"><span class="font-bold">Address:</span> Uttara</h6>
+                <h6 class="mb-1"><span class="font-bold">Phone 1:</span> 01799000000</h6>
+                <h6 class="mb-1"><span class="font-bold">Email:</span> testbranch@gmail.com</h6>
+            </div>
+        </div>
+
+        <!-- Invoice Info -->
+        <div class="grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-4 px-4 mb-10 grid">
+            <div>
+                <h6 class="font-bold text-gray-700 mb-2">Billed To</h6>
+                <h6 class="mb-1">Test Branch</h6>
+                <h6 class="mb-1">Uttara</h6>
+                <h6 class="mb-1">01799000000</h6>
+                <h6>testbranch@gmail.com</h6>
+            </div>
+            <div>
+                <h6 class="font-bold text-gray-700 mb-2">Invoice Number</h6>
+                <h6 class="mb-4">#1000002</h6>
+                <h6 class="font-bold text-gray-700 mb-2">Date Of Issue</h6>
+                <h6>27-04-2024</h6>
+            </div>
+            <div>
+                <h6 class="font-bold text-gray-700 mb-2">Invoice Total</h6>
+                <h6 class="text-4xl font-bold text-purple-500">18000৳</h6>
+            </div>
+        </div>
+        
+
+        <!-- Table -->
+        <div class="overflow-x-auto mb-10">
+            <table class="table-auto border-collapse border border-gray-300 w-full">
+                <thead class="bg-gray-100 text-gray-700 text-center">
+                    <tr>
+                        <th class="border border-gray-300 px-4 py-2 font-bold">Name</th>
+                        <th class="border border-gray-300 px-4 py-2 font-bold">Status</th>
+                        <th class="border border-gray-300 px-4 py-2 font-bold">Actions</th>
+                    </tr>
+                </thead>
+                <tbody class="text-center">
+                    <tr>
+                        <td class="border border-gray-300 px-4 py-2">Beauty</td>
+                        <td class="border border-gray-300 px-4 py-2">Beauty</td>
+                        <td class="border border-gray-300 px-4 py-2">Beauty</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="flex items-start ">
+            <div class="flex-1">
+                <h6 class="font-bold text-gray-700 mb-2">Invoice Terms</h6>
+                <h6>sdfsd</h6>
+            </div>
+
+            <div class="flex flex-1">
+
+                <div class="w-7/12">
+                    <h6 class="text-purple-500 ">Service Qty</h6>
+                    <h6 class="text-purple-500">Sub Total</h6>
+                    <h6 class="text-purple-500">Discount</h6>
+                    <h6 class="text-purple-500">Special Discount</h6>
+                    <h6 class="text-purple-500">Net Amount</h6>
+                    <h6 class="text-purple-500">Paid Amount</h6>
+                    <h6 class="text-purple-500">Due Amount</h6>
+                    <h6 class="text-purple-500">Change Amount</h6>
+                </div>
+
+                <div class="w-2/12">
+                    <h6 class="text-purple-500 ">:</h6>
+                    <h6 class="text-purple-500">:</h6>
+                    <h6 class="text-purple-500">:</h6>
+                    <h6 class="text-purple-500 ">:</h6>
+                    <h6 class="text-purple-500">:</h6>
+                    <h6 class="text-purple-500">:</h6>
+                    <h6 class="text-purple-500 ">:</h6>
+                    <h6 class="text-purple-500">:</h6>
+                  
+                </div>
+
+                <div class="w-3/12 text-end ">
+                    <h6 class=" flex items-center gap-1 text-center  ">200 <span class="font-extrabold text-sm">	৳</span></h6>
+                    <h6 class=" flex items-center gap-1 text-center  ">200 <span class="font-extrabold text-sm">	৳</span></h6>
+                    <h6 class=" flex items-center gap-1 text-center  ">200 <span class="font-extrabold text-sm">	৳</span></h6>
+
+                    <h6 class=" flex items-center gap-1 text-center  ">200 <span class="font-extrabold text-sm">	৳</span></h6><h6 class=" flex items-center gap-1 text-center  ">200 <span class="font-extrabold text-sm">	৳</span></h6>
+                    <h6 class=" flex items-center gap-1 text-center  ">200 <span class="font-extrabold text-sm">	৳</span></h6>
+                    <h6 class=" flex items-center gap-1 text-center  ">200 <span class="font-extrabold text-sm">	৳</span></h6>
+                    <h6 class=" flex items-center gap-1 text-center  ">200 <span class="font-extrabold text-sm">	৳</span></h6>
+                   
+                </div>
+
+
+            </div>
+        </div>
+        <!-- Invoice Summary -->
+        
+    </div>
+</body>
+
+</html>

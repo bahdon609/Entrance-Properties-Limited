@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Entrance Properties Limited</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+    <link href="./css/style.css" rel="stylesheet" />
+    <style>
+        /* Tailwind dropdown hidden by default */
+    </style>
+</head>
+
+<body class="bg-gray-100 font-sans leading-normal tracking-normal">
+    <!-- Sidebar Component -->
+    <div class="flex gap-4 w-full">
+        <!-- Sidebar -->
+        <div id="sidebar" class="w-64 shadow-md z-50 bg-white text-white h-screen fixed p-4 transition-transform transform -translate-x-full md:translate-x-0">
+            <div class="bg-white rounded w-full">
+                <img class="rounded h-20 object-contain w-full" src="./assets/ENTRANCE.png" alt="Logo" />
+            </div>
+            <!-- Menu Items -->
+            <div class="flex flex-col justify-between mt-2">
+                <ul id="sidebarMenu" class="w-full ">
+                    <!-- Overview Section -->
+                    <li class="font-bold text-sm text_color_primary my-2">Overview</li>
+                    <li class="mb-2">
+                        <a href="index.html" class="sidebar-link flex items-center gap-2 py-1.5  rounded hover:bg-gray-100 text-gray-700" id="homeLink">
+                            <i class="fas fa-home icon_color text-white p-2  text-xs rounded"></i>
+                            <span class="font-bold">Home</span>
+                        </a>
+                    </li>
+
+                    <li class="mb-2">
+                        <a href="about.html" class="sidebar-link flex items-center gap-2 py-1.5 rounded hover:bg-gray-100 text-gray-700" id="aboutLink">
+                            <i class="fas fa-home icon_color text-white p-2 text-xs rounded"></i>
+                            <span class="font-bold">About Us</span>
+                        </a>
+                    </li>
+
+                    <li class="mb-2">
+                        <a href="photo.html" class="sidebar-link flex items-center gap-2 py-1.5 rounded hover:bg-gray-100 text-gray-700" id="photoLink">
+                            <i class="fas fa-info-circle icon_color text-white p-2 text-xs rounded"></i>
+                            <span class="font-bold">Photo Gallery</span>
+                        </a>
+                    </li>
+
+                    <li class="mb-2">
+                        <a href="video.html" class="sidebar-link flex items-center gap-2 py-1.5 rounded hover:bg-gray-100 text-gray-700" id="videoLink">
+                            <i class="fas fa-info-circle icon_color text-white p-2 text-xs rounded"></i>
+                            <span class="font-bold">Video Gallery</span>
+                        </a>
+                    </li>
+
+                    <li class="mb-2">
+                        <a href="blog.html" class="sidebar-link flex items-center gap-2 py-1.5 rounded hover:bg-gray-100 text-gray-700" id="blogLink">
+                            <i class="fas fa-info-circle icon_color text-white p-2 text-xs rounded"></i>
+                            <span class="font-bold">Blog & Event</span>
+                        </a>
+                    </li>
+
+                    <li class="mb-2">
+                        <a href="contact.html" class="sidebar-link flex items-center gap-2 py-1.5 rounded hover:bg-gray-100 text-gray-700" id="contactLink">
+                            <i class="fas fa-info-circle icon_color text-white p-2 text-xs rounded"></i>
+                            <span class="font-bold">Contact Us</span>
+                        </a>
+                    </li>
+
+                    <li class="font-bold text-sm text_color_primary my-1">Our project</li>
+
+                    <li class="mb-2">
+                        <a href="bashundhara.html" class="sidebar-link flex items-center gap-2 py-1.5 rounded hover:bg-gray-100 text-gray-700" id="courseLinks">
+                            <i class="fas fa-info-circle icon_color text-white p-2 text-xs rounded"></i>
+                            <span class="font-bold">Basundhara</span>
+                        </a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="uttara.html" class="sidebar-link flex items-center gap-2 py-1.5 rounded hover:bg-gray-100 text-gray-700" id="serviceLink">
+                            <i class="fas fa-info-circle icon_color text-white p-2 text-xs rounded"></i>
+                            <span class="font-bold">Uttara</span>
+                        </a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="mirpur.html" class="sidebar-link flex items-center gap-2 py-1.5 rounded hover:bg-gray-100 text-gray-700" id="student_certificateLinkss">
+                            <i class="fas fa-info-circle icon_color text-white p-2 text-xs rounded"></i>
+                            <span class="font-bold">Mirpur</span>
+                        </a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="mohammadpur.html" class="sidebar-link flex items-center gap-2 py-1.5 rounded hover:bg-gray-100 text-gray-700" id="registration_formLinks">
+                            <i class="fas fa-info-circle icon_color text-white p-2 text-xs rounded"></i>
+                            <span class="font-bold">Mohammadpur</span>
+                        </a>
+                    </li>
+
+
+                </ul>
+            </div>
+        </div>
+
+        <div class="md:ml-64 w-full">
+
+
+            <div class="mt-4 mx-4">
+                <!-- page title  -->
+                <!-- Header Section -->
+                <div class="icon_color text-white text-center py-6 px-[15px]">
+                    <h1 class="text-4xl font-bold">About</h1>
+                    <p class="text-base mt-2">Memorable moments of our association</p>
+                </div>
+                <!-- ----- cards ---- -->
+                <div class="grid grid-cols-1 lg:grid-cols-4 my-4 gap-5 ">
+                    <div class="flex justify-center one-card">
+                        <div class="bg-white border-2 border-gray-300  p-4 mx-auto w-full hover:border-purple-400 transition duration-500 cursor-pointer">
+                            <div>
+                                <img src="https://member.gcauk.co.uk/uploads/gallery/1718146822-6668d7067817e.JPG" class="rounded-sm" alt="" />
+                            </div>
+                            <div class="p-5">
+                                <div class="text-2xl text-black font-semibold my-2">Abby</div>
+                                <div class="text-base text-gray-600 font-thin">
+                                    0198485776859030
+                                </div>
+                                <div class="text-base text-gray-600 font-thin">
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia, voluptatibus!
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- description -->
+                <div class="mb-4 bg-white border-2 border-gray-300  p-4 mx-auto w-full hover:border-purple-400 transition duration-500 cursor-pointer">
+                    <p class="text-justify text-sm lg:text-xl font-thin text-gray-600 py-2">
+                        Welcome to Entrance Properties Limited, a trusted name in the construction industry of Bangladesh. Since our founding, we have been committed to delivering high-quality construction services that reflect our dedication to excellence, honesty, and long-term
+                        value. As a growing company in an ever-evolving sector, we are proud to contribute to the infrastructure and urban development of our nation. Established in the early 2000s, Entrance Properties Limited was formed with a simple
+                        but powerful vision — to build a better future. From the beginning, our goal has been to create buildings and spaces that are not only structurally sound but also serve the needs and aspirations of those who use them. Over the
+                        years, we have successfully completed a wide range of projects, including residential apartments, commercial complexes, office spaces, and industrial facilities. Our strength lies in our people. We are backed by a highly experienced
+                        team of engineers, architects, project managers, and construction workers who share a common passion for quality and innovation. Our professionals use proven construction practices, careful planning, and the latest tools and technologies
+                        available at the time to ensure that every project is completed on schedule, within budget, and to the satisfaction of our clients.
+                    </p>
+
+                    <div class="my-2">
+                        <div class="text-lg lg:text-2xl font-semibold text-gray-700 ps-10 my-5">
+                            Our Mission
+                        </div>
+                        <div>
+                            <p class="text-justify text-sm lg:text-xl font-thin text-gray-600">
+
+                                To deliver reliable, efficient, and cost-effective construction solutions that fulfill the needs of clients while adhering to the highest standards of quality, safety, and environmental responsibility.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="my-2">
+                        <div class="text-lg lg:text-2xl font-semibold text-gray-700 ps-10 my-5">
+                            Our Vision
+                        </div>
+                        <div>
+                            <p class="text-justify text-sm lg:text-xl font-thin text-gray-600">
+                                To be a leading construction company in Bangladesh, known for our integrity, customer satisfaction, and long-lasting contributions to national development. We provide a broad range of services tailored to the specific requirements of each project. Whether
+                                it is a multi-storied residential building in Dhaka, a commercial plaza in Chittagong, or an industrial warehouse in Narayanganj, our team is equipped to handle every phase — from design and planning to final handover.
+                                Some of our key services include: Residential and Commercial Construction Project Planning and Supervision Civil and Structural Engineering Interior and Exterior Finishing Work Renovation and Remodeling Projects What sets
+                                us apart is our commitment to building strong client relationships. We believe that clear communication, mutual respect, and transparency are the foundations of every successful project. Our clients trust us because we
+                                listen carefully to their needs and work tirelessly to bring their vision to life. As Bangladesh continues to grow and modernize, the demand for dependable and visionary construction companies is higher than ever. [Your
+                                Company Name] is proud to be part of that growth, working hand in hand with clients, developers, and communities to shape the cities of tomorrow. Thank you for visiting our website. Whether you are a prospective client,
+                                a partner, or just someone interested in learning more about our work, we invite you to explore our portfolio and get in touch with us. We look forward to helping you build your future.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+
+            </div>
+        </div>
+    </div>
+    <!-- Scripts -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const container = document.querySelector('.group'); // Select the parent container
+            const dropdown = document.getElementById('dropdowns1'); // Select the dropdown element
+
+            // Show dropdown on hover
+            container.addEventListener('mouseenter', () => {
+                dropdown.classList.remove('hidden');
+            });
+
+            // Hide dropdown when not hovering
+            container.addEventListener('mouseleave', () => {
+                dropdown.classList.add('hidden');
+            });
+        });
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/library-name@version/library.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/home.js"></script>
+
+</body>
+
+</html>

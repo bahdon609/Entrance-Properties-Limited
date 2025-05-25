@@ -1,0 +1,119 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.selected {
+    background-color: #72C2E7 !important;
+    color: white;
+}
+
+.text_color {
+    color: #72C2E7;
+}
+
+.icon_color {
+    background-color: #72C2E7;
+}
+
+.purple_color {
+    background-color: white;
+    font-weight: bold;
+}
+
+.purple_color:hover {
+    background-color: #72C2E7;
+    color: white;
+}
+
+.purple_color2 {
+    background-color: white;
+}
+
+.purple_color2:hover {
+    background-color: #72C2E7;
+    color: white;
+}
+
+.border_color {
+    color: #72C2E7;
+}
+
+.border_top_color_purple {
+    border-bottom: 1px solid #72C2E7;
+}
+
+.border_purple_color {
+    border-bottom: 1px solid #72C2E7;
+    border-left: 1px solid #72C2E7;
+    border-right: 1px solid #72C2E7;
+}
+
+.text_color_primary {
+    color: #0317a4;
+}
+
+.text_color_title {
+    color: #141d38;
+}
+
+.text_color_paragraph {
+    color: #737887;
+}
+
+.gray_color_background {
+    background-color: #eff1f9;
+}
+
+.text_orange_color {
+    color: #f16126;
+}
+
+.btn_hover {
+    color: black;
+}
+
+.btn_hover:hover {
+    color: #f16126;
+}
+
+.btn_primary {
+    background-color: #72C2E7;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    padding: 8px 8px;
+}
+
+.button_primary {
+    background-color: #72C2E7;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px 14px;
+    border: none;
+    transition: 0.3s all ease-in-out;
+}
+
+.button_primary:hover {
+    background-color: #29439a;
+}
+
+.group:hover .absolute.inset-0 {
+    background-image: url("../assets/bg_overlay_1.png");
+    background-size: cover;
+    background-position: center;
+    opacity: 0.8;
+    /* Adjust for desired overlay intensity */
+}
+
+.width_height_pixel {
+    height: 1299px !important;
+    width: 1062px !important;
+}
+
+.building-cart {
+    height: 450px;
+}
+
+.cart-text {
+    color: #17A84C;
+}
